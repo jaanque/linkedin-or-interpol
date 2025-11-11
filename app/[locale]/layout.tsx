@@ -6,6 +6,10 @@ import "../globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
+export function generateStaticParams() {
+  return [{locale: 'en'}, {locale: 'es'}, {locale: 'fr'}];
+}
+
 export const metadata: Metadata = {
   title: "LinkedIn or Interpol",
   description: "A deduction game.",
