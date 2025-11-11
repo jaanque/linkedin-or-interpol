@@ -1,0 +1,32 @@
+{
+  "Header": {
+    "language": "Español",
+    "filter1": {
+      "bw": "Blanco y Negro",
+      "shrek": "Modo Shrek",
+      "saturate": "Saturar",
+      "sepia": "Sepia",
+      "none": "Ninguno"
+    },
+    "filter2": {
+      "blur": "Desenfoque",
+      "random": "Calidad aleatoria",
+      "none": "Ninguno"
+    }
+  },
+  "Home": {
+    "title": "LinkedIn o Interpol",
+    "subtitle": "¿Profesional o Criminal? ¡Tú decides!",
+    "score": "Puntuación",
+    "total": "Total",
+    "linkedin": "LinkedIn",
+    "interpol": "Interpol"
+  },
+  "Footer": {
+    "title": "LinkedIn o Interpol - Un Juego de Deducción - Versión 1.0",
+    "legal": "Aviso legal: Este sitio web es un juego de adivinanzas satírico y educativo.",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyright": "© 2025 Jan Queralt. Todos los derechos reservados."
+  }
+}
