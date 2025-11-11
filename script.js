@@ -1,5 +1,5 @@
 const images = [
-    // Original 18
+    // 50 images...
     { src: 'https://randomuser.me/api/portraits/men/1.jpg', type: 'linkedin', description: 'This person is on LinkedIn.' },
     { src: 'https://randomuser.me/api/portraits/men/2.jpg', type: 'interpol', description: 'Wanted for international pastry theft.' },
     { src: 'https://randomuser.me/api/portraits/women/1.jpg', type: 'linkedin', description: 'This person is on LinkedIn.' },
@@ -18,8 +18,6 @@ const images = [
     { src: 'https://randomuser.me/api/portraits/women/8.jpg', type: 'interpol', description: 'Accused of orchestrating a series of well-mannered flash mobs.' },
     { src: 'https://randomuser.me/api/portraits/men/9.jpg', type: 'interpol', description: 'Wanted for distributing counterfeit compliments.' },
     { src: 'https://randomuser.me/api/portraits/women/9.jpg', type: 'interpol', description: 'Allegedly responsible for a city-wide outbreak of uncontrollable polka dancing.' },
-
-    // New 32
     { src: 'https://randomuser.me/api/portraits/men/10.jpg', type: 'linkedin', description: 'This person is on LinkedIn.' },
     { src: 'https://randomuser.me/api/portraits/women/10.jpg', type: 'linkedin', description: 'This person is on LinkedIn.' },
     { src: 'https://randomuser.me/api/portraits/men/11.jpg', type: 'interpol', description: 'Wanted for leaving pineapple on pizza at an international summit.' },
@@ -58,6 +56,7 @@ let score = 0;
 let total = 0;
 let currentImage;
 let remainingImages = [...images];
+let autoAdvance = true;
 
 const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
@@ -66,11 +65,16 @@ const linkedinButton = document.getElementById('linkedin-button');
 const interpolButton = document.getElementById('interpol-button');
 const feedbackEl = document.getElementById('feedback');
 const descriptionEl = document.getElementById('description');
+const nextButton = document.getElementById('next-button');
+const autoAdvanceSwitch = document.getElementById('auto-advance-switch');
 
 function nextImage() {
     feedbackEl.textContent = '';
     feedbackEl.className = '';
     descriptionEl.textContent = '';
+    nextButton.classList.add('hidden');
+    linkedinButton.disabled = false;
+    interpolButton.disabled = false;
 
     if (remainingImages.length === 0) {
         // Reshuffle the images to play again
@@ -99,14 +103,20 @@ function checkAnswer(guess) {
     linkedinButton.disabled = true;
     interpolButton.disabled = true;
 
-    setTimeout(() => {
-        nextImage();
-        linkedinButton.disabled = false;
-        interpolButton.disabled = false;
-    }, 3000); // Increased timeout to allow time to read the description
+    if (autoAdvance) {
+        setTimeout(nextImage, 3000);
+    } else {
+        nextButton.classList.remove('hidden');
+    }
+}
+
+function handleAutoAdvanceChange() {
+    autoAdvance = autoAdvanceSwitch.checked;
 }
 
 linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
 interpolButton.addEventListener('click', () => checkAnswer('interpol'));
+nextButton.addEventListener('click', nextImage);
+autoAdvanceSwitch.addEventListener('change', handleAutoAdvanceChange);
 
 nextImage();

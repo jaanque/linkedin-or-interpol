@@ -10,10 +10,17 @@
     <div class="container">
         <div class="header">
             <h1>LinkedIn or Interpol</h1>
-            <p>¿Profesional o Criminal? ¡Tú decides!</p>
+            <p>Professional or Criminal? You decide!</p>
             <div class="score-container">
-                <p>Puntuación: <span id="score">0</span></p>
+                <p>Score: <span id="score">0</span></p>
                 <p>Total: <span id="total">0</span></p>
+            </div>
+            <div class="settings-container">
+                <span>Auto-Advance</span>
+                <label class="switch">
+                    <input type="checkbox" id="auto-advance-switch" checked>
+                    <span class="slider"></span>
+                </label>
             </div>
         </div>
         <div class="game-container">
@@ -26,12 +33,13 @@
                 <button id="linkedin-button">LinkedIn</button>
                 <button id="interpol-button">Interpol</button>
             </div>
+            <button id="next-button" class="hidden">Next Image</button>
         </div>
         <div class="footer">
-            <p>LinkedIn or Interpol - Un Juego de Deducción - Versión 1.0</p>
-            <p>Aviso legal: Este sitio web es un juego de adivinanzas satírico y educativo.</p>
-            <p><a href="#">Política de Privacidad</a> <a href="#">Términos de Servicio</a></p>
-            <p>© 2025 Jan Queralt. Tous droits réservés.</p>
+            <p>LinkedIn or Interpol - A Deduction Game - Version 1.0</p>
+            <p>Disclaimer: This website is a satirical and educational guessing game.</p>
+            <p><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a></p>
+            <p>© 2025 Jan Queralt. All rights reserved.</p>
         </div>
     </div>
     <script src="script.js"></script>
