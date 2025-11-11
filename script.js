@@ -57,6 +57,12 @@ const translations = {
         "imgDesc45": "This person is on LinkedIn.",
         "imgDesc47": "This person is on LinkedIn.",
         "imgDesc49": "This person is on LinkedIn.",
+        "professionalOrCriminal": "Professional or Criminal?",
+        "youDecide": "You decide!",
+        "aDeductionGame": "A Deduction Game",
+        "version": "Version 1.0",
+        "disclaimer": "Disclaimer: This website is a satirical and educational guessing game.",
+        "allRightsReserved": "All rights reserved."
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -116,6 +122,12 @@ const translations = {
         "imgDesc45": "Esta personá está en LinkedIn.",
         "imgDesc47": "Esta persona está en LinkedIn.",
         "imgDesc49": "Esta persona está en LinkedIn.",
+        "professionalOrCriminal": "¿Profesional o Criminal?",
+        "youDecide": "¡Tú decides!",
+        "aDeductionGame": "Un Juego de Deducción",
+        "version": "Versión 1.0",
+        "disclaimer": "Aviso: Este sitio web es un juego de adivinanzas satírico y educativo.",
+        "allRightsReserved": "Todos los derechos reservados."
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -175,6 +187,12 @@ const translations = {
         "imgDesc45": "Cette personne est sur LinkedIn.",
         "imgDesc47": "Cette personne est sur LinkedIn.",
         "imgDesc49": "Cette personne est sur LinkedIn.",
+        "professionalOrCriminal": "Professionnel ou Criminel?",
+        "youDecide": "À vous de décider!",
+        "aDeductionGame": "Un Jeu de Déduction",
+        "version": "Version 1.0",
+        "disclaimer": "Avertissement: Ce site web est un jeu de devinettes satirique et éducatif.",
+        "allRightsReserved": "Tous droits réservés."
     }
 };
 
@@ -295,7 +313,7 @@ function checkAnswer(guess) {
         policeRecordLink.href = recordUrl;
         policeRecordLink.textContent = currentTranslations.policeRecord;
         policeRecordLink.target = '_blank';
-        descriptionEl.innerHTML = `${name} - ${currentTranslations[currentImage.descriptionKey]} <br> `;
+        descriptionEl.innerHTML = `<b>${name}</b> - ${currentTranslations[currentImage.descriptionKey]} <br> `;
         descriptionEl.appendChild(policeRecordLink);
     } else {
         descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
