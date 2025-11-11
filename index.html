@@ -120,22 +120,19 @@
         <div class="popup-content">
             <span class="close-btn">&times;</span>
             <h2 data-i18n-key="requestImagePopupHeader">Request a New Image</h2>
-            <form
-  action="https://formspree.io/f/mvgdovle"
-  method="POST"
->
+            <form action="https://formspree.io/f/mvgdovle" method="POST">
                 <label for="request-name" data-i18n-key="requestImagePopupNameLabel">Name:</label>
                 <input type="text" id="request-name" name="name" required>
-
+                
                 <label for="request-link" data-i18n-key="requestImagePopupLinkLabel">Image Link:</label>
                 <input type="url" id="request-link" name="link" required>
-
+                
                 <label for="request-type" data-i18n-key="requestImagePopupTypeLabel">Type:</label>
                 <select id="request-type" name="type" required>
                     <option value="linkedin" data-i18n-key="requestImagePopupTypeLinkedin">LinkedIn</option>
                     <option value="interpol" data-i18n-key="requestImagePopupTypeInterpol">Interpol</option>
                 </select>
-
+                
                 <button type="submit" data-i18n-key="requestImagePopupSubmit">Submit Request</button>
             </form>
         </div>
