@@ -1,28 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
 
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #f4f4f4;
+    font-family: 'Courier Prime', monospace;
+    background-color: #fdf6e3; /* A warm, paper-like color */
     color: #333;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Align items vertically */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 1rem;
+    padding: 1rem; /* Adjusted padding for smaller screens */
     box-sizing: border-box;
-    background-image: url('https://www.transparenttextures.com/patterns/subtle-white-feathers.png');
 }
 
 .container {
     text-align: center;
     width: 100%;
-    max-width: 600px;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    max-width: 600px; /* Allow more width */
 }
 
 .header {
@@ -32,7 +27,7 @@ body {
 .header h1 {
     font-weight: 700;
     font-size: 2.5rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .header h1 .linkedin {
@@ -40,7 +35,7 @@ body {
 }
 
 .header h1 .interpol {
-    color: #c91a1a;
+    color: #c91a1a; /* A slightly more muted red */
 }
 
 .header p {
@@ -62,14 +57,13 @@ body {
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 .language-selector-container select {
-    font-family: 'Roboto Mono', monospace;
-    padding: 0.5rem;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    font-family: 'Courier Prime', monospace;
+    padding: 0.3rem;
+    border: 2px solid #333;
     background: #fff;
 }
 
@@ -136,16 +130,18 @@ input:checked + .slider:before {
 .image-container {
     width: 250px;
     height: 250px;
-    margin: 0 auto 1.5rem;
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    border: 10px solid #eceadd;
+    background: #fff;
+    box-shadow: 3px 3px 0px #dcd3b8; /* Hard shadow for analog feel */
+    padding: 5px;
 }
 
 #profile-picture {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: sepia(0.2) grayscale(0.1); /* Add a slight analog photo effect */
 }
 
 @keyframes feedback-animation {
@@ -176,7 +172,7 @@ input:checked + .slider:before {
     margin: 1rem 0;
     font-size: 1.1rem;
     color: #555;
-    min-height: 40px;
+    min-height: 40px; /* Reserve space */
 }
 
 .button-container {
@@ -188,38 +184,58 @@ input:checked + .slider:before {
 
 button {
     padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
+    border: 2px solid #333;
+    background-color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Courier Prime', monospace;
     font-weight: 700;
-    transition: all 0.2s ease;
+    color: #333;
+    transition: all 0.2s;
+    box-shadow: 3px 3px 0px #333;
 }
 
 button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
+    background-color: #f5efdc;
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px #333;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px 0px #333;
 }
 
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
 
+
 #linkedin-button {
-    background-color: #0077b5;
+    color: #0077b5;
+    border-color: #0077b5;
+    box-shadow: 3px 3px 0px #0077b5;
+}
+
+#linkedin-button:hover {
+    box-shadow: 1px 1px 0px #0077b5;
 }
 
 #interpol-button {
-    background-color: #c91a1a;
+    color: #c91a1a;
+    border-color: #c91a1a;
+    box-shadow: 3px 3px 0px #c91a1a;
+}
+
+#interpol-button:hover {
+    box-shadow: 1px 1px 0px #c91a1a;
 }
 
 #next-button {
     margin-top: 1rem;
-    background-color: #555;
 }
 
 .hidden {
@@ -230,22 +246,21 @@ button:disabled {
     font-size: 0.9rem;
     color: #888;
     margin-top: 3rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #dcd3b8;
     padding-top: 1.5rem;
     width: 100%;
+    max-width: 600px;
 }
 
 .footer a {
     color: #333;
-    text-decoration: none;
-}
-.footer a:hover {
     text-decoration: underline;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
-    .container {
-        padding: 1.5rem;
+    body {
+        padding: 1rem;
     }
 
     .header h1 {
@@ -267,7 +282,18 @@ button:disabled {
     }
 
     button {
-        width: 100%;
+        width: 80%;
         max-width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .image-container {
+        width: 180px;
+        height: 180px;
     }
 }
