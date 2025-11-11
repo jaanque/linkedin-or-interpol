@@ -293,6 +293,20 @@ button:disabled {
     }
 }
 
+.ad-container-side {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+@media (max-width: 1024px) {
+    .ad-container-side {
+        display: none;
+    }
+}
+
 @media (max-width: 400px) {
     .header h1 {
         font-size: 1.8rem;
