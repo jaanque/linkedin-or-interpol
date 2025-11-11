@@ -5,30 +5,13 @@ body {
     background-color: #fdf6e3; /* A warm, paper-like color */
     color: #333;
     display: flex;
-    min-height: 100vh;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.ad-container-left {
-    width: 728px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    background-color: #f0e6d2;
-    padding: 1rem;
-    box-sizing: border-box;
-}
-
-.main-content {
-    margin-left: 728px;
-    padding: 1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Align items vertically */
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem; /* Adjusted padding for smaller screens */
+    box-sizing: border-box;
 }
 
 .container {
@@ -141,7 +124,7 @@ input:checked + .slider:before {
 }
 
 .game-container {
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .image-container {
@@ -257,6 +240,10 @@ button:disabled {
 
 .hidden {
     display: none;
+}
+
+.ad-container-bottom {
+    margin: 2rem 0;
 }
 
 .footer {
