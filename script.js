@@ -94,7 +94,15 @@ const translations = {
         "yourConsentText1": "By using our website, you consent to our data collection and privacy policy as described here.",
         "privacyButton": "Privacy Policy",
         "learnMore": "Learn more",
-        "cookieAccept": "Got it!"
+        "cookieAccept": "Got it!",
+        "requestImageBtn": "Request to Add an Image",
+        "requestImagePopupHeader": "Request a New Image",
+        "requestImagePopupNameLabel": "Name:",
+        "requestImagePopupLinkLabel": "Image Link:",
+        "requestImagePopupTypeLabel": "Type:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Submit Request"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -191,7 +199,15 @@ const translations = {
         "yourConsentText1": "Al utilizar nuestro sitio web, aceptas nuestra recopilación de datos y política de privacidad como se describe aquí.",
         "privacyButton": "Política de Privacidad",
         "learnMore": "Leer más",
-        "cookieAccept": "¡Entendido!"
+        "cookieAccept": "¡Entendido!",
+        "requestImageBtn": "Solicitar añadir una imagen",
+        "requestImagePopupHeader": "Solicitar una nueva imagen",
+        "requestImagePopupNameLabel": "Nombre:",
+        "requestImagePopupLinkLabel": "Enlace de la imagen:",
+        "requestImagePopupTypeLabel": "Tipo:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Enviar solicitud"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -288,7 +304,15 @@ const translations = {
         "yourConsentText1": "En utilisant notre site web, vous consentez à notre collecte de données et à notre politique de confidentialité telles que décrites ici.",
         "privacyButton": "Politique de Confidentialité",
         "learnMore": "En savoir plus",
-        "cookieAccept": "J'ai compris!"
+        "cookieAccept": "J'ai compris!",
+        "requestImageBtn": "Demander l'ajout d'une image",
+        "requestImagePopupHeader": "Demander une nouvelle image",
+        "requestImagePopupNameLabel": "Nom:",
+        "requestImagePopupLinkLabel": "Lien de l'image:",
+        "requestImagePopupTypeLabel": "Type:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Envoyer la demande"
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -385,7 +409,15 @@ const translations = {
         "yourConsentText1": "Durch die Nutzung unserer Website stimmen Sie unserer Datenerfassung und Datenschutzrichtlinie wie hier beschrieben zu.",
         "privacyButton": "Datenschutzrichtlinie",
         "learnMore": "Mehr erfahren",
-        "cookieAccept": "Verstanden!"
+        "cookieAccept": "Verstanden!",
+        "requestImageBtn": "Bild hinzufügen anfordern",
+        "requestImagePopupHeader": "Neues Bild anfordern",
+        "requestImagePopupNameLabel": "Name:",
+        "requestImagePopupLinkLabel": "Bildlink:",
+        "requestImagePopupTypeLabel": "Typ:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Anfrage senden"
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -482,7 +514,15 @@ const translations = {
         "yourConsentText1": "Ao usar nosso site, você concorda com nossa coleta de dados e política de privacidade, conforme descrito aqui.",
         "privacyButton": "Política de Privacidade",
         "learnMore": "Saiba mais",
-        "cookieAccept": "Entendi!"
+        "cookieAccept": "Entendi!",
+        "requestImageBtn": "Solicitar a adição de uma imagem",
+        "requestImagePopupHeader": "Solicitar uma nova imagem",
+        "requestImagePopupNameLabel": "Nome:",
+        "requestImagePopupLinkLabel": "Link da imagem:",
+        "requestImagePopupTypeLabel": "Tipo:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Enviar solicitação"
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -579,7 +619,15 @@ const translations = {
         "yourConsentText1": "Utilizzando il nostro sito web, acconsentite alla nostra raccolta di dati e alla nostra politica sulla privacy come descritto qui.",
         "privacyButton": "Informativa sulla Privacy",
         "learnMore": "Scopri di più",
-        "cookieAccept": "Ho capito!"
+        "cookieAccept": "Ho capito!",
+        "requestImageBtn": "Richiedi di aggiungere un'immagine",
+        "requestImagePopupHeader": "Richiedi una nuova immagine",
+        "requestImagePopupNameLabel": "Nome:",
+        "requestImagePopupLinkLabel": "Link immagine:",
+        "requestImagePopupTypeLabel": "Tipo:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Invia richiesta"
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -676,7 +724,15 @@ const translations = {
         "yourConsentText1": "Door onze website te gebruiken, stemt u in met onze gegevensverzameling en ons privacybeleid zoals hier beschreven.",
         "privacyButton": "Privacybeleid",
         "learnMore": "Meer informatie",
-        "cookieAccept": "Begrepen!"
+        "cookieAccept": "Begrepen!",
+        "requestImageBtn": "Verzoek om een afbeelding toe te voegen",
+        "requestImagePopupHeader": "Vraag een nieuwe afbeelding aan",
+        "requestImagePopupNameLabel": "Naam:",
+        "requestImagePopupLinkLabel": "Afbeeldingslink:",
+        "requestImagePopupTypeLabel": "Type:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Interpol",
+        "requestImagePopupSubmit": "Verzoek indienen"
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -773,7 +829,15 @@ const translations = {
         "yourConsentText1": "Используя наш веб-сайт, вы соглашаетесь на сбор данных и нашу политику конфиденциальности, как описано здесь.",
         "privacyButton": "Политика конфиденциальности",
         "learnMore": "Узнать больше",
-        "cookieAccept": "Понятно!"
+        "cookieAccept": "Понятно!",
+        "requestImageBtn": "Запросить добавление изображения",
+        "requestImagePopupHeader": "Запросить новое изображение",
+        "requestImagePopupNameLabel": "Имя:",
+        "requestImagePopupLinkLabel": "Ссылка на изображение:",
+        "requestImagePopupTypeLabel": "Тип:",
+        "requestImagePopupTypeLinkedin": "LinkedIn",
+        "requestImagePopupTypeInterpol": "Интерпол",
+        "requestImagePopupSubmit": "Отправить запрос"
     }
 };
 
@@ -938,18 +1002,38 @@ nextImage();
 
 document.addEventListener('DOMContentLoaded', () => {
     const banner = document.getElementById('cookie-banner');
-    const button = document.getElementById('cookie-accept');
+    const acceptButton = document.getElementById('cookie-accept');
 
-    if (banner && button) {
+    if (banner && acceptButton) {
         if (localStorage.getItem('cookieConsent') === 'true') {
             banner.style.display = 'none';
         } else {
             banner.style.display = 'flex';
         }
 
-        button.addEventListener('click', () => {
+        acceptButton.addEventListener('click', () => {
             localStorage.setItem('cookieConsent', 'true');
             banner.style.display = 'none';
+        });
+    }
+
+    const requestBtn = document.getElementById('request-image-btn');
+    const popup = document.getElementById('request-image-popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    if (requestBtn && popup && closeBtn) {
+        requestBtn.addEventListener('click', () => {
+            popup.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = 'none';
+            }
         });
     }
 });
