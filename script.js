@@ -26,10 +26,8 @@ function nextImage() {
     feedbackEl.className = '';
 
     if (remainingImages.length === 0) {
-        feedbackEl.textContent = `Game over! Your final score is ${score}/${total}`;
-        linkedinButton.disabled = true;
-        interpolButton.disabled = true;
-        return;
+        // Reshuffle the images to play again
+        remainingImages = [...images];
     }
 
     const randomIndex = Math.floor(Math.random() * remainingImages.length);
@@ -55,10 +53,8 @@ function checkAnswer(guess) {
 
     setTimeout(() => {
         nextImage();
-        if (remainingImages.length > 0) {
-            linkedinButton.disabled = false;
-            interpolButton.disabled = false;
-        }
+        linkedinButton.disabled = false;
+        interpolButton.disabled = false;
     }, 1500);
 }
 
