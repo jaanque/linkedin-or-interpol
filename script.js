@@ -783,3 +783,21 @@ languageSelector.addEventListener('change', handleLanguageChange);
 // Initial load
 loadLanguage('en');
 nextImage();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.getElementById('cookie-banner');
+    const button = document.getElementById('cookie-accept');
+
+    if (banner && button) {
+        if (localStorage.getItem('cookieConsent') === 'true') {
+            banner.style.display = 'none';
+        } else {
+            banner.style.display = 'flex';
+        }
+
+        button.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'true');
+            banner.style.display = 'none';
+        });
+    }
+});
