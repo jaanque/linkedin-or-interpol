@@ -15,6 +15,7 @@ const translations = {
         "copyright": "© 2025 Jan Queralt. All rights reserved.",
         "correct": "Correct!",
         "wrong": "Wrong!",
+        "policeRecord": "Police Record",
         "imgDesc1": "This person is on LinkedIn.",
         "imgDesc2": "Iranian indicted for hacking by FBI.",
         "imgDesc3": "This person is on LinkedIn.",
@@ -73,6 +74,7 @@ const translations = {
         "copyright": "© 2025 Jan Queralt. Todos los derechos reservados.",
         "correct": "¡Correcto!",
         "wrong": "¡Incorrecto!",
+        "policeRecord": "Antecedentes Policiales",
         "imgDesc1": "Esta persona está en LinkedIn.",
         "imgDesc2": "Iraní acusado de piratería por el FBI.",
         "imgDesc3": "Esta persona está en LinkedIn.",
@@ -131,6 +133,7 @@ const translations = {
         "copyright": "© 2025 Jan Queralt. Tous droits réservés.",
         "correct": "Correct!",
         "wrong": "Faux!",
+        "policeRecord": "Dossier de Police",
         "imgDesc1": "Cette personne est sur LinkedIn.",
         "imgDesc2": "Iranien inculpé de piratage par le FBI.",
         "imgDesc3": "Cette personne est sur LinkedIn.",
@@ -178,41 +181,41 @@ const translations = {
 const images = [
     // 50 imágenes reales con URLs corregidas
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc1' },
-    { src: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi/@@images/image/preview', type: 'interpol', descriptionKey: 'imgDesc2' },
+    { src: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi/@@images/image/preview', type: 'interpol', name: 'Mohammed Reza Sabahi', recordUrl: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi', descriptionKey: 'imgDesc2' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc3' },
-    { src: 'https://www.fbi.gov/wanted/cei/john-joe-soto/@@images/image/preview', type: 'interpol', descriptionKey: 'imgDesc4' },
+    { src: 'https://www.fbi.gov/wanted/cei/john-joe-soto/@@images/image/preview', type: 'interpol', name: 'John Joe Soto', recordUrl: 'https://www.fbi.gov/wanted/cei/john-joe-soto', descriptionKey: 'imgDesc4' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc5' },
-    { src: 'https://www.fbi.gov/wanted/counterintelligence/natalia-burlinova/@@images/image/preview', type: 'interpol', descriptionKey: 'imgDesc6' },
+    { src: 'https://www.fbi.gov/wanted/counterintelligence/natalia-burlinova/@@images/image/preview', type: 'interpol', name: 'Natalia Burlinova', recordUrl: 'https://www.fbi.gov/wanted/counterintelligence/natalia-burlinova', descriptionKey: 'imgDesc6' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc7' },
-    { src: 'https://www.secretservice.gov/sites/default/files/styles/500px_width/public/2023-05/kulkov_200x.png.webp?itok=QEpJMkNO', type: 'interpol', descriptionKey: 'imgDesc8' },
+    { src: 'https://www.secretservice.gov/sites/default/files/styles/500px_width/public/2023-05/kulkov_200x.png.webp?itok=QEpJMkNO', type: 'interpol', name: 'Kulkov', recordUrl: 'https://www.secretservice.gov/investigation/most-wanted', descriptionKey: 'imgDesc8' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc9' },
-    { src: 'https://www.secretservice.gov/sites/default/files/styles/webp_original_size/public/2024-08/RADOVANOVIC-Nemanja-Photo1.jpg.webp?itok=0C6RbHlg', type: 'interpol', descriptionKey: 'imgDesc10' },
+    { src: 'https://www.secretservice.gov/sites/default/files/styles/webp_original_size/public/2024-08/RADOVANOVIC-Nemanja-Photo1.jpg.webp?itok=0C6RbHlg', type: 'interpol', name: 'Nemanja Radovanovic', recordUrl: 'https://www.secretservice.gov/investigation/most-wanted', descriptionKey: 'imgDesc10' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc11' },
-    { src: 'https://www.secretservice.gov/sites/default/files/styles/webp_original_size/public/inline-images/sokolov-5.png.webp?itok=amNSVvhX', type: 'interpol', descriptionKey: 'imgDesc12' },
+    { src: 'https://www.secretservice.gov/sites/default/files/styles/webp_original_size/public/inline-images/sokolov-5.png.webp?itok=amNSVvhX', type: 'interpol', name: 'Sokolov', recordUrl: 'https://www.secretservice.gov/investigation/most-wanted', descriptionKey: 'imgDesc12' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc13' },
-    { src: 'https://www.dea.gov/sites/default/files/2023-04/Nunez-Herrera%2C%20Alan%20Gabriel.jpg', type: 'interpol', descriptionKey: 'imgDesc14' },
+    { src: 'https://www.dea.gov/sites/default/files/2023-04/Nunez-Herrera%2C%20Alan%20Gabriel.jpg', type: 'interpol', name: 'Alan Gabriel Nunez-Herrera', recordUrl: 'https://www.dea.gov/fugitives', descriptionKey: 'imgDesc14' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc15' },
-    { src: 'https://www.dea.gov/sites/default/files/fugitives/fugitives/elp/hernandez-de-la-cruz.jpg', type: 'interpol', descriptionKey: 'imgDesc16' },
+    { src: 'https://www.dea.gov/sites/default/files/fugitives/fugitives/elp/hernandez-de-la-cruz.jpg', type: 'interpol', name: 'Hernandez De La Cruz', recordUrl: 'https://www.dea.gov/fugitives', descriptionKey: 'imgDesc16' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc17' },
-    { src: 'https://www.lamoncloa.gob.es/presidente/PublishingImages/SANCHEZ-BIOGRAFIA/080323-sanchez-biografia2.jpg', type: 'interpol', descriptionKey: 'imgDesc18' },
+    { src: 'https://www.lamoncloa.gob.es/presidente/PublishingImages/SANCHEZ-BIOGRAFIA/080323-sanchez-biografia2.jpg', type: 'interpol', name: 'Pedro Sanchez', recordUrl: 'https://es.wikipedia.org/wiki/Pedro_Sánchez', descriptionKey: 'imgDesc18' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc19' },
-    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/Smrekar%20Melisa%203.jpg?itok=vDOAEXxQ', type: 'interpol', descriptionKey: 'imgDesc20' },
+    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/Smrekar%20Melisa%203.jpg?itok=vDOAEXxQ', type: 'interpol', name: 'Melisa Smrekar', recordUrl: 'https://eumostwanted.eu/', descriptionKey: 'imgDesc20' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc21' },
-    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/eva.png?itok=5JJlDQPH', type: 'interpol', descriptionKey: 'imgDesc22' },
+    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/eva.png?itok=5JJlDQPH', type: 'interpol', name: 'Eva', recordUrl: 'https://eumostwanted.eu/', descriptionKey: 'imgDesc22' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc23' },
-    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/4_dk_-_steffen-van-khoa-do.jpg?itok=yH_UD9cK', type: 'interpol', descriptionKey: 'imgDesc24' },
+    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/4_dk_-_steffen-van-khoa-do.jpg?itok=yH_UD9cK', type: 'interpol', name: 'Steffen van Khoa DO', recordUrl: 'https://eumostwanted.eu/', descriptionKey: 'imgDesc24' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc25' },
-    { src: 'https://www.cib.npa.gov.tw/en/app/globalcase/image?module=globalcase&detailNo=782819431024717824&init=Y', type: 'interpol', descriptionKey: 'imgDesc26' },
+    { src: 'https://www.cib.npa.gov.tw/en/app/globalcase/image?module=globalcase&detailNo=782819431024717824&init=Y', type: 'interpol', name: 'Unknown', recordUrl: 'https://www.cib.npa.gov.tw/en/', descriptionKey: 'imgDesc26' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc27' },
-    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/Imagen%202.png?itok=aEniB5aK', type: 'interpol', descriptionKey: 'imgDesc28' },
+    { src: 'https://eumostwanted.eu/sites/default/files/styles/wanted_medium/public/wanted_pictures/Imagen%202.png?itok=aEniB5aK', type: 'interpol', name: 'Unknown', recordUrl: 'https://eumostwanted.eu/', descriptionKey: 'imgDesc28' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc29' },
-    { src: 'https://www.usmarshals.gov/sites/default/files/acquiadam/most-wanted-king-robert-lee-300-350.jpg', type: 'interpol', descriptionKey: 'imgDesc30' },
+    { src: 'https://www.usmarshals.gov/sites/default/files/acquiadam/most-wanted-king-robert-lee-300-350.jpg', type: 'interpol', name: 'Robert Lee King', recordUrl: 'https://www.usmarshals.gov/', descriptionKey: 'imgDesc30' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc31' },
-    { src: 'https://www.usmarshals.gov/sites/default/files/acquiadam/most-wanted-eubanks-lester-edward-300-350.jpg', type: 'interpol', descriptionKey: 'imgDesc32' },
+    { src: 'https://www.usmarshals.gov/sites/default/files/acquiadam/most-wanted-eubanks-lester-edward-300-350.jpg', type: 'interpol', name: 'Lester Edward Eubanks', recordUrl: 'https://www.usmarshals.gov/', descriptionKey: 'imgDesc32' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc33' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc35' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc37' },
-    { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc39' },
+    { src: 'https://thispersondoesnotexist.com/', type: "linkedin", descriptionKey: 'imgDesc39' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc41' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc43' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc45' },
@@ -284,6 +287,20 @@ function checkAnswer(guess) {
     }
 
     descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
+
+    if (currentImage.type === 'interpol') {
+        const name = currentImage.name;
+        const recordUrl = currentImage.recordUrl;
+        const policeRecordLink = document.createElement('a');
+        policeRecordLink.href = recordUrl;
+        policeRecordLink.textContent = currentTranslations.policeRecord;
+        policeRecordLink.target = '_blank';
+        descriptionEl.innerHTML = `${name} - ${currentTranslations[currentImage.descriptionKey]} <br> `;
+        descriptionEl.appendChild(policeRecordLink);
+    } else {
+        descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
+    }
+
     linkedinButton.disabled = true;
     interpolButton.disabled = true;
 

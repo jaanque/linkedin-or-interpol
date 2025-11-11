@@ -180,6 +180,11 @@ input:checked + .slider:before {
     min-height: 40px; /* Reserve space */
 }
 
+#description a {
+    color: #c91a1a;
+    text-decoration: underline;
+}
+
 .button-container {
     margin-top: 1rem;
     display: flex;
