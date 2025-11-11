@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from 'react';
+import Header from '../components/Header';
 import ImageCard from '../components/ImageCard';
-import Buttons from '../components/Buttons';
 import Score from '../components/Score';
 
 const images = [
@@ -12,7 +12,8 @@ const images = [
 ];
 
 export default function Home() {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(6);
+  const [total, setTotal] = useState(7);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleAnswer = (answer: 'linkedin' | 'interpol') => {
@@ -21,25 +22,39 @@ export default function Home() {
     } else {
       setScore(score - 1);
     }
+    setTotal(total + 1);
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100">
-      <h1 className="text-4xl font-bold mb-8">LinkedIn or Interpol?</h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <main className="flex-grow flex flex-col items-center justify-center p-4">
+        <h1 className="text-5xl font-bold mb-2">
+          <span className="text-blue-600">LinkedIn</span> ou <span className="text-red-600">Interpol</span>
+        </h1>
+        <p className="text-gray-600 mb-6">¿Profesional o Criminal? ¡Tú decides!</p>
 
-      <div className="mb-8">
-        <ImageCard imageUrl={images[currentImageIndex].src} />
-      </div>
+        <Score score={score} total={total} />
 
-      <div className="mb-8">
-        <Buttons
-          onLinkedInClick={() => handleAnswer('linkedin')}
-          onInterpolClick={() => handleAnswer('interpol')}
-        />
-      </div>
-
-      <Score score={score} />
-    </main>
+        <div className="mt-8">
+          <ImageCard
+            imageUrl={images[currentImageIndex].src}
+            onLinkedInClick={() => handleAnswer('linkedin')}
+            onInterpolClick={() => handleAnswer('interpol')}
+          />
+        </div>
+      </main>
+      <footer className="w-full text-center p-4 text-xs text-gray-500">
+        <p>LinkedIn o Interpol - Un Juego de Deducción - Versión 1.0</p>
+        <p>
+          <span className="font-bold">Aviso legal:</span> Este sitio web es un juego de adivinanzas satírico y educativo.
+        </p>
+        <p>
+          <a href="#" className="underline">Política de Privacidad</a> <a href="#" className="underline">Términos de Servicio</a>
+        </p>
+        <p>© 2025 Thebrainfox. Tous droits réservés.</p>
+      </footer>
+    </div>
   );
 }
