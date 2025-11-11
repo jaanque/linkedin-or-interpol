@@ -184,6 +184,8 @@ input:checked + .slider:before {
 #description a {
     color: #c91a1a;
     text-decoration: underline;
+    margin-top: 0.5rem;
+    display: inline-block;
 }
 
 .button-container {
