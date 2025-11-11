@@ -62,7 +62,19 @@ const translations = {
         "aDeductionGame": "A Deduction Game",
         "version": "Version 1.0",
         "disclaimer": "Disclaimer: This website is a satirical and educational guessing game.",
-        "allRightsReserved": "All rights reserved."
+        "allRightsReserved": "All rights reserved.",
+        "metaDescription": "A fun game where you have to guess if a person is a LinkedIn professional or an Interpol criminal.",
+        "ogTitle": "LinkedIn or Interpol",
+        "ogDescription": "A fun game where you have to guess if a person is a LinkedIn professional or an Interpol criminal.",
+        "aboutTitle": "About - LinkedIn or Interpol",
+        "aboutHeader": "About the Game",
+        "aboutText": "This game was created for entertainment and educational purposes to highlight the similarities and differences in professional and criminal profiles. All images are used for satirical purposes.",
+        "disclaimerTitle": "Disclaimer - LinkedIn or Interpol",
+        "disclaimerHeader": "Disclaimer",
+        "disclaimerText": "This website is a satirical and educational guessing game. It is not affiliated with LinkedIn or Interpol. All content is for entertainment purposes only.",
+        "backButton": "Back to the game",
+        "aboutButton": "About",
+        "disclaimerButton": "Disclaimer"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -127,7 +139,19 @@ const translations = {
         "aDeductionGame": "Un Juego de Deducción",
         "version": "Versión 1.0",
         "disclaimer": "Aviso: Este sitio web es un juego de adivinanzas satírico y educativo.",
-        "allRightsReserved": "Todos los derechos reservados."
+        "allRightsReserved": "Todos los derechos reservados.",
+        "metaDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "ogTitle": "LinkedIn o Interpol",
+        "ogDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "aboutTitle": "Acerca de - LinkedIn o Interpol",
+        "aboutHeader": "Acerca del Juego",
+        "aboutText": "Este juego fue creado con fines de entretenimiento y educativos para resaltar las similitudes y diferencias en los perfiles profesionales y criminales. Todas las imágenes se utilizan con fines satíricos.",
+        "disclaimerTitle": "Aviso Legal - LinkedIn o Interpol",
+        "disclaimerHeader": "Aviso Legal",
+        "disclaimerText": "Este sitio web es un juego de adivinanzas satírico y educativo. No está afiliado a LinkedIn ni a Interpol. Todo el contenido es solo para fines de entretenimiento.",
+        "backButton": "Volver al juego",
+        "aboutButton": "Acerca de",
+        "disclaimerButton": "Aviso Legal"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -192,7 +216,19 @@ const translations = {
         "aDeductionGame": "Un Jeu de Déduction",
         "version": "Version 1.0",
         "disclaimer": "Avertissement: Ce site web est un jeu de devinettes satirique et éducatif.",
-        "allRightsReserved": "Tous droits réservés."
+        "allRightsReserved": "Tous droits réservés.",
+        "metaDescription": "Un jeu amusant où vous devez deviner si une personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
+        "ogTitle": "LinkedIn ou Interpol",
+        "ogDescription": "Un jeu amusant où vous devez deviner si une personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
+        "aboutTitle": "À propos - LinkedIn ou Interpol",
+        "aboutHeader": "À propos du jeu",
+        "aboutText": "Ce jeu a été créé à des fins de divertissement et d'éducation pour souligner les similitudes et les différences entre les profils professionnels et criminels. Toutes les images sont utilisées à des fins satiriques.",
+        "disclaimerTitle": "Avis de non-responsabilité - LinkedIn ou Interpol",
+        "disclaimerHeader": "Avis de non-responsabilité",
+        "disclaimerText": "Ce site web est un jeu de devinettes satirique et éducatif. Il n'est affilié ni à LinkedIn ni à Interpol. Tout le contenu est uniquement à des fins de divertissement.",
+        "backButton": "Retour au jeu",
+        "aboutButton": "À propos",
+        "disclaimerButton": "Avis"
     }
 };
 
@@ -262,6 +298,7 @@ const languageSelector = document.getElementById('language-selector');
 function loadLanguage(lang) {
     currentTranslations = translations[lang];
     translatePage();
+    updateMetaTags();
 }
 
 function translatePage() {
@@ -271,6 +308,12 @@ function translatePage() {
             el.textContent = currentTranslations[key];
         }
     });
+}
+
+function updateMetaTags() {
+    document.querySelector('meta[name="description"]').setAttribute('content', currentTranslations.metaDescription);
+    document.querySelector('meta[property="og:title"]').setAttribute('content', currentTranslations.ogTitle);
+    document.querySelector('meta[property="og:description"]').setAttribute('content', currentTranslations.ogDescription);
 }
 
 function nextImage() {
