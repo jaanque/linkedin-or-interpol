@@ -276,6 +276,16 @@ button:disabled {
     text-decoration: underline;
 }
 
+.url-website {
+    color: #333;
+    text-decoration: underline;
+}
+
+.url-website:hover {
+    font-weight: bold;
+    color: #0077b5;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     body {
