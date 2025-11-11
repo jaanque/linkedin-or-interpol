@@ -1,29 +1,26 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import {NextIntlClientProvider, useMessages} from 'next-intl';
-import {setRequestLocale} from 'next-intl/server';
+import {NextIntlClientProvider} from 'next-intl';
+import {getMessages} from 'next-intl/server';
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
 import "../globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
-
-export function generateStaticParams() {
-  return [{locale: 'en'}, {locale: 'es'}, {locale: 'fr'}];
-}
 
 export const metadata: Metadata = {
   title: "LinkedIn or Interpol",
   description: "A deduction game.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params: {locale}
 }: Readonly<{
   children: React.ReactNode;
   params: {locale: string};
 }>) {
-  setRequestLocale(locale);
-  const messages = useMessages();
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
