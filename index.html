@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkedIn or Interpol</title>
+    <title data-i18n-key="title">LinkedIn or Interpol</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>LinkedIn or Interpol</h1>
-            <p>Professional or Criminal? You decide!</p>
-            <div class="score-container">
-                <p>Score: <span id="score">0</span></p>
-                <p>Total: <span id="total">0</span></p>
+            <div class="settings-toolbar">
+                <div class="language-selector-container">
+                    <select id="language-selector">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+                <div class="settings-container">
+                    <span data-i18n-key="autoAdvance">Auto-Advance</span>
+                    <label class="switch">
+                        <input type="checkbox" id="auto-advance-switch" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
-            <div class="settings-container">
-                <span>Auto-Advance</span>
-                <label class="switch">
-                    <input type="checkbox" id="auto-advance-switch" checked>
-                    <span class="slider"></span>
-                </label>
+            <h1 data-i18n-key="title">LinkedIn or Interpol</h1>
+            <p data-i18n-key="subtitle">Professional or Criminal? You decide!</p>
+            <div class="score-container">
+                <p><span data-i18n-key="score">Score</span>: <span id="score">0</span></p>
+                <p><span data-i18n-key="total">Total</span>: <span id="total">0</span></p>
             </div>
         </div>
         <div class="game-container">
@@ -30,16 +39,16 @@
             <div id="feedback"></div>
             <div id="description"></div>
             <div class="button-container">
-                <button id="linkedin-button">LinkedIn</button>
-                <button id="interpol-button">Interpol</button>
+                <button id="linkedin-button" data-i18n-key="linkedinButton">LinkedIn</button>
+                <button id="interpol-button" data-i18n-key="interpolButton">Interpol</button>
             </div>
-            <button id="next-button" class="hidden">Next Image</button>
+            <button id="next-button" class="hidden" data-i18n-key="nextButton">Next Image</button>
         </div>
         <div class="footer">
-            <p>LinkedIn or Interpol - A Deduction Game - Version 1.0</p>
-            <p>Disclaimer: This website is a satirical and educational guessing game.</p>
-            <p><a href="#">Privacy Policy</a> <a href="#">Terms of Service</a></p>
-            <p>© 2025 Jan Queralt. All rights reserved.</p>
+            <p data-i18n-key="footerTitle">LinkedIn or Interpol - A Deduction Game - Version 1.0</p>
+            <p data-i18n-key="footerDisclaimer">Disclaimer: This website is a satirical and educational guessing game.</p>
+            <p><a href="#" data-i18n-key="privacyPolicy">Privacy Policy</a> <a href="#" data-i18n-key="termsOfService">Terms of Service</a></p>
+            <p data-i18n-key="copyright">© 2025 Jan Queralt. All rights reserved.</p>
         </div>
     </div>
     <script src="script.js"></script>
