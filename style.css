@@ -293,16 +293,25 @@ button:disabled {
     }
 }
 
-.ad-container-side {
+.ad-container-left,
+.ad-container-right {
     position: fixed;
     top: 50%;
-    right: 20px;
     transform: translateY(-50%);
     z-index: 1000;
 }
 
-@media (max-width: 1024px) {
-    .ad-container-side {
+.ad-container-left {
+    left: 20px;
+}
+
+.ad-container-right {
+    right: 20px;
+}
+
+@media (max-width: 1200px) {
+    .ad-container-left,
+    .ad-container-right {
         display: none;
     }
 }
