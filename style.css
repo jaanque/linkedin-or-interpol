@@ -495,3 +495,32 @@ button:disabled {
 .popup-content button:hover {
     background-color: #005b8e;
 }
+
+/* Instructions Button */
+#instructions-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+    box-shadow: 3px 3px 0px #1e7e34;
+}
+
+#instructions-btn:hover {
+    background-color: #1e7e34;
+    box-shadow: 1px 1px 0px #1e7e34;
+}
+
+.close-instructions-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-instructions-btn:hover,
+.close-instructions-btn:focus {
+    color: #333;
+    text-decoration: none;
+}

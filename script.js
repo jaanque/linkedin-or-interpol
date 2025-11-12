@@ -104,7 +104,13 @@ const translations = {
         "requestImagePopupTypeInterpol": "Interpol",
         "requestImagePopupSubmit": "Submit Request",
         "structuredDataDescription": "A fun game where you have to guess if a person is a LinkedIn professional or an Interpol criminal.",
-        "structuredDataType": "Deduction game"
+        "structuredDataType": "Deduction game",
+        "instructionsBtn": "Instructions",
+        "instructionsPopupHeader": "How to Play",
+        "instructionsPopupText1": "You will be shown a series of images.",
+        "instructionsPopupText2": "For each image, you must guess whether the person is a professional from LinkedIn or a criminal from Interpol.",
+        "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
+        "instructionsPopupText4": "Your score is tracked at the top of the page."
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -211,7 +217,13 @@ const translations = {
         "requestImagePopupTypeInterpol": "Interpol",
         "requestImagePopupSubmit": "Enviar solicitud",
         "structuredDataDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
-        "structuredDataType": "Juego de deducción"
+        "structuredDataType": "Juego de deducción",
+        "instructionsBtn": "Instrucciones",
+        "instructionsPopupHeader": "Cómo Jugar",
+        "instructionsPopupText1": "Se te mostrará una serie de imágenes.",
+        "instructionsPopupText2": "Para cada imagen, debes adivinar si la persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
+        "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página."
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -316,7 +328,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Type:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Envoyer la demande"
+        "requestImagePopupSubmit": "Envoyer la demande",
+        "instructionsBtn": "Instructions",
+        "instructionsPopupHeader": "Comment Jouer",
+        "instructionsPopupText1": "Une série d'images vous sera présentée.",
+        "instructionsPopupText2": "Pour chaque image, vous devez deviner si la personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
+        "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
+        "instructionsPopupText4": "Votre score est suivi en haut de la page."
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -421,7 +439,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Typ:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Anfrage senden"
+        "requestImagePopupSubmit": "Anfrage senden",
+        "instructionsBtn": "Anleitung",
+        "instructionsPopupHeader": "Spielanleitung",
+        "instructionsPopupText1": "Ihnen wird eine Reihe von Bildern gezeigt.",
+        "instructionsPopupText2": "Für jedes Bild müssen Sie raten, ob die Person ein Profi von LinkedIn oder ein Krimineller von Interpol ist.",
+        "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
+        "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt."
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -526,7 +550,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Tipo:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Enviar solicitação"
+        "requestImagePopupSubmit": "Enviar solicitação",
+        "instructionsBtn": "Instruções",
+        "instructionsPopupHeader": "Como Jogar",
+        "instructionsPopupText1": "Você verá uma série de imagens.",
+        "instructionsPopupText2": "Para cada imagem, você deve adivinhar se a pessoa é um profissional do LinkedIn ou um criminoso da Interpol.",
+        "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
+        "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página."
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -631,7 +661,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Tipo:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Invia richiesta"
+        "requestImagePopupSubmit": "Invia richiesta",
+        "instructionsBtn": "Istruzioni",
+        "instructionsPopupHeader": "Come Giocare",
+        "instructionsPopupText1": "Ti verrà mostrata una serie di immagini.",
+        "instructionsPopupText2": "Per ogni immagine, devi indovinare se la persona è un professionista di LinkedIn o un criminale dell'Interpol.",
+        "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
+        "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina."
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -736,7 +772,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Type:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Verzoek indienen"
+        "requestImagePopupSubmit": "Verzoek indienen",
+        "instructionsBtn": "Instructies",
+        "instructionsPopupHeader": "Hoe te Spelen",
+        "instructionsPopupText1": "U krijgt een reeks afbeeldingen te zien.",
+        "instructionsPopupText2": "Voor elke afbeelding moet u raden of de persoon een professional van LinkedIn is of een crimineel van Interpol.",
+        "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
+        "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden."
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -841,7 +883,13 @@ const translations = {
         "requestImagePopupTypeLabel": "Тип:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Интерпол",
-        "requestImagePopupSubmit": "Отправить запрос"
+        "requestImagePopupSubmit": "Отправить запрос",
+        "instructionsBtn": "Инструкции",
+        "instructionsPopupHeader": "Как играть",
+        "instructionsPopupText1": "Вам будет показана серия изображений.",
+        "instructionsPopupText2": "Для каждого изображения вы должны угадать, является ли человек профессионалом из LinkedIn или преступником из Интерпола.",
+        "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
+        "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы."
     }
 };
 
@@ -1058,6 +1106,32 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('click', (event) => {
             if (event.target === popup) {
                 popup.style.display = 'none';
+            }
+        });
+    }
+
+    const instructionsBtn = document.getElementById('instructions-btn');
+    const instructionsPopup = document.getElementById('instructions-popup');
+    const closeInstructionsBtn = document.querySelector('.close-instructions-btn');
+
+    if (instructionsBtn && instructionsPopup && closeInstructionsBtn) {
+        // Show the popup on first visit
+        if (!localStorage.getItem('instructionsShown')) {
+            instructionsPopup.style.display = 'block';
+            localStorage.setItem('instructionsShown', 'true');
+        }
+
+        instructionsBtn.addEventListener('click', () => {
+            instructionsPopup.style.display = 'block';
+        });
+
+        closeInstructionsBtn.addEventListener('click', () => {
+            instructionsPopup.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === instructionsPopup) {
+                instructionsPopup.style.display = 'none';
             }
         });
     }
