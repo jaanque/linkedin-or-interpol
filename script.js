@@ -1078,7 +1078,14 @@ languageSelector.addEventListener('change', handleLanguageChange);
 instructionsLanguageSelector.addEventListener('change', handleInstructionsLanguageChange);
 
 // Initial load
-loadLanguage('en');
+const userLang = navigator.language || navigator.userLanguage;
+const langCode = userLang.split('-')[0];
+
+if (translations[langCode]) {
+    loadLanguage(langCode);
+} else {
+    loadLanguage('en');
+}
 nextImage();
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -1123,11 +1130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeInstructionsBtn = document.querySelector('.close-instructions-btn');
 
     if (instructionsBtn && instructionsPopup && closeInstructionsBtn) {
-        // Show the popup on first visit
-        if (!localStorage.getItem('instructionsShown')) {
-            instructionsPopup.style.display = 'block';
-            localStorage.setItem('instructionsShown', 'true');
-        }
+        instructionsPopup.style.display = 'block';
 
         instructionsBtn.addEventListener('click', () => {
             instructionsPopup.style.display = 'block';
