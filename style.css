@@ -463,6 +463,19 @@ button:disabled {
     text-decoration: none;
 }
 
+#play-button {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+    box-shadow: 3px 3px 0px #1e7e34;
+}
+
+#play-button:hover {
+    background-color: #1e7e34;
+    box-shadow: 1px 1px 0px #1e7e34;
+}
+
 .popup-content h2 {
     margin-top: 0;
 }

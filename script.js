@@ -110,7 +110,8 @@ const translations = {
         "instructionsPopupText1": "You will be shown a series of images.",
         "instructionsPopupText2": "For each image, you must guess whether the person is a professional from LinkedIn or a criminal from Interpol.",
         "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
-        "instructionsPopupText4": "Your score is tracked at the top of the page."
+        "instructionsPopupText4": "Your score is tracked at the top of the page.",
+        "playButton": "Play"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -223,7 +224,8 @@ const translations = {
         "instructionsPopupText1": "Se te mostrará una serie de imágenes.",
         "instructionsPopupText2": "Para cada imagen, debes adivinar si la persona es un profesional de LinkedIn o un criminal de Interpol.",
         "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
-        "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página."
+        "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página.",
+        "playButton": "Jugar"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -334,7 +336,8 @@ const translations = {
         "instructionsPopupText1": "Une série d'images vous sera présentée.",
         "instructionsPopupText2": "Pour chaque image, vous devez deviner si la personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
         "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
-        "instructionsPopupText4": "Votre score est suivi en haut de la page."
+        "instructionsPopupText4": "Votre score est suivi en haut de la page.",
+        "playButton": "Jouer"
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -445,7 +448,8 @@ const translations = {
         "instructionsPopupText1": "Ihnen wird eine Reihe von Bildern gezeigt.",
         "instructionsPopupText2": "Für jedes Bild müssen Sie raten, ob die Person ein Profi von LinkedIn oder ein Krimineller von Interpol ist.",
         "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
-        "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt."
+        "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt.",
+        "playButton": "Spielen"
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -556,7 +560,8 @@ const translations = {
         "instructionsPopupText1": "Você verá uma série de imagens.",
         "instructionsPopupText2": "Para cada imagem, você deve adivinhar se a pessoa é um profissional do LinkedIn ou um criminoso da Interpol.",
         "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
-        "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página."
+        "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página.",
+        "playButton": "Jogar"
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -667,7 +672,8 @@ const translations = {
         "instructionsPopupText1": "Ti verrà mostrata una serie di immagini.",
         "instructionsPopupText2": "Per ogni immagine, devi indovinare se la persona è un professionista di LinkedIn o un criminale dell'Interpol.",
         "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
-        "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina."
+        "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina.",
+        "playButton": "Gioca"
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -778,7 +784,8 @@ const translations = {
         "instructionsPopupText1": "U krijgt een reeks afbeeldingen te zien.",
         "instructionsPopupText2": "Voor elke afbeelding moet u raden of de persoon een professional van LinkedIn is of een crimineel van Interpol.",
         "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
-        "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden."
+        "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden.",
+        "playButton": "Spelen"
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -889,7 +896,8 @@ const translations = {
         "instructionsPopupText1": "Вам будет показана серия изображений.",
         "instructionsPopupText2": "Для каждого изображения вы должны угадать, является ли человек профессионалом из LinkedIn или преступником из Интерпола.",
         "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
-        "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы."
+        "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы.",
+        "playButton": "Играть"
     }
 };
 
@@ -1127,8 +1135,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const instructionsBtn = document.getElementById('instructions-btn');
     const instructionsPopup = document.getElementById('instructions-popup');
     const closeInstructionsBtn = document.querySelector('.close-instructions-btn');
+    const playButton = document.getElementById('play-button');
 
-    if (instructionsBtn && instructionsPopup && closeInstructionsBtn) {
+    if (instructionsBtn && instructionsPopup && closeInstructionsBtn && playButton) {
         instructionsPopup.style.display = 'block';
 
         instructionsBtn.addEventListener('click', () => {
@@ -1136,6 +1145,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         closeInstructionsBtn.addEventListener('click', () => {
+            instructionsPopup.style.display = 'none';
+        });
+
+        playButton.addEventListener('click', () => {
             instructionsPopup.style.display = 'none';
         });
 
