@@ -1077,18 +1077,17 @@ autoAdvanceSwitch.addEventListener('change', handleAutoAdvanceChange);
 languageSelector.addEventListener('change', handleLanguageChange);
 instructionsLanguageSelector.addEventListener('change', handleInstructionsLanguageChange);
 
-// Initial load
-const userLang = navigator.language || navigator.userLanguage;
-const langCode = userLang.split('-')[0];
-
-if (translations[langCode]) {
-    loadLanguage(langCode);
-} else {
-    loadLanguage('en');
-}
-nextImage();
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Initial load
+    const userLang = navigator.language || navigator.userLanguage;
+    const langCode = userLang.split('-')[0];
+
+    if (translations[langCode]) {
+        loadLanguage(langCode);
+    } else {
+        loadLanguage('en');
+    }
+    nextImage();
     const banner = document.getElementById('cookie-banner');
     const acceptButton = document.getElementById('cookie-accept');
 
