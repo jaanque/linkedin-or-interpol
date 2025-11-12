@@ -102,7 +102,9 @@ const translations = {
         "requestImagePopupTypeLabel": "Type:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Submit Request"
+        "requestImagePopupSubmit": "Submit Request",
+        "structuredDataDescription": "A fun game where you have to guess if a person is a LinkedIn professional or an Interpol criminal.",
+        "structuredDataType": "Deduction game"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -207,7 +209,9 @@ const translations = {
         "requestImagePopupTypeLabel": "Tipo:",
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
-        "requestImagePopupSubmit": "Enviar solicitud"
+        "requestImagePopupSubmit": "Enviar solicitud",
+        "structuredDataDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "structuredDataType": "Juego de deducción"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -905,9 +909,30 @@ const autoAdvanceSwitch = document.getElementById('auto-advance-switch');
 const languageSelector = document.getElementById('language-selector');
 
 function loadLanguage(lang) {
+    document.documentElement.lang = lang;
     currentTranslations = translations[lang];
     translatePage();
     updateMetaTags();
+    updateStructuredData();
+}
+
+function updateStructuredData() {
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": currentTranslations.title,
+        "description": currentTranslations.structuredDataDescription,
+        "gamePlatform": "Web",
+        "inLanguage": document.documentElement.lang,
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "genre": currentTranslations.structuredDataType,
+        "author": {
+            "@type": "Person",
+            "name": "Jan Queralt"
+        }
+    };
+    document.getElementById('structured-data').textContent = JSON.stringify(structuredData);
 }
 
 function translatePage() {
