@@ -955,8 +955,11 @@ const descriptionEl = document.getElementById('description');
 const nextButton = document.getElementById('next-button');
 const autoAdvanceSwitch = document.getElementById('auto-advance-switch');
 const languageSelector = document.getElementById('language-selector');
+const instructionsLanguageSelector = document.getElementById('instructions-language-selector');
 
 function loadLanguage(lang) {
+    languageSelector.value = lang;
+    instructionsLanguageSelector.value = lang;
     document.documentElement.lang = lang;
     currentTranslations = translations[lang];
     translatePage();
@@ -1063,11 +1066,16 @@ function handleLanguageChange() {
     loadLanguage(languageSelector.value);
 }
 
+function handleInstructionsLanguageChange() {
+    loadLanguage(instructionsLanguageSelector.value);
+}
+
 linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
 interpolButton.addEventListener('click', () => checkAnswer('interpol'));
 nextButton.addEventListener('click', nextImage);
 autoAdvanceSwitch.addEventListener('change', handleAutoAdvanceChange);
 languageSelector.addEventListener('change', handleLanguageChange);
+instructionsLanguageSelector.addEventListener('change', handleInstructionsLanguageChange);
 
 // Initial load
 loadLanguage('en');
