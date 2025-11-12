@@ -904,7 +904,7 @@ const translations = {
 const images = [
     // 50 imágenes reales con URLs corregidas
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc1' },
-    { src: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi/@@images/image/preview', type: 'interpol', name: 'Mohammed Reza Sabahi', recordUrl: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi', descriptionKey: 'imgDesc2' },
+    { src: 'https://i.ibb.co/twZMbRF6/preview.webp', type: 'interpol', name: 'Mohammed Reza Sabahi', recordUrl: 'https://www.fbi.gov/wanted/cyber/mohammed-reza-sabahi', descriptionKey: 'imgDesc2' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc3' },
     { src: 'https://www.fbi.gov/wanted/cei/john-joe-soto/@@images/image/preview', type: 'interpol', name: 'John Joe Soto', recordUrl: 'https://www.fbi.gov/wanted/cei/john-joe-soto', descriptionKey: 'imgDesc4' },
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc5' },
