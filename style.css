@@ -463,6 +463,50 @@ button:disabled {
     text-decoration: none;
 }
 
+/* Lives */
+#lives-container {
+    display: flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.heart {
+    font-size: 1.5rem;
+    color: #c91a1a;
+}
+
+.minus-one-animation {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #c91a1a;
+    animation: minus-one-fade 1s forwards;
+}
+
+@keyframes minus-one-fade {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50px);
+    }
+}
+
+/* Game Over Popup */
+#game-over-popup .popup-content {
+    text-align: center;
+}
+
+#game-over-popup button {
+    margin-top: 1rem;
+    display: inline-block;
+    width: auto;
+}
+
 #play-button {
     margin-top: 1rem;
     background-color: #28a745;
