@@ -1180,6 +1180,9 @@ document.getElementById('share-score-button').addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('close-game-over-popup').addEventListener('click', () => {
+        document.getElementById('game-over-popup').style.display = 'none';
+    });
     // Initial load
     const userLang = navigator.language || navigator.userLanguage;
     const langCode = userLang.split('-')[0];
@@ -1221,7 +1224,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         window.addEventListener('click', (event) => {
-            if (event.target === popup) {
+            if (event.target === popup && event.target.id !== 'game-over-popup') {
                 popup.style.display = 'none';
             }
         });
@@ -1248,7 +1251,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         window.addEventListener('click', (event) => {
-            if (event.target === instructionsPopup) {
+            if (event.target === instructionsPopup && event.target.id !== 'game-over-popup') {
                 instructionsPopup.style.display = 'none';
             }
         });
