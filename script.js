@@ -1679,7 +1679,7 @@ instructionsLanguageSelector.addEventListener('change', handleInstructionsLangua
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initial load
-    onst userLang = navigator.language || navigator.userLanguage;
+    const userLang = navigator.language || navigator.userLanguage;
     const langCode = userLang.split('-')[0];
 
     if (translations[langCode]) {
