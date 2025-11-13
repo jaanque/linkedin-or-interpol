@@ -84,6 +84,11 @@
 
             <div class="score-container">
                 <p><span data-i18n-key="score">Score</span>: <span id="score">0</span></p>
+                <div id="lives-container">
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                    <span class="heart">❤️</span>
+                </div>
                 <p><span data-i18n-key="total">Total</span>: <span id="total">0</span></p>
             </div>
         </div>
@@ -175,6 +180,15 @@
             <p data-i18n-key="instructionsPopupText3">Click the "LinkedIn" or "Interpol" button to make your guess.</p>
             <p data-i18n-key="instructionsPopupText4">Your score is tracked at the top of the page.</p>
             <button id="play-button" data-i18n-key="playButton">Play</button>
+        </div>
+    </div>
+
+    <div id="game-over-popup" class="popup">
+        <div class="popup-content">
+            <h2 data-i18n-key="gameOverTitle">Game Over</h2>
+            <p data-i18n-key="finalScore">Your final score is: <span id="final-score">0</span></p>
+            <button id="play-again-button" data-i18n-key="playAgainButton">Play Again</button>
+            <button id="share-score-button" data-i18n-key="shareScoreButton">Share Score</button>
         </div>
     </div>
 

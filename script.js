@@ -111,7 +111,12 @@ const translations = {
         "instructionsPopupText2": "For each image, you must guess whether the person is a professional from LinkedIn or a criminal from Interpol.",
         "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
         "instructionsPopupText4": "Your score is tracked at the top of the page.",
-        "playButton": "Play"
+        "playButton": "Play",
+        "lives": "Lives",
+        "gameOverTitle": "Game Over",
+        "finalScore": "Your final score is: ",
+        "playAgainButton": "Play Again",
+        "shareScoreButton": "Share Score"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -225,7 +230,12 @@ const translations = {
         "instructionsPopupText2": "Para cada imagen, debes adivinar si la persona es un profesional de LinkedIn o un criminal de Interpol.",
         "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
         "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página.",
-        "playButton": "Jugar"
+        "playButton": "Jugar",
+        "lives": "Vidas",
+        "gameOverTitle": "Fin del Juego",
+        "finalScore": "Tu puntuación final es: ",
+        "playAgainButton": "Jugar de Nuevo",
+        "shareScoreButton": "Compartir Puntuación"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -337,7 +347,12 @@ const translations = {
         "instructionsPopupText2": "Pour chaque image, vous devez deviner si la personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
         "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
         "instructionsPopupText4": "Votre score est suivi en haut de la page.",
-        "playButton": "Jouer"
+        "playButton": "Jouer",
+        "lives": "Vies",
+        "gameOverTitle": "Fin de Partie",
+        "finalScore": "Votre score final est : ",
+        "playAgainButton": "Rejouer",
+        "shareScoreButton": "Partager le Score"
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -449,7 +464,12 @@ const translations = {
         "instructionsPopupText2": "Für jedes Bild müssen Sie raten, ob die Person ein Profi von LinkedIn oder ein Krimineller von Interpol ist.",
         "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
         "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt.",
-        "playButton": "Spielen"
+        "playButton": "Spielen",
+        "lives": "Leben",
+        "gameOverTitle": "Spielende",
+        "finalScore": "Ihre Endpunktzahl ist: ",
+        "playAgainButton": "Erneut spielen",
+        "shareScoreButton": "Punktzahl teilen"
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -561,7 +581,12 @@ const translations = {
         "instructionsPopupText2": "Para cada imagem, você deve adivinhar se a pessoa é um profissional do LinkedIn ou um criminoso da Interpol.",
         "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
         "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página.",
-        "playButton": "Jogar"
+        "playButton": "Jogar",
+        "lives": "Vidas",
+        "gameOverTitle": "Fim de Jogo",
+        "finalScore": "Sua pontuação final é: ",
+        "playAgainButton": "Jogar Novamente",
+        "shareScoreButton": "Compartilhar Pontuação"
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -673,7 +698,12 @@ const translations = {
         "instructionsPopupText2": "Per ogni immagine, devi indovinare se la persona è un professionista di LinkedIn o un criminale dell'Interpol.",
         "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
         "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina.",
-        "playButton": "Gioca"
+        "playButton": "Gioca",
+        "lives": "Vite",
+        "gameOverTitle": "Fine del Gioco",
+        "finalScore": "Il tuo punteggio finale è: ",
+        "playAgainButton": "Gioca di Nuovo",
+        "shareScoreButton": "Condividi Punteggio"
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -785,7 +815,12 @@ const translations = {
         "instructionsPopupText2": "Voor elke afbeelding moet u raden of de persoon een professional van LinkedIn is of een crimineel van Interpol.",
         "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
         "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden.",
-        "playButton": "Spelen"
+        "playButton": "Spelen",
+        "lives": "Levens",
+        "gameOverTitle": "Spel Voorbij",
+        "finalScore": "Je eindscore is: ",
+        "playAgainButton": "Speel Opnieuw",
+        "shareScoreButton": "Deel Score"
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -897,7 +932,12 @@ const translations = {
         "instructionsPopupText2": "Для каждого изображения вы должны угадать, является ли человек профессионалом из LinkedIn или преступником из Интерпола.",
         "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
         "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы.",
-        "playButton": "Играть"
+        "playButton": "Играть",
+        "lives": "Жизни",
+        "gameOverTitle": "Игра Окончена",
+        "finalScore": "Ваш итоговый счет: ",
+        "playAgainButton": "Играть Снова",
+        "shareScoreButton": "Поделиться Счетом"
     }
 };
 
@@ -948,6 +988,7 @@ const images = [
 
 let score = 0;
 let total = 0;
+let lives = 3;
 let currentImage;
 let remainingImages = [...images];
 let autoAdvance = true;
@@ -1037,8 +1078,15 @@ function checkAnswer(guess) {
         feedbackEl.textContent = currentTranslations.correct;
         feedbackEl.className = 'correct';
     } else {
+        lives--;
+        updateLives();
+        showMinusOneAnimation();
         feedbackEl.textContent = currentTranslations.wrong;
         feedbackEl.className = 'incorrect';
+        if (lives === 0) {
+            showGameOverPopup();
+            return;
+        }
     }
 
     descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
@@ -1078,12 +1126,58 @@ function handleInstructionsLanguageChange() {
     loadLanguage(instructionsLanguageSelector.value);
 }
 
+function updateLives() {
+    const livesContainer = document.getElementById('lives-container');
+    livesContainer.innerHTML = '';
+    for (let i = 0; i < lives; i++) {
+        const heart = document.createElement('span');
+        heart.className = 'heart';
+        heart.textContent = '❤️';
+        livesContainer.appendChild(heart);
+    }
+}
+
+function showMinusOneAnimation() {
+    const livesContainer = document.getElementById('lives-container');
+    const minusOne = document.createElement('div');
+    minusOne.textContent = '-1';
+    minusOne.className = 'minus-one-animation';
+    livesContainer.appendChild(minusOne);
+    setTimeout(() => {
+        minusOne.remove();
+    }, 1000);
+}
+
+function showGameOverPopup() {
+    document.getElementById('final-score').textContent = score;
+    document.getElementById('game-over-popup').style.display = 'block';
+}
+
+function resetGame() {
+    score = 0;
+    total = 0;
+    lives = 3;
+    scoreSpan.textContent = score;
+    totalSpan.textContent = total;
+    updateLives();
+    remainingImages = [...images];
+    document.getElementById('game-over-popup').style.display = 'none';
+    nextImage();
+}
+
 linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
 interpolButton.addEventListener('click', () => checkAnswer('interpol'));
 nextButton.addEventListener('click', nextImage);
 autoAdvanceSwitch.addEventListener('change', handleAutoAdvanceChange);
 languageSelector.addEventListener('change', handleLanguageChange);
 instructionsLanguageSelector.addEventListener('change', handleInstructionsLanguageChange);
+document.getElementById('play-again-button').addEventListener('click', resetGame);
+document.getElementById('share-score-button').addEventListener('click', () => {
+    const text = `I scored ${score} points in LinkedIn or Interpol! Can you beat me?`;
+    const url = window.location.href;
+    const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(shareUrl, '_blank');
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initial load
@@ -1095,6 +1189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         loadLanguage('en');
     }
+    updateLives();
     nextImage();
     const banner = document.getElementById('cookie-banner');
     const acceptButton = document.getElementById('cookie-accept');
