@@ -89,7 +89,7 @@ const translations = {
         "howDataPoint1": "Improve and optimize our website and game.",
         "howDataPoint2": "Show you ads that are more relevant to your interests.",
         "yourChoicesHeader": "Your Data and Your Choices",
-        "yourChoicesText1": "We respect your privacy. You can control and manage the information Google collects about you by visiting Google's <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">My Activity</a> page. There, you can review and delete your activity data and adjust your ad personalization settings.",
+        "yourChoicesText1": "We respect your privacy. You can control and manage the information Google collects about you by visiting Google's <a href='https://myactivity.google.com/myactivity' target='_blank'>My Activity</a> page. There, you can review and delete your activity data and adjust your ad personalization settings.",
         "yourConsentHeader": "Your Consent",
         "yourConsentText1": "By using our website, you consent to our data collection and privacy policy as described here.",
         "privacyButton": "Privacy Policy",
@@ -109,7 +109,7 @@ const translations = {
         "instructionsPopupHeader": "How to Play",
         "instructionsPopupText1": "You will be shown a series of images.",
         "instructionsPopupText2": "For each image, you must guess whether the person is a professional from LinkedIn or a criminal from Interpol.",
-        "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
+        "instructionsPopupText3": "Click the 'LinkedIn' or 'Interpol' button to make your guess.",
         "instructionsPopupText4": "Your score is tracked at the top of the page.",
         "playButton": "Play"
     },
@@ -203,7 +203,7 @@ const translations = {
         "howDataPoint1": "Mejorar y optimizar nuestro sitio web y juego.",
         "howDataPoint2": "Mostrarte anuncios que sean más relevantes para tus intereses.",
         "yourChoicesHeader": "Tus Datos y Tus Opciones",
-        "yourChoicesText1": "Respetamos tu privacidad. Puedes controlar y gestionar la información que Google recopila sobre ti visitando la página <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Mi Actividad</a> de Google. Allí, puedes revisar y eliminar tus datos de actividad y ajustar la configuración de personalización de anuncios.",
+        "yourChoicesText1": "Respetamos tu privacidad. Puedes controlar y gestionar la información que Google recopila sobre ti visitando la página <a href='https://myactivity.google.com/myactivity' target='_blank'>Mi Actividad</a> de Google. Allí, puedes revisar y eliminar tus datos de actividad y ajustar la configuración de personalización de anuncios.",
         "yourConsentHeader": "Tu Consentimiento",
         "yourConsentText1": "Al utilizar nuestro sitio web, aceptas nuestra recopilación de datos y política de privacidad como se describe aquí.",
         "privacyButton": "Política de Privacidad",
@@ -223,7 +223,7 @@ const translations = {
         "instructionsPopupHeader": "Cómo Jugar",
         "instructionsPopupText1": "Se te mostrará una serie de imágenes.",
         "instructionsPopupText2": "Para cada imagen, debes adivinar si la persona es un profesional de LinkedIn o un criminal de Interpol.",
-        "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
+        "instructionsPopupText3": "Haz clic en el botón 'LinkedIn' o 'Interpol' para hacer tu suposición.",
         "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página.",
         "playButton": "Jugar"
     },
@@ -317,7 +317,7 @@ const translations = {
         "howDataPoint1": "Améliorer et optimiser notre site web et notre jeu.",
         "howDataPoint2": "Vous montrer des publicités plus pertinentes pour vos centres d'intérêt.",
         "yourChoicesHeader": "Vos Données et Vos Choix",
-        "yourChoicesText1": "Nous respectons votre vie privée. Vous pouvez contrôler et gérer les informations que Google collecte à votre sujet en visitant la page <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Mon Activité</a> de Google. Là, vous pouvez consulter et supprimer vos données d'activité et ajuster vos paramètres de personnalisation des annonces.",
+        "yourChoicesText1": "Nous respectons votre vie privée. Vous pouvez contrôler et gérer les informations que Google collecte à votre sujet en visitant la page <a href='https://myactivity.google.com/myactivity' target='_blank'>Mon Activité</a> de Google. Là, vous pouvez consulter et supprimer vos données d'activité et ajuster vos paramètres de personnalisation des annonces.",
         "yourConsentHeader": "Votre Consentement",
         "yourConsentText1": "En utilisant notre site web, vous consentez à notre collecte de données et à notre politique de confidentialité telles que décrites ici.",
         "privacyButton": "Politique de Confidentialité",
@@ -335,7 +335,7 @@ const translations = {
         "instructionsPopupHeader": "Comment Jouer",
         "instructionsPopupText1": "Une série d'images vous sera présentée.",
         "instructionsPopupText2": "Pour chaque image, vous devez deviner si la personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
-        "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
+        "instructionsPopupText3": "Cliquez sur le bouton 'LinkedIn' ou 'Interpol' pour faire votre supposition.",
         "instructionsPopupText4": "Votre score est suivi en haut de la page.",
         "playButton": "Jouer"
     },
@@ -429,7 +429,7 @@ const translations = {
         "howDataPoint1": "Unsere Website und unser Spiel zu verbessern und zu optimieren.",
         "howDataPoint2": "Ihnen Anzeigen zu zeigen, die für Ihre Interessen relevanter sind.",
         "yourChoicesHeader": "Ihre Daten und Ihre Wahlmöglichkeiten",
-        "yourChoicesText1": "Wir respektieren Ihre Privatsphäre. Sie können die von Google über Sie gesammelten Informationen kontrollieren und verwalten, indem Sie die Seite <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Meine Aktivität</a> von Google besuchen. Dort können Sie Ihre Aktivitätsdaten überprüfen und löschen sowie Ihre Einstellungen zur Anzeigenpersonalisierung anpassen.",
+        "yourChoicesText1": "Wir respektieren Ihre Privatsphäre. Sie können die von Google über Sie gesammelten Informationen kontrollieren und verwalten, indem Sie die Seite <a href='https://myactivity.google.com/myactivity' target='_blank'>Meine Aktivität</a> von Google besuchen. Dort können Sie Ihre Aktivitätsdaten überprüfen und löschen sowie Ihre Einstellungen zur Anzeigenpersonalisierung anpassen.",
         "yourConsentHeader": "Ihre Zustimmung",
         "yourConsentText1": "Durch die Nutzung unserer Website stimmen Sie unserer Datenerfassung und Datenschutzrichtlinie wie hier beschrieben zu.",
         "privacyButton": "Datenschutzrichtlinie",
@@ -447,7 +447,7 @@ const translations = {
         "instructionsPopupHeader": "Spielanleitung",
         "instructionsPopupText1": "Ihnen wird eine Reihe von Bildern gezeigt.",
         "instructionsPopupText2": "Für jedes Bild müssen Sie raten, ob die Person ein Profi von LinkedIn oder ein Krimineller von Interpol ist.",
-        "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
+        "instructionsPopupText3": "Klicken Sie auf die Schaltfläche 'LinkedIn' oder 'Interpol', um Ihre Vermutung abzugeben.",
         "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt.",
         "playButton": "Spielen"
     },
@@ -541,7 +541,7 @@ const translations = {
         "howDataPoint1": "Melhorar e otimizar nosso site e jogo.",
         "howDataPoint2": "Mostrar anúncios mais relevantes para seus interesses.",
         "yourChoicesHeader": "Seus Dados e Suas Escolhas",
-        "yourChoicesText1": "Respeitamos sua privacidade. Você pode controlar e gerenciar as informações que o Google coleta sobre você visitando a página <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Minha Atividade</a> do Google. Lá, você pode revisar e excluir seus dados de atividade e ajustar suas configurações de personalização de anúncios.",
+        "yourChoicesText1": "Respeitamos sua privacidade. Você pode controlar e gerenciar as informações que o Google coleta sobre você visitando a página <a href='https://myactivity.google.com/myactivity' target='_blank'>Minha Atividade</a> do Google. Lá, você pode revisar e excluir seus dados de atividade e ajustar suas configurações de personalização de anúncios.",
         "yourConsentHeader": "Seu Consentimento",
         "yourConsentText1": "Ao usar nosso site, você concorda com nossa coleta de dados e política de privacidade, conforme descrito aqui.",
         "privacyButton": "Política de Privacidade",
@@ -559,7 +559,7 @@ const translations = {
         "instructionsPopupHeader": "Como Jogar",
         "instructionsPopupText1": "Você verá uma série de imagens.",
         "instructionsPopupText2": "Para cada imagem, você deve adivinhar se a pessoa é um profissional do LinkedIn ou um criminoso da Interpol.",
-        "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
+        "instructionsPopupText3": "Clique no botão 'LinkedIn' ou 'Interpol' para fazer sua suposição.",
         "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página.",
         "playButton": "Jogar"
     },
@@ -653,7 +653,7 @@ const translations = {
         "howDataPoint1": "Migliorare e ottimizzare il nostro sito web e il nostro gioco.",
         "howDataPoint2": "Mostrare annunci più pertinenti ai vostri interessi.",
         "yourChoicesHeader": "I Vostri Dati e le Vostre Scelte",
-        "yourChoicesText1": "Rispettiamo la vostra privacy. Potete controllare e gestire le informazioni che Google raccoglie su di voi visitando la pagina <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Le mie attività</a> di Google. Lì potete rivedere ed eliminare i vostri dati di attività e modificare le impostazioni di personalizzazione degli annunci.",
+        "yourChoicesText1": "Rispettiamo la vostra privacy. Potete controllare e gestire le informazioni che Google raccoglie su di voi visitando la pagina <a href='https://myactivity.google.com/myactivity' target='_blank'>Le mie attività</a> di Google. Lì potete rivedere ed eliminare i vostri dati di attività e modificare le impostazioni di personalizzazione degli annunci.",
         "yourConsentHeader": "Il Vostro Consenso",
         "yourConsentText1": "Utilizzando il nostro sito web, acconsentite alla nostra raccolta di dati e alla nostra politica sulla privacy come descritto qui.",
         "privacyButton": "Informativa sulla Privacy",
@@ -671,7 +671,7 @@ const translations = {
         "instructionsPopupHeader": "Come Giocare",
         "instructionsPopupText1": "Ti verrà mostrata una serie di immagini.",
         "instructionsPopupText2": "Per ogni immagine, devi indovinare se la persona è un professionista di LinkedIn o un criminale dell'Interpol.",
-        "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
+        "instructionsPopupText3": "Clicca sul pulsante 'LinkedIn' o 'Interpol' per fare la tua ipotesi.",
         "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina.",
         "playButton": "Gioca"
     },
@@ -765,7 +765,7 @@ const translations = {
         "howDataPoint1": "Onze website en ons spel te verbeteren en te optimaliseren.",
         "howDataPoint2": "U advertenties te tonen die relevanter zijn voor uw interesses.",
         "yourChoicesHeader": "Uw Gegevens en Uw Keuzes",
-        "yourChoicesText1": "We respecteren uw privacy. U kunt de informatie die Google over u verzamelt, beheren en controleren door de pagina <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Mijn Activiteit</a> van Google te bezoeken. Daar kunt u uw activiteitsgegevens bekijken en verwijderen en uw instellingen voor advertentiepersonalisatie aanpassen.",
+        "yourChoicesText1": "We respecteren uw privacy. U kunt de informatie die Google over u verzamelt, beheren en controleren door de pagina <a href='https://myactivity.google.com/myactivity' target='_blank'>Mijn Activiteit</a> van Google te bezoeken. Daar kunt u uw activiteitsgegevens bekijken en verwijderen en uw instellingen voor advertentiepersonalisatie aanpassen.",
         "yourConsentHeader": "Uw Toestemming",
         "yourConsentText1": "Door onze website te gebruiken, stemt u in met onze gegevensverzameling en ons privacybeleid zoals hier beschreven.",
         "privacyButton": "Privacybeleid",
@@ -783,7 +783,7 @@ const translations = {
         "instructionsPopupHeader": "Hoe te Spelen",
         "instructionsPopupText1": "U krijgt een reeks afbeeldingen te zien.",
         "instructionsPopupText2": "Voor elke afbeelding moet u raden of de persoon een professional van LinkedIn is of een crimineel van Interpol.",
-        "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
+        "instructionsPopupText3": "Klik op de knop 'LinkedIn' of 'Interpol' om uw gok te maken.",
         "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden.",
         "playButton": "Spelen"
     },
@@ -877,7 +877,7 @@ const translations = {
         "howDataPoint1": "Улучшать и оптимизировать наш сайт и игру.",
         "howDataPoint2": "Показывать вам более релевантную рекламу.",
         "yourChoicesHeader": "Ваши данные и ваш выбор",
-        "yourChoicesText1": "Мы уважаем вашу конфиденциальность. Вы можете контролировать и управлять информацией, которую Google собирает о вас, посетив страницу <a href=\"https://myactivity.google.com/myactivity\" target=\"_blank\">Моя активность</a> Google. Там вы можете просматривать и удалять свои данные об активности и настраивать параметры персонализации рекламы.",
+        "yourChoicesText1": "Мы уважаем вашу конфиденциальность. Вы можете контролировать и управлять информацией, которую Google собирает о вас, посетив страницу <a href='https://myactivity.google.com/myactivity' target='_blank'>Моя активность</a> Google. Там вы можете просматривать и удалять свои данные об активности и настраивать параметры персонализации рекламы.",
         "yourConsentHeader": "Ваше согласие",
         "yourConsentText1": "Используя наш веб-сайт, вы соглашаетесь на сбор данных и нашу политику конфиденциальности, как описано здесь.",
         "privacyButton": "Политика конфиденциальности",
@@ -895,7 +895,7 @@ const translations = {
         "instructionsPopupHeader": "Как играть",
         "instructionsPopupText1": "Вам будет показана серия изображений.",
         "instructionsPopupText2": "Для каждого изображения вы должны угадать, является ли человек профессионалом из LinkedIn или преступником из Интерпола.",
-        "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
+        "instructionsPopupText3": "Нажмите кнопку 'LinkedIn' или 'Интерпол', чтобы сделать свой выбор.",
         "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы.",
         "playButton": "Играть"
     }
@@ -976,21 +976,38 @@ function loadLanguage(lang) {
 }
 
 function updateStructuredData() {
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "VideoGame",
-        "name": currentTranslations.title,
-        "description": currentTranslations.structuredDataDescription,
-        "gamePlatform": "Web",
-        "inLanguage": document.documentElement.lang,
-        "applicationCategory": "Game",
-        "operatingSystem": "Any",
-        "genre": currentTranslations.structuredDataType,
-        "author": {
-            "@type": "Person",
-            "name": "Jan Queralt"
+    const structuredData = [
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": currentTranslations.title,
+            "description": currentTranslations.structuredDataDescription,
+            "gamePlatform": "Web",
+            "inLanguage": document.documentElement.lang,
+            "applicationCategory": "Game",
+            "operatingSystem": "Any",
+            "browserRequirements": "Requires HTML5 support",
+            "genre": currentTranslations.structuredDataType,
+            "author": {
+                "@type": "Person",
+                "name": "Jan Queralt",
+                "url": "https://jqueralt.com"
+            },
+            "keywords": currentTranslations.metaKeywords
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://linkedinorinterpol.com/",
+            "name": "LinkedIn or Interpol",
+            "description": currentTranslations.structuredDataDescription,
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://linkedinorinterpol.com/",
+                "query-input": "required name=search_term_string"
+            }
         }
-    };
+    ];
     document.getElementById('structured-data').textContent = JSON.stringify(structuredData);
 }
 
@@ -1004,6 +1021,7 @@ function translatePage() {
 }
 
 function updateMetaTags() {
+    document.title = currentTranslations.title;
     document.querySelector('meta[name="description"]').setAttribute('content', currentTranslations.metaDescription);
     document.querySelector('meta[property="og:title"]').setAttribute('content', currentTranslations.ogTitle);
     document.querySelector('meta[property="og:description"]').setAttribute('content', currentTranslations.ogDescription);
