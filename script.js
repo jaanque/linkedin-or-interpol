@@ -1597,51 +1597,99 @@ function translatePage() {
 }
 
 function updateMetaTags() {
+    const page = window.location.pathname.split("/").pop();
+    let description = '';
+    let ogTitle = '';
+    let ogDescription = '';
+    let keywords = '';
+
+    if (page === 'about.html') {
+        description = currentTranslations.aboutText;
+        ogTitle = currentTranslations.aboutTitle;
+        ogDescription = currentTranslations.aboutText;
+        keywords = currentTranslations.metaKeywords;
+    } else if (page === 'disclaimer.html') {
+        description = currentTranslations.disclaimerText;
+        ogTitle = currentTranslations.disclaimerTitle;
+        ogDescription = currentTranslations.disclaimerText;
+        keywords = currentTranslations.metaKeywords;
+    } else if (page === 'privacy.html') {
+        description = currentTranslations.privacyIntro;
+        ogTitle = currentTranslations.privacyTitle;
+        ogDescription = currentTranslations.privacyIntro;
+        keywords = currentTranslations.metaKeywords;
+    } else {
+        description = currentTranslations.metaDescription;
+        ogTitle = currentTranslations.ogTitle;
+        ogDescription = currentTranslations.ogDescription;
+        keywords = currentTranslations.metaKeywords;
+    }
+
     const descriptionTag = document.querySelector('meta[name="description"]');
-    if (descriptionTag) descriptionTag.setAttribute('content', currentTranslations.metaDescription);
+    if (descriptionTag) descriptionTag.setAttribute('content', description);
 
     const ogTitleTag = document.querySelector('meta[property="og:title"]');
-    if (ogTitleTag) ogTitleTag.setAttribute('content', currentTranslations.ogTitle);
+    if (ogTitleTag) ogTitleTag.setAttribute('content', ogTitle);
 
     const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
-    if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', currentTranslations.ogDescription);
+    if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', ogDescription);
 
     const keywordsTag = document.querySelector('meta[name="keywords"]');
-    if (keywordsTag) keywordsTag.setAttribute('content', currentTranslations.metaKeywords);
+    if (keywordsTag) keywordsTag.setAttribute('content', keywords);
 }
 
 
 function updateStructuredData() {
     const structuredDataEl = document.getElementById('structured-data');
     if (!structuredDataEl) return;
-    const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "VideoGame",
-        "name": currentTranslations.title,
-        "url": "https://linkedinorinterpol.com/",
-        "image": "https://linkedinorinterpol.com/images/logo.png",
-        "thumbnailUrl": "https://linkedinorinterpol.com/images/logo.png",
-        "description": currentTranslations.structuredDataDescription,
-        "gamePlatform": "Web",
-        "inLanguage": document.documentElement.lang,
-        "applicationCategory": "TriviaGame",
-        "operatingSystem": "Any",
-        "genre": currentTranslations.structuredDataType,
-        "keywords": currentTranslations.metaKeywords,
-        "playMode": "SinglePlayer",
-        "publisher": {
-            "@type": "Person",
-            "name": "Jan Queralt"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "Jan Queralt"
-        },
-        "audience": {
-            "@type": "PeopleAudience",
-            "suggestedMinAge": "16"
-        }
-    };
+
+    const page = window.location.pathname.split("/").pop();
+    let structuredData = {};
+
+    if (page === 'about.html' || page === 'disclaimer.html' || page === 'privacy.html') {
+        structuredData = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": currentTranslations[page.replace('.html', 'Title')],
+            "url": `https://linkedinorinterpol.com/${page}`,
+            "description": currentTranslations[page.replace('.html', 'Text')] || currentTranslations[page.replace('.html', 'Intro')],
+            "inLanguage": document.documentElement.lang,
+            "publisher": {
+                "@type": "Person",
+                "name": "Jan Queralt"
+            }
+        };
+    } else {
+        structuredData = {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": currentTranslations.title,
+            "url": "https://linkedinorinterpol.com/",
+            "image": "https://linkedinorinterpol.com/images/logo.png",
+            "thumbnailUrl": "https://linkedinorinterpol.com/images/logo.png",
+            "description": currentTranslations.structuredDataDescription,
+            "gamePlatform": "Web",
+            "inLanguage": document.documentElement.lang,
+            "applicationCategory": "TriviaGame",
+            "operatingSystem": "Any",
+            "genre": currentTranslations.structuredDataType,
+            "keywords": currentTranslations.metaKeywords,
+            "playMode": "SinglePlayer",
+            "publisher": {
+                "@type": "Person",
+                "name": "Jan Queralt"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Jan Queralt"
+            },
+            "audience": {
+                "@type": "PeopleAudience",
+                "suggestedMinAge": "16"
+            }
+        };
+    }
+
     structuredDataEl.textContent = JSON.stringify(structuredData, null, 2);
 }
 
