@@ -1529,6 +1529,7 @@ const images = [
     { src: 'https://thispersondoesnotexist.com/', type: 'linkedin', descriptionKey: 'imgDesc49' },
 ];
 
+// State and configuration variables
 let score = 0;
 let total = 0;
 let currentImage;
@@ -1536,6 +1537,8 @@ let remainingImages = [...images];
 let autoAdvance = true;
 let currentTranslations = {};
 
+// --- DOM Element References ---
+// Note: Some elements are only present on the main game page (index.html)
 const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
 const totalSpan = document.getElementById('total');
@@ -1548,17 +1551,56 @@ const autoAdvanceSwitch = document.getElementById('auto-advance-switch');
 const languageSelector = document.getElementById('language-selector');
 const instructionsLanguageSelector = document.getElementById('instructions-language-selector');
 
+// --- Language and Translation Functions ---
+
 function loadLanguage(lang) {
-    languageSelector.value = lang;
-    instructionsLanguageSelector.value = lang;
+    if (languageSelector) languageSelector.value = lang;
+    if (instructionsLanguageSelector) instructionsLanguageSelector.value = lang;
+
     document.documentElement.lang = lang;
     currentTranslations = translations[lang];
+
     translatePage();
     updateMetaTags();
-    updateStructuredData();
+
+    // Structured data only exists on the main page
+    if (document.getElementById('structured-data')) {
+        updateStructuredData();
+    }
 }
 
+function translatePage() {
+    document.querySelectorAll('[data-i18n-key]').forEach(el => {
+        const key = el.getAttribute('data-i18n-key');
+        if (currentTranslations[key]) {
+            // Use innerHTML for keys that might contain HTML tags like 'whatDataPoint1'
+            if (key.includes('whatDataPoint')) {
+                el.innerHTML = currentTranslations[key];
+            } else {
+                el.textContent = currentTranslations[key];
+            }
+        }
+    });
+}
+
+function updateMetaTags() {
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) descriptionTag.setAttribute('content', currentTranslations.metaDescription);
+
+    const ogTitleTag = document.querySelector('meta[property="og:title"]');
+    if (ogTitleTag) ogTitleTag.setAttribute('content', currentTranslations.ogTitle);
+
+    const ogDescriptionTag = document.querySelector('meta[property="og:description"]');
+    if (ogDescriptionTag) ogDescriptionTag.setAttribute('content', currentTranslations.ogDescription);
+
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) keywordsTag.setAttribute('content', currentTranslations.metaKeywords);
+}
+
+
 function updateStructuredData() {
+    const structuredDataEl = document.getElementById('structured-data');
+    if (!structuredDataEl) return;
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "VideoGame",
@@ -1574,26 +1616,14 @@ function updateStructuredData() {
             "name": "Jan Queralt"
         }
     };
-    document.getElementById('structured-data').textContent = JSON.stringify(structuredData);
+    structuredDataEl.textContent = JSON.stringify(structuredData);
 }
 
-function translatePage() {
-    document.querySelectorAll('[data-i18n-key]').forEach(el => {
-        const key = el.getAttribute('data-i18n-key');
-        if (currentTranslations[key]) {
-            el.textContent = currentTranslations[key];
-        }
-    });
-}
-
-function updateMetaTags() {
-    document.querySelector('meta[name="description"]').setAttribute('content', currentTranslations.metaDescription);
-    document.querySelector('meta[property="og:title"]').setAttribute('content', currentTranslations.ogTitle);
-    document.querySelector('meta[property="og:description"]').setAttribute('content', currentTranslations.ogDescription);
-    document.querySelector('meta[name="keywords"]').setAttribute('content', currentTranslations.metaKeywords);
-}
+// --- Game Logic Functions (Only for index.html) ---
 
 function nextImage() {
+    if (!profilePicture) return; // Exit if not on the game page
+
     feedbackEl.textContent = '';
     feedbackEl.className = '';
     descriptionEl.textContent = '';
@@ -1602,8 +1632,7 @@ function nextImage() {
     interpolButton.disabled = false;
 
     if (remainingImages.length === 0) {
-        // Reshuffle the images to play again
-        remainingImages = [...images];
+        remainingImages = [...images]; // Reshuffle
     }
 
     const randomIndex = Math.floor(Math.random() * remainingImages.length);
@@ -1635,8 +1664,6 @@ function checkAnswer(guess) {
         policeRecordLink.target = '_blank';
         descriptionEl.innerHTML = `<b>${name}</b> - ${currentTranslations[currentImage.descriptionKey]} <br> `;
         descriptionEl.appendChild(policeRecordLink);
-    } else {
-        descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
     }
 
     linkedinButton.disabled = true;
@@ -1649,18 +1676,6 @@ function checkAnswer(guess) {
     }
 }
 
-function handleAutoAdvanceChange() {
-    autoAdvance = autoAdvanceSwitch.checked;
-}
-
-function handleLanguageChange() {
-    loadLanguage(languageSelector.value);
-}
-
-function handleInstructionsLanguageChange() {
-    loadLanguage(instructionsLanguageSelector.value);
-}
-
 function resetGame() {
     score = 0;
     total = 0;
@@ -1670,84 +1685,78 @@ function resetGame() {
     nextImage();
 }
 
-linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
-interpolButton.addEventListener('click', () => checkAnswer('interpol'));
-nextButton.addEventListener('click', nextImage);
-autoAdvanceSwitch.addEventListener('change', handleAutoAdvanceChange);
-languageSelector.addEventListener('change', handleLanguageChange);
-instructionsLanguageSelector.addEventListener('change', handleInstructionsLanguageChange);
+// --- Initialization ---
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Initial load
+function initializeCommonComponents() {
     const userLang = navigator.language || navigator.userLanguage;
     const langCode = userLang.split('-')[0];
+    const initialLang = translations[langCode] ? langCode : 'en';
 
-    if (translations[langCode]) {
-        loadLanguage(langCode);
-    } else {
-        loadLanguage('en');
+    if (languageSelector) {
+        languageSelector.addEventListener('change', () => loadLanguage(languageSelector.value));
     }
-    nextImage();
+    if (instructionsLanguageSelector) {
+        instructionsLanguageSelector.addEventListener('change', () => loadLanguage(instructionsLanguageSelector.value));
+    }
+
+    // Load initial language
+    loadLanguage(initialLang);
+
+    // Cookie Banner
     const banner = document.getElementById('cookie-banner');
     const acceptButton = document.getElementById('cookie-accept');
-
     if (banner && acceptButton) {
         if (localStorage.getItem('cookieConsent') === 'true') {
             banner.style.display = 'none';
         } else {
             banner.style.display = 'flex';
         }
-
         acceptButton.addEventListener('click', () => {
             localStorage.setItem('cookieConsent', 'true');
             banner.style.display = 'none';
         });
     }
 
+    // Request Image Popup (only on main page)
     const requestBtn = document.getElementById('request-image-btn');
     const popup = document.getElementById('request-image-popup');
     const closeBtn = document.querySelector('.close-btn');
-
     if (requestBtn && popup && closeBtn) {
-        requestBtn.addEventListener('click', () => {
-            popup.style.display = 'block';
-        });
-
-        closeBtn.addEventListener('click', () => {
-            popup.style.display = 'none';
-        });
-
+        requestBtn.addEventListener('click', () => popup.style.display = 'block');
+        closeBtn.addEventListener('click', () => popup.style.display = 'none');
         window.addEventListener('click', (event) => {
-            if (event.target === popup && event.target.id !== 'game-over-popup') {
-                popup.style.display = 'none';
-            }
+            if (event.target === popup) popup.style.display = 'none';
         });
     }
 
+    // Instructions Popup (only on main page)
     const instructionsBtn = document.getElementById('instructions-btn');
     const instructionsPopup = document.getElementById('instructions-popup');
     const closeInstructionsBtn = document.querySelector('.close-instructions-btn');
     const playButton = document.getElementById('play-button');
-
     if (instructionsBtn && instructionsPopup && closeInstructionsBtn && playButton) {
-        instructionsPopup.style.display = 'block';
-
-        instructionsBtn.addEventListener('click', () => {
-            instructionsPopup.style.display = 'block';
-        });
-
-        closeInstructionsBtn.addEventListener('click', () => {
-            instructionsPopup.style.display = 'none';
-        });
-
-        playButton.addEventListener('click', () => {
-            instructionsPopup.style.display = 'none';
-        });
-
+        instructionsPopup.style.display = 'block'; // Show on initial load
+        instructionsBtn.addEventListener('click', () => instructionsPopup.style.display = 'block');
+        closeInstructionsBtn.addEventListener('click', () => instructionsPopup.style.display = 'none');
+        playButton.addEventListener('click', () => instructionsPopup.style.display = 'none');
         window.addEventListener('click', (event) => {
-            if (event.target === instructionsPopup && event.target.id !== 'game-over-popup') {
-                instructionsPopup.style.display = 'none';
-            }
+            if (event.target === instructionsPopup) instructionsPopup.style.display = 'none';
         });
     }
+}
+
+function initializeGame() {
+    if (!profilePicture) return; // Make sure we are on the game page
+
+    linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
+    interpolButton.addEventListener('click', () => checkAnswer('interpol'));
+    nextButton.addEventListener('click', nextImage);
+    autoAdvanceSwitch.addEventListener('change', () => autoAdvance = autoAdvanceSwitch.checked);
+
+    nextImage(); // Load the first image
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initializeCommonComponents();
+    initializeGame();
 });
