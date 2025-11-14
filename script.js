@@ -93,6 +93,7 @@ const translations = {
         "yourConsentHeader": "Your Consent",
         "yourConsentText1": "By using our website, you consent to our data collection and privacy policy as described here.",
         "privacyButton": "Privacy Policy",
+        "cookieBannerText": "This website uses cookies to ensure you get the best experience on our website.",
         "learnMore": "Learn more",
         "cookieAccept": "Got it!",
         "requestImageBtn": "Request to Add an Image",
@@ -208,6 +209,7 @@ const translations = {
         "yourConsentHeader": "Tu Consentimiento",
         "yourConsentText1": "Al utilizar nuestro sitio web, aceptas nuestra recopilación de datos y política de privacidad como se describe aquí.",
         "privacyButton": "Política de Privacidad",
+        "cookieBannerText": "Este sitio web utiliza cookies para garantizar que obtengas la mejor experiencia en nuestro sitio web.",
         "learnMore": "Leer más",
         "cookieAccept": "¡Entendido!",
         "requestImageBtn": "Solicitar añadir una imagen",
@@ -323,6 +325,7 @@ const translations = {
         "yourConsentHeader": "Votre Consentement",
         "yourConsentText1": "En utilisant notre site web, vous consentez à notre collecte de données et à notre politique de confidentialité telles que décrites ici.",
         "privacyButton": "Politique de Confidentialité",
+        "cookieBannerText": "Ce site web utilise des cookies pour vous garantir la meilleure expérience sur notre site.",
         "learnMore": "En savoir plus",
         "cookieAccept": "J'ai compris!",
         "requestImageBtn": "Demander l'ajout d'une image",
@@ -436,6 +439,7 @@ const translations = {
         "yourConsentHeader": "Ihre Zustimmung",
         "yourConsentText1": "Durch die Nutzung unserer Website stimmen Sie unserer Datenerfassung und Datenschutzrichtlinie wie hier beschrieben zu.",
         "privacyButton": "Datenschutzrichtlinie",
+        "cookieBannerText": "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.",
         "learnMore": "Mehr erfahren",
         "cookieAccept": "Verstanden!",
         "requestImageBtn": "Bild hinzufügen anfordern",
@@ -549,6 +553,7 @@ const translations = {
         "yourConsentHeader": "Seu Consentimento",
         "yourConsentText1": "Ao usar nosso site, você concorda com nossa coleta de dados e política de privacidade, conforme descrito aqui.",
         "privacyButton": "Política de Privacidade",
+        "cookieBannerText": "Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site.",
         "learnMore": "Saiba mais",
         "cookieAccept": "Entendi!",
         "requestImageBtn": "Solicitar a adição de uma imagem",
@@ -662,6 +667,7 @@ const translations = {
         "yourConsentHeader": "Il Vostro Consenso",
         "yourConsentText1": "Utilizzando il nostro sito web, acconsentite alla nostra raccolta di dati e alla nostra politica sulla privacy come descritto qui.",
         "privacyButton": "Informativa sulla Privacy",
+        "cookieBannerText": "Questo sito web utilizza i cookie per garantirti la migliore esperienza sul nostro sito.",
         "learnMore": "Scopri di più",
         "cookieAccept": "Ho capito!",
         "requestImageBtn": "Richiedi di aggiungere un'immagine",
@@ -775,6 +781,7 @@ const translations = {
         "yourConsentHeader": "Uw Toestemming",
         "yourConsentText1": "Door onze website te gebruiken, stemt u in met onze gegevensverzameling en ons privacybeleid zoals hier beschreven.",
         "privacyButton": "Privacybeleid",
+        "cookieBannerText": "Deze website maakt gebruik van cookies om ervoor te zorgen dat u de beste ervaring op onze website krijgt.",
         "learnMore": "Meer informatie",
         "cookieAccept": "Begrepen!",
         "requestImageBtn": "Verzoek om een afbeelding toe te voegen",
@@ -888,6 +895,7 @@ const translations = {
         "yourConsentHeader": "Ваше согласие",
         "yourConsentText1": "Используя наш веб-сайт, вы соглашаетесь на сбор данных и нашу политику конфиденциальности, как описано здесь.",
         "privacyButton": "Политика конфиденциальности",
+        "cookieBannerText": "Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимальное удобство работы с нашим веб-сайтом.",
         "learnMore": "Узнать больше",
         "cookieAccept": "Понятно!",
         "requestImageBtn": "Запросить добавление изображения",
@@ -1001,6 +1009,7 @@ const translations = {
     "yourConsentHeader": "您的同意",
     "yourConsentText1": "使用我们的网站即表示您同意我们如此处所述的数据收集和隐私政策。",
     "privacyButton": "隐私政策",
+        "cookieBannerText": "本网站使用Cookie以确保您在我们的网站上获得最佳体验。",
     "learnMore": "了解更多",
     "cookieAccept": "知道了！",
     "requestImageBtn": "请求添加图片",
@@ -1116,6 +1125,7 @@ const translations = {
     "yourConsentHeader": "आपकी सहमति",
     "yourConsentText1": "हमारी वेबसाइट का उपयोग करके, आप यहां वर्णित अनुसार हमारे डेटा संग्रह और गोपनीयता नीति के लिए सहमति देते हैं।",
     "privacyButton": "गोपनीयता नीति",
+        "cookieBannerText": "यह वेबसाइट कुकीज़ का उपयोग करती है ताकि यह सुनिश्चित हो सके कि आपको हमारी वेबसाइट पर सबसे अच्छा अनुभव मिले।",
     "learnMore": "और जानें",
     "cookieAccept": "समझ गया!",
     "requestImageBtn": "एक छवि जोड़ने का अनुरोध करें",
@@ -1231,6 +1241,7 @@ const translations = {
     "yourConsentHeader": "موافقتك",
     "yourConsentText1": "باستخدام موقعنا ، فإنك توافق على جمع البيانات وسياسة الخصوصية الخاصة بنا كما هو موضح هنا.",
     "privacyButton": "سياسة الخصوصية",
+        "cookieBannerText": "يستخدم هذا الموقع ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة على موقعنا.",
     "learnMore": "اعرف المزيد",
     "cookieAccept": "فهمت!",
     "requestImageBtn": "طلب إضافة صورة",
@@ -1346,6 +1357,7 @@ const translations = {
     "yourConsentHeader": "আপনার সম্মতি",
     "yourConsentText1": "আমাদের ওয়েবসাইট ব্যবহার করে, আপনি এখানে বর্ণিত আমাদের ডেটা সংগ্রহ এবং গোপনীয়তা নীতিতে সম্মতি দিচ্ছেন।",
     "privacyButton": "গোপনীয়তা নীতি",
+        "cookieBannerText": "এই ওয়েবসাইটটি কুকি ব্যবহার করে যাতে আপনি আমাদের ওয়েবসাইটে সেরা অভিজ্ঞতা পান।",
     "learnMore": "আরও জানুন",
     "cookieAccept": "পেয়েছি!",
     "requestImageBtn": "একটি চিত্র যুক্ত করার অনুরোধ করুন",
@@ -1461,6 +1473,7 @@ const translations = {
     "yourConsentHeader": "お客様の同意",
     "yourConsentText1": "当社のウェブサイトを使用することにより、お客様はここに記載されている当社のデータ収集およびプライバシーポリシーに同意したことになります。",
     "privacyButton": "プライバシーポリシー",
+        "cookieBannerText": "このウェブサイトはクッキーを使用して、お客様に最高の体験を提供します。",
     "learnMore": "詳細を見る",
     "cookieAccept": "承知しました！",
     "requestImageBtn": "画像の追加をリクエスト",
@@ -1758,5 +1771,9 @@ function initializeGame() {
 
 document.addEventListener('DOMContentLoaded', () => {
     initializeCommonComponents();
-    initializeGame();
+
+    // Only initialize the game if we are on the main game page
+    if (document.getElementById('profile-picture')) {
+        initializeGame();
+    }
 });
