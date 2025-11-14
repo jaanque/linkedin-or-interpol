@@ -179,9 +179,9 @@ const translations = {
         "version": "Versión 1.0",
         "disclaimer": "Aviso: Este sitio web es un juego de adivinanzas satírico y educativo.",
         "allRightsReserved": "Todos los derechos reservados.",
-        "metaDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "metaDescription": "Juega a LinkedIn o Interpol, un divertido juego de navegador para adivinar quién es quién. ¿Serás capaz de diferenciar a un profesional de un criminal en este juego de humor y deducción? ¡Ponte a prueba!",
         "ogTitle": "LinkedIn o Interpol",
-        "ogDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "ogDescription": "Juega a LinkedIn o Interpol, un divertido juego de navegador para adivinar quién es quién. ¿Serás capaz de diferenciar a un profesional de un criminal en este juego de humor y deducción? ¡Ponte a prueba!",
         "aboutTitle": "Acerca de - LinkedIn o Interpol",
         "aboutHeader": "Acerca del Juego",
         "aboutText": "Este juego fue creado con fines de entretenimiento y educativos para resaltar las similitudes y diferencias en los perfiles profesionales y criminales. Todas las imágenes se utilizan con fines satíricos.",
@@ -191,7 +191,7 @@ const translations = {
         "backButton": "Volver al juego",
         "aboutButton": "Acerca de",
         "disclaimerButton": "Aviso Legal",
-        "metaKeywords": "linkedin, interpol, juego, profesional, criminal, adivinar",
+        "metaKeywords": "juegos de navegador, juegos para navegador, juegos online gratis, juegos divertidos, juegos de adivinar, juegos de humor, quién es quién, adivina quién, juego de deducción, linkedin, interpol",
         "privacyTitle": "Política de Privacidad - LinkedIn o Interpol",
         "privacyHeaderV2": "Política de Privacidad",
         "privacyIntro": "Bienvenido a nuestro sitio web. Queremos que entiendas qué información recopilamos y cómo la usamos. Para mejorar este juego y mantenerlo gratuito, utilizamos servicios como Google Analytics.",
@@ -220,7 +220,7 @@ const translations = {
         "requestImagePopupTypeLinkedin": "LinkedIn",
         "requestImagePopupTypeInterpol": "Interpol",
         "requestImagePopupSubmit": "Enviar solicitud",
-        "structuredDataDescription": "Un divertido juego donde tienes que adivinar si una persona es un profesional de LinkedIn o un criminal de Interpol.",
+        "structuredDataDescription": "Adivina si la persona es un profesional de LinkedIn o un criminal buscado por la Interpol en este juego de navegador de humor y deducción.",
         "structuredDataType": "Juego de deducción",
         "instructionsBtn": "Instrucciones",
         "instructionsPopupHeader": "Cómo Jugar",
@@ -1618,18 +1618,31 @@ function updateStructuredData() {
         "@context": "https://schema.org",
         "@type": "VideoGame",
         "name": currentTranslations.title,
+        "url": "https://linkedinorinterpol.com/",
+        "image": "https://linkedinorinterpol.com/images/logo.png",
+        "thumbnailUrl": "https://linkedinorinterpol.com/images/logo.png",
         "description": currentTranslations.structuredDataDescription,
         "gamePlatform": "Web",
         "inLanguage": document.documentElement.lang,
-        "applicationCategory": "Game",
+        "applicationCategory": "TriviaGame",
         "operatingSystem": "Any",
         "genre": currentTranslations.structuredDataType,
+        "keywords": currentTranslations.metaKeywords,
+        "playMode": "SinglePlayer",
+        "publisher": {
+            "@type": "Person",
+            "name": "Jan Queralt"
+        },
         "author": {
             "@type": "Person",
             "name": "Jan Queralt"
+        },
+        "audience": {
+            "@type": "PeopleAudience",
+            "suggestedMinAge": "16"
         }
     };
-    structuredDataEl.textContent = JSON.stringify(structuredData);
+    structuredDataEl.textContent = JSON.stringify(structuredData, null, 2);
 }
 
 // --- Game Logic Functions (Only for index.html) ---
