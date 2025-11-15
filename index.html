@@ -84,6 +84,18 @@
                 </div>
                 <button id="request-image-btn" data-i18n-key="requestImageBtn">Request to Add an Image</button>
                 <button id="instructions-btn" data-i18n-key="instructionsBtn">Instructions</button>
+                <div class="settings-container">
+                    <label for="game-mode-selector" data-i18n-key="gameMode">Game Mode</label>
+                    <select id="game-mode-selector">
+                        <option value="classic" data-i18n-key="classicMode">Classic</option>
+                        <option value="time-trial" data-i18n-key="timeTrialMode">Time Trial</option>
+                    </select>
+                    <label for="auto-advance-switch" data-i18n-key="autoAdvance">Auto-Advance</label>
+                    <label class="switch">
+                        <input type="checkbox" id="auto-advance-switch" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
             <br>
             <img src="images/logo.png" alt="LinkedIn or Interpol game logo" id="header-logo">
@@ -98,12 +110,8 @@
             </div>
         </div>
         <div class="game-container">
-            <div class="settings-container">
-                <label for="auto-advance-switch" data-i18n-key="autoAdvance">Auto-Advance</label>
-                <label class="switch">
-                    <input type="checkbox" id="auto-advance-switch" checked>
-                    <span class="slider"></span>
-                </label>
+            <div id="timer-container" class="hidden">
+                <p><span data-i18n-key="timeRemaining">Time Remaining</span>: <span id="timer">10</span>s</p>
             </div>
             <div class="image-container">
                 <img draggable="false" src="" alt="Profile picture" id="profile-picture">
@@ -193,6 +201,16 @@
         </div>
     </div>
 
+    <div id="time-up-popup" class="popup">
+        <div class="popup-content">
+            <h2 data-i18n-key="timeUpHeader">Time's Up!</h2>
+            <p data-i18n-key="timeUpText">You ran out of time. Better luck next time!</p>
+            <button id="share-score-button" data-i18n-key="shareScoreButton">Share Score</button>
+            <button id="play-again-button" data-i18n-key="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

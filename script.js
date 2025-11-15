@@ -113,7 +113,15 @@ const translations = {
         "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
         "instructionsPopupText4": "Your score is tracked at the top of the page.",
         "playButton": "Play",
-        "shareScoreButton": "Share Score"
+        "shareScoreButton": "Share Score",
+        "gameMode": "Game Mode",
+        "classicMode": "Classic",
+        "timeTrialMode": "Time Trial",
+        "timeRemaining": "Time Remaining",
+        "timeUpHeader": "Time's Up!",
+        "timeUpText": "You ran out of time. Better luck next time!",
+        "playAgainButton": "Play Again",
+        "shareMessage": "I scored {score}/{total} in LinkedIn or Interpol! Can you beat me? linkedinorinterpol.com"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -229,7 +237,15 @@ const translations = {
         "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
         "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página.",
         "playButton": "Jugar",
-        "shareScoreButton": "Compartir Puntuación"
+        "shareScoreButton": "Compartir Puntuación",
+        "gameMode": "Modo de Juego",
+        "classicMode": "Clásico",
+        "timeTrialMode": "Contrarreloj",
+        "timeRemaining": "Tiempo Restante",
+        "timeUpHeader": "¡Se acabó el tiempo!",
+        "timeUpText": "Te quedaste sin tiempo. ¡Mejor suerte la próxima vez!",
+        "playAgainButton": "Jugar de Nuevo",
+        "shareMessage": "¡He conseguido {score}/{total} en LinkedIn o Interpol! ¿Puedes superarme? linkedinorinterpol.com"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -343,7 +359,15 @@ const translations = {
         "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
         "instructionsPopupText4": "Votre score est suivi en haut de la page.",
         "playButton": "Jouer",
-        "shareScoreButton": "Partager le Score"
+        "shareScoreButton": "Partager le Score",
+        "gameMode": "Mode de jeu",
+        "classicMode": "Classique",
+        "timeTrialMode": "Contre-la-montre",
+        "timeRemaining": "Temps restant",
+        "timeUpHeader": "Temps écoulé!",
+        "timeUpText": "Vous n'avez plus de temps. Meilleure chance la prochaine fois!",
+        "playAgainButton": "Rejouer",
+        "shareMessage": "J'ai obtenu {score}/{total} dans LinkedIn ou Interpol! Pouvez-vous me battre? linkedinorinterpol.com"
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -457,7 +481,15 @@ const translations = {
         "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
         "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt.",
         "playButton": "Spielen",
-        "shareScoreButton": "Punktzahl teilen"
+        "shareScoreButton": "Punktzahl teilen",
+        "gameMode": "Spielmodus",
+        "classicMode": "Klassisch",
+        "timeTrialMode": "Zeitfahren",
+        "timeRemaining": "Verbleibende Zeit",
+        "timeUpHeader": "Zeit abgelaufen!",
+        "timeUpText": "Du hast keine Zeit mehr. Viel Glück beim nächsten Mal!",
+        "playAgainButton": "Erneut spielen",
+        "shareMessage": "Ich habe {score}/{total} in LinkedIn oder Interpol erreicht! Kannst du mich schlagen? linkedinorinterpol.com"
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -571,7 +603,15 @@ const translations = {
         "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
         "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página.",
         "playButton": "Jogar",
-        "shareScoreButton": "Compartilhar Pontuação"
+        "shareScoreButton": "Compartilhar Pontuação",
+        "gameMode": "Modo de Jogo",
+        "classicMode": "Clássico",
+        "timeTrialMode": "Contra o Tempo",
+        "timeRemaining": "Tempo Restante",
+        "timeUpHeader": "O Tempo Acabou!",
+        "timeUpText": "Você ficou sem tempo. Mais sorte da próxima vez!",
+        "playAgainButton": "Jogar Novamente",
+        "shareMessage": "Eu fiz {score}/{total} no LinkedIn ou Interpol! Você consegue me vencer? linkedinorinterpol.com"
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -685,7 +725,15 @@ const translations = {
         "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
         "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina.",
         "playButton": "Gioca",
-        "shareScoreButton": "Condividi Punteggio"
+        "shareScoreButton": "Condividi Punteggio",
+        "gameMode": "Modalità di Gioco",
+        "classicMode": "Classica",
+        "timeTrialMode": "Prova a Tempo",
+        "timeRemaining": "Tempo Rimanente",
+        "timeUpHeader": "Tempo Scaduto!",
+        "timeUpText": "Hai esaurito il tempo. Buona fortuna la prossima volta!",
+        "playAgainButton": "Gioca di Nuovo",
+        "shareMessage": "Ho ottenuto {score}/{total} in LinkedIn o Interpol! Riesci a battermi? linkedinorinterpol.com"
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -799,7 +847,15 @@ const translations = {
         "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
         "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden.",
         "playButton": "Spelen",
-        "shareScoreButton": "Deel Score"
+        "shareScoreButton": "Deel Score",
+        "gameMode": "Spelmodus",
+        "classicMode": "Klassiek",
+        "timeTrialMode": "Tijdrit",
+        "timeRemaining": "Resterende tijd",
+        "timeUpHeader": "Tijd is om!",
+        "timeUpText": "Je tijd is om. Volgende keer beter!",
+        "playAgainButton": "Opnieuw spelen",
+        "shareMessage": "Ik heb {score}/{total} gescoord in LinkedIn of Interpol! Kun je mij verslaan? linkedinorinterpol.com"
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -913,7 +969,15 @@ const translations = {
         "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
         "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы.",
         "playButton": "Играть",
-        "shareScoreButton": "Поделиться Счетом"
+        "shareScoreButton": "Поделиться Счетом",
+        "gameMode": "Режим игры",
+        "classicMode": "Классический",
+        "timeTrialMode": "Испытание на время",
+        "timeRemaining": "Оставшееся время",
+        "timeUpHeader": "Время вышло!",
+        "timeUpText": "У вас закончилось время. Удачи в следующий раз!",
+        "playAgainButton": "Играть снова",
+        "shareMessage": "Я набрал {score}/{total} в LinkedIn или Интерпол! Сможешь меня победить? linkedinorinterpol.com"
     },
     "zh": {
     "title": "领英或国际刑警组织",
@@ -1029,7 +1093,15 @@ const translations = {
     "instructionsPopupText3": "单击“领英”或“国际刑警组织”按钮进行猜测。",
     "instructionsPopupText4": "您的分数记录在页面顶部。",
     "playButton": "开始游戏",
-    "shareScoreButton": "分享分数"
+    "shareScoreButton": "分享分数",
+    "gameMode": "游戏模式",
+    "classicMode": "经典模式",
+    "timeTrialMode": "计时赛",
+    "timeRemaining": "剩余时间",
+    "timeUpHeader": "时间到！",
+    "timeUpText": "你的时间用完了。下次好运！",
+    "playAgainButton": "再玩一次",
+    "shareMessage": "我在领英或国际刑警组织中得到了{score}/{total}分！你能打败我吗？ linkedinorinterpol.com"
   },
   "hi": {
     "title": "लिंक्डइन या इंटरपोल",
@@ -1145,7 +1217,15 @@ const translations = {
     "instructionsPopupText3": "अपना अनुमान लगाने के लिए \"लिंक्डइन\" या \"इंटरपोल\" बटन पर क्लिक करें।",
     "instructionsPopupText4": "आपका स्कोर पृष्ठ के शीर्ष पर ट्रैक किया जाता है।",
     "playButton": "खेलें",
-    "shareScoreButton": "स्कोर साझा करें"
+    "shareScoreButton": "स्कोर साझा करें",
+    "gameMode": "खेल मोड",
+    "classicMode": "क्लासिक",
+    "timeTrialMode": "टाइम ट्रायल",
+    "timeRemaining": "शेष समय",
+    "timeUpHeader": "समय समाप्त!",
+    "timeUpText": "आपका समय समाप्त हो गया। अगली बार बेहतर suerte!",
+    "playAgainButton": "फिर से खेलें",
+    "shareMessage": "मैंने लिंक्डइन या इंटरपोल में {score}/{total} स्कोर किया! क्या आप मुझे हरा सकते हैं? linkedinorinterpol.com"
   },
   "ar": {
     "title": "لينكد إن أم الإنتربول",
@@ -1261,7 +1341,15 @@ const translations = {
     "instructionsPopupText3": "انقر فوق الزر \"لينكد إن\" أو \"الإنتربول\" لتخمينك.",
     "instructionsPopupText4": "يتم تتبع درجاتك في الجزء العلوي من الصفحة.",
     "playButton": "العب",
-    "shareScoreButton": "مشاركة النتيجة"
+    "shareScoreButton": "مشاركة النتيجة",
+    "gameMode": "وضع اللعب",
+    "classicMode": "كلاسيكي",
+    "timeTrialMode": "سباق الزمن",
+    "timeRemaining": "الوقت المتبقي",
+    "timeUpHeader": "انتهى الوقت!",
+    "timeUpText": "لقد نفد منك الوقت. حظا أفضل في المرة القادمة!",
+    "playAgainButton": "العب مرة أخرى",
+    "shareMessage": "لقد سجلت {score}/{total} في لينكد إن أو الإنتربول! هل يمكنك هزيمتي؟ linkedinorinterpol.com"
   },
   "bn": {
     "title": "লিঙ্কডইন নাকি ইন্টারপোল",
@@ -1377,7 +1465,15 @@ const translations = {
     "instructionsPopupText3": "আপনার অনুমান করতে \"লিঙ্কডইন\" বা \"ইন্টারপোল\" বোতামে ক্লিক করুন।",
     "instructionsPopupText4": "আপনার স্কোর পৃষ্ঠার শীর্ষে ট্র্যাক করা হয়।",
     "playButton": "খেলুন",
-    "shareScoreButton": "স্কোর শেয়ার করুন"
+    "shareScoreButton": "স্কোর শেয়ার করুন",
+    "gameMode": "খেলার মোড",
+    "classicMode": "ক্লাসিক",
+    "timeTrialMode": "সময় পরীক্ষা",
+    "timeRemaining": "বাকি সময়",
+    "timeUpHeader": "সময় শেষ!",
+    "timeUpText": "আপনার সময় শেষ। পরের বার আরও ভাল ভাগ্য!",
+    "playAgainButton": "আবার খেলুন",
+    "shareMessage": "আমি লিঙ্কডইন বা ইন্টারপোলে {score}/{total} স্কোর করেছি! আপনি কি আমাকে হারাতে পারবেন? linkedinorinterpol.com"
   },
   "ja": {
     "title": "リンクトインかインターポールか",
@@ -1493,7 +1589,15 @@ const translations = {
     "instructionsPopupText3": "「リンクトイン」または「インターポール」ボタンをクリックして推測します。",
     "instructionsPopupText4": "スコアはページの上部で追跡されます。",
     "playButton": "プレイ",
-    "shareScoreButton": "スコアを共有"
+    "shareScoreButton": "スコアを共有",
+    "gameMode": "ゲームモード",
+    "classicMode": "クラシック",
+    "timeTrialMode": "タイムトライアル",
+    "timeRemaining": "残り時間",
+    "timeUpHeader": "時間切れ！",
+    "timeUpText": "時間切れです。次回頑張ってください！",
+    "playAgainButton": "もう一度プレイ",
+    "shareMessage": "リンクトインかインターポールかで{score}/{total}点を獲得しました！私を倒せますか？ linkedinorinterpol.com"
   }
 }
 
@@ -1549,6 +1653,9 @@ let currentImage;
 let remainingImages = [...images];
 let autoAdvance = true;
 let currentTranslations = {};
+let gameMode = 'classic'; // 'classic' or 'time-trial'
+let timerInterval;
+let timeLeft = 10;
 
 // --- DOM Element References ---
 // Note: Some elements are only present on the main game page (index.html)
@@ -1563,6 +1670,12 @@ const nextButton = document.getElementById('next-button');
 const autoAdvanceSwitch = document.getElementById('auto-advance-switch');
 const languageSelector = document.getElementById('language-selector');
 const instructionsLanguageSelector = document.getElementById('instructions-language-selector');
+const gameModeSelector = document.getElementById('game-mode-selector');
+const timerContainer = document.getElementById('timer-container');
+const timerSpan = document.getElementById('timer');
+const timeUpPopup = document.getElementById('time-up-popup');
+const playAgainButton = document.getElementById('play-again-button');
+const shareScoreButton = document.getElementById('share-score-button');
 
 // --- Language and Translation Functions ---
 
@@ -1693,11 +1806,107 @@ function updateStructuredData() {
     structuredDataEl.textContent = JSON.stringify(structuredData, null, 2);
 }
 
+// --- Timer and Game Mode Functions ---
+
+function startTimer() {
+    if (gameMode !== 'time-trial') return;
+    timerContainer.classList.remove('hidden');
+    timeLeft = 10;
+    timerSpan.textContent = timeLeft;
+    timerInterval = setInterval(() => {
+        timeLeft--;
+        timerSpan.textContent = timeLeft;
+        if (timeLeft <= 3) {
+            timerSpan.classList.add('blinking');
+        } else {
+            timerSpan.classList.remove('blinking');
+        }
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            timeUp();
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+    if (timerContainer) {
+        timerContainer.classList.add('hidden');
+        timerSpan.classList.remove('blinking');
+    }
+}
+
+function timeUp() {
+    timeUpPopup.style.display = 'block';
+    linkedinButton.disabled = true;
+    interpolButton.disabled = true;
+}
+
+function handleGameModeChange() {
+    gameMode = gameModeSelector.value;
+    resetGame();
+}
+
+function shareScore() {
+    const captureTarget = document.querySelector('.header');
+    const settingsToolbar = document.querySelector('.settings-toolbar');
+    const shareText = currentTranslations.shareMessage
+        .replace('{score}', score)
+        .replace('{total}', total);
+
+    // Hide the settings toolbar before taking the screenshot
+    if (settingsToolbar) {
+        settingsToolbar.style.display = 'none';
+    }
+
+    html2canvas(captureTarget, { useCORS: true }).then(canvas => {
+        // Show the settings toolbar again after taking the screenshot
+        if (settingsToolbar) {
+            settingsToolbar.style.display = 'flex';
+        }
+
+        canvas.toBlob(blob => {
+            if (blob) {
+                const file = new File([blob], 'score.png', { type: 'image/png' });
+                const shareData = {
+                    files: [file],
+                    title: currentTranslations.title,
+                    text: shareText,
+                };
+
+                if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+                    navigator.share(shareData)
+                        .catch((error) => {
+                            console.log('Error sharing:', error);
+                            navigator.clipboard.writeText(shareText).then(() => {
+                                alert('Sharing failed. Score copied to clipboard!');
+                            });
+                        });
+                } else {
+                    navigator.clipboard.writeText(shareText).then(() => {
+                        alert('Score copied to clipboard!');
+                    });
+                }
+            }
+        }, 'image/png');
+    }).catch(err => {
+        // Ensure the settings toolbar is shown even if there's an error
+        if (settingsToolbar) {
+            settingsToolbar.style.display = 'flex';
+        }
+        console.error('Error generating screenshot:', err);
+        navigator.clipboard.writeText(shareText).then(() => {
+            alert('Could not generate image, score copied to clipboard instead!');
+        });
+    });
+}
+
+
 // --- Game Logic Functions (Only for index.html) ---
 
 function nextImage() {
     if (!profilePicture) return; // Exit if not on the game page
-
+    stopTimer();
     feedbackEl.textContent = '';
     feedbackEl.className = '';
     descriptionEl.textContent = '';
@@ -1714,9 +1923,11 @@ function nextImage() {
     profilePicture.src = currentImage.src;
     total++;
     totalSpan.textContent = total;
+    startTimer();
 }
 
 function checkAnswer(guess) {
+    stopTimer();
     if (guess === currentImage.type) {
         score++;
         scoreSpan.textContent = score;
@@ -1756,6 +1967,7 @@ function resetGame() {
     scoreSpan.textContent = score;
     totalSpan.textContent = total;
     remainingImages = [...images];
+    if (timeUpPopup) timeUpPopup.style.display = 'none';
     nextImage();
 }
 
@@ -1826,6 +2038,9 @@ function initializeGame() {
     interpolButton.addEventListener('click', () => checkAnswer('interpol'));
     nextButton.addEventListener('click', nextImage);
     autoAdvanceSwitch.addEventListener('change', () => autoAdvance = autoAdvanceSwitch.checked);
+    gameModeSelector.addEventListener('change', handleGameModeChange);
+    playAgainButton.addEventListener('click', resetGame);
+    shareScoreButton.addEventListener('click', shareScore);
 
     nextImage(); // Load the first image
 }
