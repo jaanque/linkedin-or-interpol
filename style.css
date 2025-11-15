@@ -70,7 +70,6 @@ body {
     padding: 0.3rem;
     border: 2px solid #333;
     background: #fff;
-    margin-bottom: 1rem;
 }
 
 .settings-container {
@@ -78,7 +77,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
 }
 
 .switch {
@@ -461,6 +459,64 @@ button:disabled {
 .close-btn:focus {
     color: #333;
     text-decoration: none;
+}
+
+/* --- Game Mode and Timer Styles --- */
+
+#game-mode-selector {
+    font-family: 'Courier Prime', monospace;
+    padding: 0.3rem;
+    border: 2px solid #333;
+    background: #fff;
+}
+
+#timer-container {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #c91a1a;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking {
+    animation: blink 1s linear infinite;
+}
+
+/* --- Time Up Popup --- */
+/* Reusing .popup and .popup-content from existing styles */
+#time-up-popup .popup-content {
+    text-align: center;
+}
+
+#play-again-button {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+    box-shadow: 3px 3px 0px #1e7e34;
+}
+
+#play-again-button:hover {
+    background-color: #1e7e34;
+    box-shadow: 1px 1px 0px #1e7e34;
+}
+
+#share-score-button {
+    margin-top: 1rem;
+    background-color: #0077b5;
+    color: #fff;
+    border-color: #0077b5;
+    box-shadow: 3px 3px 0px #005b8e;
+}
+
+#share-score-button:hover {
+    background-color: #005b8e;
+    box-shadow: 1px 1px 0px #005b8e;
 }
 
 
