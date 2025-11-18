@@ -2118,27 +2118,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('profile-picture')) {
         initializeGame();
     }
-
-    if (loadAdsButton) {
-        loadAdsButton.addEventListener('click', () => {
-            const gameContainer = document.querySelector('.game-container');
-            if (gameContainer) {
-                const script1 = document.createElement('script');
-                script1.text = '(window.openVideoPlayers = window.openVideoPlayers || []).push({target: document.currentScript});';
-                script1.setAttribute('data-ezscrex', 'false');
-                script1.setAttribute('data-cfasync', 'false');
-
-                const script2 = document.createElement('script');
-                script2.src = 'https://open.video/video.js';
-                script2.async = true;
-                script2.setAttribute('data-ezscrex', 'false');
-                script2.setAttribute('data-cfasync', 'false');
-
-                gameContainer.prepend(script2);
-                gameContainer.prepend(script1);
-
-                loadAdsButton.style.display = 'none';
-            }
-        });
-    }
 });
