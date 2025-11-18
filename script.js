@@ -1744,6 +1744,7 @@ let timeLeft = 10;
 const classicModeEndPopup = document.getElementById('classic-mode-end-popup');
 const classicReviveButton = document.getElementById('classic-revive-button');
 const classicPlayAgainButton = document.getElementById('classic-play-again-button');
+const classicShareScoreButton = document.getElementById('classic-share-score-button');
 const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
 const totalSpan = document.getElementById('total');
@@ -2007,7 +2008,13 @@ function nextImage() {
 
     const randomIndex = Math.floor(Math.random() * remainingImages.length);
     currentImage = remainingImages.splice(randomIndex, 1)[0];
-    profilePicture.src = currentImage.src;
+
+    let imageUrl = currentImage.src;
+    if (imageUrl.includes('thispersondoesnotexist.com')) {
+        imageUrl += '?t=' + new Date().getTime();
+    }
+    profilePicture.src = imageUrl;
+
     total++;
     totalSpan.textContent = total;
     startTimer();
@@ -2155,6 +2162,7 @@ function initializeGame() {
     // Classic mode popup buttons
     if (classicPlayAgainButton) classicPlayAgainButton.addEventListener('click', resetGame);
     if (classicReviveButton) classicReviveButton.addEventListener('click', revive);
+    if (classicShareScoreButton) classicShareScoreButton.addEventListener('click', shareScore);
 
     nextImage(); // Load the first image
 }

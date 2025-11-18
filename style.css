@@ -523,7 +523,7 @@ button:disabled {
     box-shadow: 1px 1px 0px #e0a800;
 }
 
-#share-score-button {
+#share-score-button, #classic-share-score-button {
     margin-top: 1rem;
     background-color: #0077b5;
     color: #fff;
@@ -531,7 +531,7 @@ button:disabled {
     box-shadow: 3px 3px 0px #005b8e;
 }
 
-#share-score-button:hover {
+#share-score-button:hover, #classic-share-score-button:hover {
     background-color: #005b8e;
     box-shadow: 1px 1px 0px #005b8e;
 }
