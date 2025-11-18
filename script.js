@@ -127,7 +127,9 @@ const translations = {
         "playAgainButton": "Play Again",
         "reviveButton": "Revive",
         "shareMessage": "I scored {score}/{total} in LinkedIn or Interpol! Can you beat me? linkedinorinterpol.com",
-        "loadAdsButton": "Load Video Ads"
+        "loadAdsButton": "Load Video Ads",
+        "classicModeEndHeader": "Wrong Answer!",
+        "classicModeEndText": "You made a mistake. Do you want to try again?"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -257,7 +259,9 @@ const translations = {
         "playAgainButton": "Jugar de Nuevo",
         "reviveButton": "Revivir",
         "shareMessage": "¡He conseguido {score}/{total} en LinkedIn o Interpol! ¿Puedes superarme? linkedinorinterpol.com",
-        "loadAdsButton": "Cargar Anuncios de Video"
+        "loadAdsButton": "Cargar Anuncios de Video",
+        "classicModeEndHeader": "¡Respuesta Incorrecta!",
+        "classicModeEndText": "Has cometido un error. ¿Quieres intentarlo de nuevo?"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -1737,6 +1741,9 @@ let timeLeft = 10;
 
 // --- DOM Element References ---
 // Note: Some elements are only present on the main game page (index.html)
+const classicModeEndPopup = document.getElementById('classic-mode-end-popup');
+const classicReviveButton = document.getElementById('classic-revive-button');
+const classicPlayAgainButton = document.getElementById('classic-play-again-button');
 const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
 const totalSpan = document.getElementById('total');
@@ -2016,6 +2023,12 @@ function checkAnswer(guess) {
     } else {
         feedbackEl.textContent = currentTranslations.wrong;
         feedbackEl.className = 'incorrect';
+        if (gameMode === 'classic') {
+            classicModeEndPopup.style.display = 'block';
+            linkedinButton.disabled = true;
+            interpolButton.disabled = true;
+            return;
+        }
     }
 
     descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
@@ -2048,17 +2061,23 @@ function resetGame() {
     totalSpan.textContent = total;
     remainingImages = [...images];
     if (timeUpPopup) timeUpPopup.style.display = 'none';
+    if (classicModeEndPopup) classicModeEndPopup.style.display = 'none'; // Hide classic mode popup
     if (reviveButton) reviveButton.style.display = 'inline-block';
     nextImage();
 }
 
 function revive() {
     window.open('https://www.effectivegatecpm.com/az9t8w75?key=9184012d5d952f4a2864a186e609ef9a', '_blank');
-    timeUpPopup.style.display = 'none';
-    linkedinButton.disabled = false;
-    interpolButton.disabled = false;
-    reviveButton.style.display = 'none'; // Hide revive button after use
-    startTimer();
+    if (gameMode === 'classic') {
+        classicModeEndPopup.style.display = 'none';
+        nextImage();
+    } else { // time-trial
+        timeUpPopup.style.display = 'none';
+        linkedinButton.disabled = false;
+        interpolButton.disabled = false;
+        reviveButton.style.display = 'none'; // Hide revive button after use
+        startTimer();
+    }
 }
 
 // --- Initialization ---
@@ -2132,6 +2151,10 @@ function initializeGame() {
     playAgainButton.addEventListener('click', resetGame);
     shareScoreButton.addEventListener('click', shareScore);
     reviveButton.addEventListener('click', revive);
+
+    // Classic mode popup buttons
+    if (classicPlayAgainButton) classicPlayAgainButton.addEventListener('click', resetGame);
+    if (classicReviveButton) classicReviveButton.addEventListener('click', revive);
 
     nextImage(); // Load the first image
 }

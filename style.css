@@ -493,7 +493,11 @@ button:disabled {
     text-align: center;
 }
 
-#play-again-button {
+#classic-mode-end-popup .popup-content {
+    text-align: center;
+}
+
+#play-again-button, #classic-play-again-button {
     margin-top: 1rem;
     background-color: #28a745;
     color: #fff;
@@ -501,9 +505,22 @@ button:disabled {
     box-shadow: 3px 3px 0px #1e7e34;
 }
 
-#play-again-button:hover {
+#play-again-button:hover, #classic-play-again-button:hover {
     background-color: #1e7e34;
     box-shadow: 1px 1px 0px #1e7e34;
+}
+
+#revive-button, #classic-revive-button {
+    margin-top: 1rem;
+    background-color: #ffc107; /* A warning yellow */
+    color: #333;
+    border-color: #ffc107;
+    box-shadow: 3px 3px 0px #e0a800;
+}
+
+#revive-button:hover, #classic-revive-button:hover {
+    background-color: #e0a800;
+    box-shadow: 1px 1px 0px #e0a800;
 }
 
 #share-score-button {
