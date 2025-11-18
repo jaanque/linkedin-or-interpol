@@ -125,7 +125,8 @@ const translations = {
         "timeUpHeader": "Time's Up!",
         "timeUpText": "You ran out of time. Better luck next time!",
         "playAgainButton": "Play Again",
-        "shareMessage": "I scored {score}/{total} in LinkedIn or Interpol! Can you beat me? linkedinorinterpol.com"
+        "shareMessage": "I scored {score}/{total} in LinkedIn or Interpol! Can you beat me? linkedinorinterpol.com",
+        "loadAdsButton": "Load Video Ads"
     },
     "es": {
         "title": "LinkedIn o Interpol",
@@ -253,7 +254,8 @@ const translations = {
         "timeUpHeader": "¡Se acabó el tiempo!",
         "timeUpText": "Te quedaste sin tiempo. ¡Mejor suerte la próxima vez!",
         "playAgainButton": "Jugar de Nuevo",
-        "shareMessage": "¡He conseguido {score}/{total} en LinkedIn o Interpol! ¿Puedes superarme? linkedinorinterpol.com"
+        "shareMessage": "¡He conseguido {score}/{total} en LinkedIn o Interpol! ¿Puedes superarme? linkedinorinterpol.com",
+        "loadAdsButton": "Cargar Anuncios de Video"
     },
     "fr": {
         "title": "LinkedIn ou Interpol",
@@ -379,7 +381,8 @@ const translations = {
         "timeUpHeader": "Temps écoulé!",
         "timeUpText": "Vous n'avez plus de temps. Meilleure chance la prochaine fois!",
         "playAgainButton": "Rejouer",
-        "shareMessage": "J'ai obtenu {score}/{total} dans LinkedIn ou Interpol! Pouvez-vous me battre? linkedinorinterpol.com"
+        "shareMessage": "J'ai obtenu {score}/{total} dans LinkedIn ou Interpol! Pouvez-vous me battre? linkedinorinterpol.com",
+        "loadAdsButton": "Charger les publicités vidéo"
     },
     "de": {
         "title": "LinkedIn oder Interpol",
@@ -505,7 +508,8 @@ const translations = {
         "timeUpHeader": "Zeit abgelaufen!",
         "timeUpText": "Du hast keine Zeit mehr. Viel Glück beim nächsten Mal!",
         "playAgainButton": "Erneut spielen",
-        "shareMessage": "Ich habe {score}/{total} in LinkedIn oder Interpol erreicht! Kannst du mich schlagen? linkedinorinterpol.com"
+        "shareMessage": "Ich habe {score}/{total} in LinkedIn oder Interpol erreicht! Kannst du mich schlagen? linkedinorinterpol.com",
+        "loadAdsButton": "Videoanzeigen laden"
     },
     "pt": {
         "title": "LinkedIn ou Interpol",
@@ -631,7 +635,8 @@ const translations = {
         "timeUpHeader": "O Tempo Acabou!",
         "timeUpText": "Você ficou sem tempo. Mais sorte da próxima vez!",
         "playAgainButton": "Jogar Novamente",
-        "shareMessage": "Eu fiz {score}/{total} no LinkedIn ou Interpol! Você consegue me vencer? linkedinorinterpol.com"
+        "shareMessage": "Eu fiz {score}/{total} no LinkedIn ou Interpol! Você consegue me vencer? linkedinorinterpol.com",
+        "loadAdsButton": "Carregar Anúncios em Vídeo"
     },
     "it": {
         "title": "LinkedIn o Interpol",
@@ -757,7 +762,8 @@ const translations = {
         "timeUpHeader": "Tempo Scaduto!",
         "timeUpText": "Hai esaurito il tempo. Buona fortuna la prossima volta!",
         "playAgainButton": "Gioca di Nuovo",
-        "shareMessage": "Ho ottenuto {score}/{total} in LinkedIn o Interpol! Riesci a battermi? linkedinorinterpol.com"
+        "shareMessage": "Ho ottenuto {score}/{total} in LinkedIn o Interpol! Riesci a battermi? linkedinorinterpol.com",
+        "loadAdsButton": "Carica Annunci Video"
     },
     "nl": {
         "title": "LinkedIn of Interpol",
@@ -883,7 +889,8 @@ const translations = {
         "timeUpHeader": "Tijd is om!",
         "timeUpText": "Je tijd is om. Volgende keer beter!",
         "playAgainButton": "Opnieuw spelen",
-        "shareMessage": "Ik heb {score}/{total} gescoord in LinkedIn of Interpol! Kun je mij verslaan? linkedinorinterpol.com"
+        "shareMessage": "Ik heb {score}/{total} gescoord in LinkedIn of Interpol! Kun je mij verslaan? linkedinorinterpol.com",
+        "loadAdsButton": "Videoadvertenties laden"
     },
     "ru": {
         "title": "LinkedIn или Интерпол",
@@ -1009,7 +1016,8 @@ const translations = {
         "timeUpHeader": "Время вышло!",
         "timeUpText": "У вас закончилось время. Удачи в следующий раз!",
         "playAgainButton": "Играть снова",
-        "shareMessage": "Я набрал {score}/{total} в LinkedIn или Интерпол! Сможешь меня победить? linkedinorinterpol.com"
+        "shareMessage": "Я набрал {score}/{total} в LinkedIn или Интерпол! Сможешь меня победить? linkedinorinterpol.com",
+        "loadAdsButton": "Загрузить видеообъявления"
     },
     "zh": {
     "title": "领英或国际刑警组织",
@@ -1137,7 +1145,8 @@ const translations = {
     "timeUpHeader": "时间到！",
     "timeUpText": "你的时间用完了。下次好运！",
     "playAgainButton": "再玩一次",
-    "shareMessage": "我在领英或国际刑警组织中得到了{score}/{total}分！你能打败我吗？ linkedinorinterpol.com"
+    "shareMessage": "我在领英或国际刑警组织中得到了{score}/{total}分！你能打败我吗？ linkedinorinterpol.com",
+    "loadAdsButton": "加载视频广告"
   },
   "hi": {
     "title": "लिंक्डइन या इंटरपोल",
@@ -1265,7 +1274,8 @@ const translations = {
     "timeUpHeader": "समय समाप्त!",
     "timeUpText": "आपका समय समाप्त हो गया। अगली बार बेहतर suerte!",
     "playAgainButton": "फिर से खेलें",
-    "shareMessage": "मैंने लिंक्डइन या इंटरपोल में {score}/{total} स्कोर किया! क्या आप मुझे हरा सकते हैं? linkedinorinterpol.com"
+    "shareMessage": "मैंने लिंक्डइन या इंटरपोल में {score}/{total} स्कोर किया! क्या आप मुझे हरा सकते हैं? linkedinorinterpol.com",
+    "loadAdsButton": "वीडियो विज्ञापन लोड करें"
   },
   "ar": {
     "title": "لينكد إن أم الإنتربول",
@@ -1393,7 +1403,8 @@ const translations = {
     "timeUpHeader": "انتهى الوقت!",
     "timeUpText": "لقد نفد منك الوقت. حظا أفضل في المرة القادمة!",
     "playAgainButton": "العب مرة أخرى",
-    "shareMessage": "لقد سجلت {score}/{total} في لينكد إن أو الإنتربول! هل يمكنك هزيمتي؟ linkedinorinterpol.com"
+    "shareMessage": "لقد سجلت {score}/{total} في لينكد إن أو الإنتربول! هل يمكنك هزيمتي؟ linkedinorinterpol.com",
+    "loadAdsButton": "تحميل إعلانات الفيديو"
   },
   "bn": {
     "title": "লিঙ্কডইন নাকি ইন্টারপোল",
@@ -1521,7 +1532,8 @@ const translations = {
     "timeUpHeader": "সময় শেষ!",
     "timeUpText": "আপনার সময় শেষ। পরের বার আরও ভাল ভাগ্য!",
     "playAgainButton": "আবার খেলুন",
-    "shareMessage": "আমি লিঙ্কডইন বা ইন্টারপোলে {score}/{total} স্কোর করেছি! আপনি কি আমাকে হারাতে পারবেন? linkedinorinterpol.com"
+    "shareMessage": "আমি লিঙ্কডইন বা ইন্টারপোলে {score}/{total} স্কোর করেছি! আপনি কি আমাকে হারাতে পারবেন? linkedinorinterpol.com",
+    "loadAdsButton": "ভিডিও বিজ্ঞাপন লোড করুন"
   },
   "ja": {
     "title": "リンクトインかインターポールか",
@@ -1649,7 +1661,8 @@ const translations = {
     "timeUpHeader": "時間切れ！",
     "timeUpText": "時間切れです。次回頑張ってください！",
     "playAgainButton": "もう一度プレイ",
-    "shareMessage": "リンクトインかインターポールかで{score}/{total}点を獲得しました！私を倒せますか？ linkedinorinterpol.com"
+    "shareMessage": "リンクトインかインターポールかで{score}/{total}点を獲得しました！私を倒せますか？ linkedinorinterpol.com",
+    "loadAdsButton": "ビデオ広告を読み込む"
   }
 }
 
@@ -1728,6 +1741,7 @@ const timerSpan = document.getElementById('timer');
 const timeUpPopup = document.getElementById('time-up-popup');
 const playAgainButton = document.getElementById('play-again-button');
 const shareScoreButton = document.getElementById('share-score-button');
+const loadAdsButton = document.getElementById('load-ads-button');
 
 // --- Language and Translation Functions ---
 
@@ -2103,5 +2117,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // Only initialize the game if we are on the main game page
     if (document.getElementById('profile-picture')) {
         initializeGame();
+    }
+
+    if (loadAdsButton) {
+        loadAdsButton.addEventListener('click', () => {
+            const gameContainer = document.querySelector('.game-container');
+            if (gameContainer) {
+                const script1 = document.createElement('script');
+                script1.text = '(window.openVideoPlayers = window.openVideoPlayers || []).push({target: document.currentScript});';
+                script1.setAttribute('data-ezscrex', 'false');
+                script1.setAttribute('data-cfasync', 'false');
+
+                const script2 = document.createElement('script');
+                script2.src = 'https://open.video/video.js';
+                script2.async = true;
+                script2.setAttribute('data-ezscrex', 'false');
+                script2.setAttribute('data-cfasync', 'false');
+
+                gameContainer.prepend(script2);
+                gameContainer.prepend(script1);
+
+                loadAdsButton.style.display = 'none';
+            }
+        });
     }
 });
