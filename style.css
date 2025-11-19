@@ -140,6 +140,12 @@ input:checked + .slider:before {
     background: #fff;
     box-shadow: 3px 3px 0px #dcd3b8; /* Hard shadow for analog feel */
     padding: 5px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.image-container.flipping {
+    transform: rotateY(180deg);
 }
 
 #profile-picture {
@@ -147,6 +153,11 @@ input:checked + .slider:before {
     height: 100%;
     object-fit: cover;
     filter: sepia(0.2) grayscale(0.1); /* Add a slight analog photo effect */
+    transition: opacity 0.5s ease-in-out;
+}
+
+#profile-picture.fade-out {
+    opacity: 0;
 }
 
 @keyframes feedback-animation {
@@ -451,6 +462,11 @@ button:disabled {
 }
 
 /* Popup Form */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 .popup {
     display: none;
     position: fixed;
@@ -461,6 +477,7 @@ button:disabled {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .popup-content {

@@ -1993,72 +1993,89 @@ function shareScore() {
 // --- Game Logic Functions (Only for index.html) ---
 
 function nextImage() {
-    if (!profilePicture) return; // Exit if not on the game page
-    stopTimer();
-    feedbackEl.textContent = '';
-    feedbackEl.className = '';
-    descriptionEl.textContent = '';
-    nextButton.classList.add('hidden');
-    linkedinButton.disabled = false;
-    interpolButton.disabled = false;
+    if (!profilePicture) return;
 
-    if (remainingImages.length === 0) {
-        remainingImages = [...images]; // Reshuffle
-    }
+    profilePicture.classList.add('fade-out');
 
-    const randomIndex = Math.floor(Math.random() * remainingImages.length);
-    currentImage = remainingImages.splice(randomIndex, 1)[0];
+    setTimeout(() => {
+        stopTimer();
+        feedbackEl.textContent = '';
+        feedbackEl.className = '';
+        descriptionEl.textContent = '';
+        nextButton.classList.add('hidden');
+        linkedinButton.disabled = false;
+        interpolButton.disabled = false;
 
-    let imageUrl = currentImage.src;
-    if (imageUrl.includes('thispersondoesnotexist.com')) {
-        imageUrl += '?t=' + new Date().getTime();
-    }
-    profilePicture.src = imageUrl;
+        if (remainingImages.length === 0) {
+            remainingImages = [...images];
+        }
 
-    total++;
-    totalSpan.textContent = total;
-    startTimer();
+        const randomIndex = Math.floor(Math.random() * remainingImages.length);
+        currentImage = remainingImages.splice(randomIndex, 1)[0];
+
+        let imageUrl = currentImage.src;
+        if (imageUrl.includes('thispersondoesnotexist.com')) {
+            imageUrl += '?t=' + new Date().getTime();
+        }
+
+        profilePicture.onload = () => {
+            profilePicture.classList.remove('fade-out');
+        };
+        profilePicture.src = imageUrl;
+
+        total++;
+        totalSpan.textContent = total;
+        startTimer();
+    }, 500);
 }
 
 function checkAnswer(guess) {
     stopTimer();
-    if (guess === currentImage.type) {
-        score++;
-        scoreSpan.textContent = score;
-        feedbackEl.textContent = currentTranslations.correct;
-        feedbackEl.className = 'correct';
-    } else {
-        feedbackEl.textContent = currentTranslations.wrong;
-        feedbackEl.className = 'incorrect';
-        if (gameMode === 'classic') {
-            classicModeEndPopup.style.display = 'block';
-            linkedinButton.disabled = true;
-            interpolButton.disabled = true;
-            return;
+    const imageContainer = document.querySelector('.image-container');
+    imageContainer.classList.add('flipping');
+
+    setTimeout(() => {
+        if (guess === currentImage.type) {
+            score++;
+            scoreSpan.textContent = score;
+            feedbackEl.textContent = currentTranslations.correct;
+            feedbackEl.className = 'correct';
+        } else {
+            feedbackEl.textContent = currentTranslations.wrong;
+            feedbackEl.className = 'incorrect';
+            if (gameMode === 'classic') {
+                classicModeEndPopup.style.display = 'block';
+                linkedinButton.disabled = true;
+                interpolButton.disabled = true;
+                return;
+            }
         }
-    }
 
-    descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
+        descriptionEl.textContent = currentTranslations[currentImage.descriptionKey];
 
-    if (currentImage.type === 'interpol') {
-        const name = currentImage.name;
-        const recordUrl = currentImage.recordUrl;
-        const policeRecordLink = document.createElement('a');
-        policeRecordLink.href = recordUrl;
-        policeRecordLink.textContent = currentTranslations.policeRecord;
-        policeRecordLink.target = '_blank';
-        descriptionEl.innerHTML = `<b>${name}</b> - ${currentTranslations[currentImage.descriptionKey]} <br> `;
-        descriptionEl.appendChild(policeRecordLink);
-    }
+        if (currentImage.type === 'interpol') {
+            const name = currentImage.name;
+            const recordUrl = currentImage.recordUrl;
+            const policeRecordLink = document.createElement('a');
+            policeRecordLink.href = recordUrl;
+            policeRecordLink.textContent = currentTranslations.policeRecord;
+            policeRecordLink.target = '_blank';
+            descriptionEl.innerHTML = `<b>${name}</b> - ${currentTranslations[currentImage.descriptionKey]} <br> `;
+            descriptionEl.appendChild(policeRecordLink);
+        }
 
-    linkedinButton.disabled = true;
-    interpolButton.disabled = true;
+        linkedinButton.disabled = true;
+        interpolButton.disabled = true;
 
-    if (autoAdvance) {
-        setTimeout(nextImage, 3000);
-    } else {
-        nextButton.classList.remove('hidden');
-    }
+        if (autoAdvance) {
+            setTimeout(() => {
+                imageContainer.classList.remove('flipping');
+                setTimeout(nextImage, 600);
+            }, 3000);
+        } else {
+            nextButton.classList.remove('hidden');
+        }
+    }, 600);
 }
 
 function resetGame() {
@@ -2152,7 +2169,11 @@ function initializeGame() {
 
     linkedinButton.addEventListener('click', () => checkAnswer('linkedin'));
     interpolButton.addEventListener('click', () => checkAnswer('interpol'));
-    nextButton.addEventListener('click', nextImage);
+    nextButton.addEventListener('click', () => {
+        const imageContainer = document.querySelector('.image-container');
+        imageContainer.classList.remove('flipping');
+        setTimeout(nextImage, 600);
+    });
     autoAdvanceSwitch.addEventListener('change', () => autoAdvance = autoAdvanceSwitch.checked);
     gameModeSelector.addEventListener('change', handleGameModeChange);
     playAgainButton.addEventListener('click', resetGame);
