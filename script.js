@@ -2548,13 +2548,27 @@ function initializeCommonComponents() {
         menuToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             menuItems.classList.toggle('show-menu');
+            menuToggle.classList.toggle('open');
+            document.body.classList.toggle('menu-open');
         });
 
         // Close menu when clicking outside
         window.addEventListener('click', (e) => {
             if (!menuItems.contains(e.target) && !menuToggle.contains(e.target)) {
                 menuItems.classList.remove('show-menu');
+                menuToggle.classList.remove('open');
+                document.body.classList.remove('menu-open');
             }
+        });
+
+        // Close menu when buttons inside are clicked
+        const menuButtons = menuItems.querySelectorAll('button');
+        menuButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                menuItems.classList.remove('show-menu');
+                menuToggle.classList.remove('open');
+                document.body.classList.remove('menu-open');
+            });
         });
     }
 }
