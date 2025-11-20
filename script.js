@@ -2326,23 +2326,31 @@ function handleGameModeChange() {
 }
 
 function shareScore() {
-    const captureTarget = document.querySelector('.header');
-    const settingsToolbar = document.querySelector('.settings-toolbar');
+    // Update the hidden share card with current score and translations
+    const shareCard = document.getElementById('share-card');
+    const shareScoreValue = document.getElementById('share-score-value');
+    const shareTotalValue = document.getElementById('share-total-value');
+
+    if (shareScoreValue) shareScoreValue.textContent = score;
+    if (shareTotalValue) shareTotalValue.textContent = total;
+
+    // Translate elements within the share card
+    const shareTitle = shareCard.querySelector('h1');
+    const shareSubtitle = shareCard.querySelector('.share-subtitle');
+    const shareLabelScore = shareCard.querySelector('.share-label[data-i18n-key="score"]');
+    const shareLabelTotal = shareCard.querySelector('.share-label[data-i18n-key="total"]');
+
+    // Ensure correct language is applied
+    if (shareSubtitle && currentTranslations.professionalOrCriminal) shareSubtitle.textContent = currentTranslations.professionalOrCriminal;
+    if (shareLabelScore && currentTranslations.score) shareLabelScore.textContent = currentTranslations.score;
+    if (shareLabelTotal && currentTranslations.total) shareLabelTotal.textContent = currentTranslations.total;
+
+
     const shareText = currentTranslations.shareMessage
         .replace('{score}', score)
         .replace('{total}', total);
 
-    // Hide the settings toolbar before taking the screenshot
-    if (settingsToolbar) {
-        settingsToolbar.style.display = 'none';
-    }
-
-    html2canvas(captureTarget, { useCORS: true }).then(canvas => {
-        // Show the settings toolbar again after taking the screenshot
-        if (settingsToolbar) {
-            settingsToolbar.style.display = 'flex';
-        }
-
+    html2canvas(shareCard, { useCORS: true, scale: 2 }).then(canvas => {
         canvas.toBlob(blob => {
             if (blob) {
                 const file = new File([blob], 'score.png', { type: 'image/png' });
@@ -2368,10 +2376,6 @@ function shareScore() {
             }
         }, 'image/png');
     }).catch(err => {
-        // Ensure the settings toolbar is shown even if there's an error
-        if (settingsToolbar) {
-            settingsToolbar.style.display = 'flex';
-        }
         console.error('Error generating screenshot:', err);
         navigator.clipboard.writeText(shareText).then(() => {
             alert('Could not generate image, score copied to clipboard instead!');

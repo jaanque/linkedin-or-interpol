@@ -741,3 +741,96 @@ button:disabled {
     color: #333;
     text-decoration: none;
 }
+
+/* Share Card Styles */
+#share-card {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 600px;
+    height: auto;
+    background-color: #fdf6e3;
+    background-image: radial-gradient(#dcd3b8 1px, transparent 1px);
+    background-size: 20px 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    border: 2px solid #333;
+}
+
+.share-card-content {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 8px 8px 0px #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#share-card h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+#share-card h1 .linkedin { color: #0077b5; }
+#share-card h1 .interpol { color: #c91a1a; }
+
+.share-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.share-score-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #f5efdc;
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 0px #333;
+}
+
+.share-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.share-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.share-divider {
+    font-size: 2rem;
+    color: #ccc;
+    font-weight: 300;
+}
+
+.share-url {
+    font-size: 1rem;
+    color: #0077b5;
+    font-weight: 700;
+    margin-top: 10px;
+}
