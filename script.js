@@ -2348,7 +2348,8 @@ function shareScore() {
 
     const shareText = currentTranslations.shareMessage
         .replace('{score}', score)
-        .replace('{total}', total);
+        .replace('{total}', total)
+        .replace('linkedinorinterpol.com', 'linkedinorinterpol.com?utm_source=share');
 
     html2canvas(shareCard, { useCORS: true, scale: 2 }).then(canvas => {
         canvas.toBlob(blob => {
