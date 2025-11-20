@@ -622,6 +622,7 @@ button:disabled {
 
 #play-again-button:hover, #classic-play-again-button:hover {
     background-color: #1e7e34;
+    background-image: none;
     box-shadow: 1px 1px 0px #1e7e34;
 }
 
@@ -635,6 +636,7 @@ button:disabled {
 
 #revive-button:hover, #classic-revive-button:hover {
     background-color: #e0a800;
+    background-image: none;
     box-shadow: 1px 1px 0px #e0a800;
 }
 
@@ -648,6 +650,7 @@ button:disabled {
 
 #share-score-button:hover, #classic-share-score-button:hover {
     background-color: #005b8e;
+    background-image: none;
     box-shadow: 1px 1px 0px #005b8e;
 }
 
@@ -662,6 +665,7 @@ button:disabled {
 
 #play-button:hover {
     background-color: #1e7e34;
+    background-image: none;
     box-shadow: 1px 1px 0px #1e7e34;
 }
 
@@ -708,6 +712,7 @@ button:disabled {
 
 .popup-content button:hover {
     background-color: #005b8e;
+    background-image: none;
 }
 
 /* Instructions Button */
