@@ -2540,6 +2540,23 @@ function initializeCommonComponents() {
             if (event.target === instructionsPopup) instructionsPopup.style.display = 'none';
         });
     }
+
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuItems = document.getElementById('menu-items');
+    if (menuToggle && menuItems) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            menuItems.classList.toggle('show-menu');
+        });
+
+        // Close menu when clicking outside
+        window.addEventListener('click', (e) => {
+            if (!menuItems.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuItems.classList.remove('show-menu');
+            }
+        });
+    }
 }
 
 function initializeGame() {

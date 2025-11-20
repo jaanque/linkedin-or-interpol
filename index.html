@@ -67,29 +67,36 @@
     <div class="container">
         <div class="header">
             <div class="settings-toolbar">
-                <div class="language-selector-container">
-                    <label for="language-selector" class="sr-only" data-i18n-key="languageSelector">Language</label>
-                    <select id="language-selector">
-                        <option value="en">English</option>
-                        <option value="es">Español</option>
-                        <option value="fr">Français</option>
-                        <option value="de">Deutsch</option>
-                        <option value="pt">Português</option>
-                        <option value="it">Italiano</option>
-                        <option value="nl">Nederlands</option>
-                        <option value="ru">Русский</option>
-                        <option value="zh">中文</option>
-                        <option value="hi">हिन्दी</option>
-                        <option value="ar">العربية</option>
-                        <option value="bn">বাংলা</option>
-                        <option value="ja">日本語</option>
-                        <option value="ko">한국어</option>
-                        <option value="tr">Türkçe</option>
-                        <option value="vi">Tiếng Việt</option>
-                    </select>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="menu-items" class="menu-items">
+                    <div class="language-selector-container">
+                        <label for="language-selector" class="sr-only" data-i18n-key="languageSelector">Language</label>
+                        <select id="language-selector">
+                            <option value="en">English</option>
+                            <option value="es">Español</option>
+                            <option value="fr">Français</option>
+                            <option value="de">Deutsch</option>
+                            <option value="pt">Português</option>
+                            <option value="it">Italiano</option>
+                            <option value="nl">Nederlands</option>
+                            <option value="ru">Русский</option>
+                            <option value="zh">中文</option>
+                            <option value="hi">हिन्दी</option>
+                            <option value="ar">العربية</option>
+                            <option value="bn">বাংলা</option>
+                            <option value="ja">日本語</option>
+                            <option value="ko">한국어</option>
+                            <option value="tr">Türkçe</option>
+                            <option value="vi">Tiếng Việt</option>
+                        </select>
+                    </div>
+                    <button id="request-image-btn" data-i18n-key="requestImageBtn">Request to Add an Image</button>
+                    <button id="instructions-btn" data-i18n-key="instructionsBtn">Instructions</button>
                 </div>
-                <button id="request-image-btn" data-i18n-key="requestImageBtn">Request to Add an Image</button>
-                <button id="instructions-btn" data-i18n-key="instructionsBtn">Instructions</button>
                 <div class="settings-container">
                     <label for="game-mode-selector" data-i18n-key="gameMode">Game Mode</label>
                     <select id="game-mode-selector">
