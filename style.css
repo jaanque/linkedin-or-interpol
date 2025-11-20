@@ -73,6 +73,16 @@ body {
     background: #fff;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+}
+
+.language-selector-container select:hover,
+.language-selector-container select:focus {
+    box-shadow: 4px 4px 0px #333;
+    transform: translateY(-1px);
+    outline: none;
+    border-color: #0077b5;
 }
 
 .settings-container {
@@ -146,6 +156,12 @@ input:checked + .slider:before {
     box-shadow: 3px 3px 0px #dcd3b8; /* Hard shadow for analog feel */
     padding: 5px;
     border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 0px #dcd3b8;
 }
 
 #profile-picture {
@@ -154,6 +170,11 @@ input:checked + .slider:before {
     object-fit: cover;
     filter: sepia(0.2) grayscale(0.1); /* Add a slight analog photo effect */
     border-radius: 10px;
+    transition: filter 0.3s ease;
+}
+
+#profile-picture:hover {
+    filter: sepia(0) grayscale(0);
 }
 
 @keyframes feedback-animation {
@@ -460,9 +481,15 @@ button:disabled {
 }
 
 /* Popup Form */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes popupEnter {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .popup {
@@ -475,7 +502,8 @@ button:disabled {
     height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
-    animation: fadeIn 0.5s ease-in-out;
+    backdrop-filter: blur(3px);
+    animation: popupEnter 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .popup-content {
@@ -513,6 +541,16 @@ button:disabled {
     background: #fff;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px #333;
+}
+
+#game-mode-selector:hover,
+#game-mode-selector:focus {
+    box-shadow: 4px 4px 0px #333;
+    transform: translateY(-1px);
+    outline: none;
+    border-color: #0077b5;
 }
 
 #timer-container {
@@ -610,12 +648,22 @@ button:disabled {
 }
 
 .popup-content input,
+.popup-content select,
 .popup-content button {
     padding: 0.8rem;
     font-family: 'Courier Prime', monospace;
     border: 2px solid #333;
     background-color: #fff;
     border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.popup-content input:focus,
+.popup-content select:focus {
+    outline: none;
+    border-color: #0077b5;
+    box-shadow: 4px 4px 0px rgba(0,119,181,0.2);
 }
 
 .popup-content button {
