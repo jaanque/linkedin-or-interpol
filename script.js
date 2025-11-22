@@ -6,6 +6,7 @@ const translations = {
         "total": "Total",
         "streak": "Streak",
         "highScore": "Best",
+        "lives": "Lives",
         "autoAdvance": "Auto-Advance",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -140,6 +141,7 @@ const translations = {
         "total": "Total",
         "streak": "Racha",
         "highScore": "Récord",
+        "lives": "Vidas",
         "autoAdvance": "Avance Automático",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -274,6 +276,7 @@ const translations = {
         "total": "Total",
         "streak": "Série",
         "highScore": "Meilleur",
+        "lives": "Vies",
         "autoAdvance": "Avance Automatique",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -404,6 +407,7 @@ const translations = {
         "total": "Gesamt",
         "streak": "Serie",
         "highScore": "Rekord",
+        "lives": "Leben",
         "autoAdvance": "Automatischer Vorlauf",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -534,6 +538,7 @@ const translations = {
         "total": "Total",
         "streak": "Sequência",
         "highScore": "Recorde",
+        "lives": "Vidas",
         "autoAdvance": "Avanço Automático",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -664,6 +669,7 @@ const translations = {
         "total": "Totale",
         "streak": "Serie",
         "highScore": "Record",
+        "lives": "Vite",
         "autoAdvance": "Avanzamento Automatico",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -794,6 +800,7 @@ const translations = {
         "total": "Totaal",
         "streak": "Reeks",
         "highScore": "Record",
+        "lives": "Levens",
         "autoAdvance": "Automatisch Doorgaan",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -924,6 +931,7 @@ const translations = {
         "total": "Всего",
         "streak": "Серия",
         "highScore": "Рекорд",
+        "lives": "Жизни",
         "autoAdvance": "Автоматический переход",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Интерпол",
@@ -1054,6 +1062,7 @@ const translations = {
     "total": "总计",
     "streak": "连胜",
     "highScore": "最高分",
+    "lives": "生命",
     "autoAdvance": "自动前进",
     "linkedinButton": "领英",
     "interpolButton": "国际刑警组织",
@@ -1186,6 +1195,7 @@ const translations = {
     "total": "कुल",
     "streak": "लगातार",
     "highScore": "सर्वश्रेष्ठ",
+    "lives": "जीवन",
     "autoAdvance": "स्वतः आगे बढ़ें",
     "linkedinButton": "लिंक्डइन",
     "interpolButton": "इंटरपोल",
@@ -1318,6 +1328,7 @@ const translations = {
     "total": "المجموع",
     "streak": "سلسلة",
     "highScore": "الأفضل",
+    "lives": "أرواح",
     "autoAdvance": "تقدم تلقائي",
     "linkedinButton": "لينكد إن",
     "interpolButton": "الإنتربول",
@@ -1450,6 +1461,7 @@ const translations = {
     "total": "মোট",
     "streak": "ধারাবাহিকতা",
     "highScore": "সেরা",
+    "lives": "জীবন",
     "autoAdvance": "স্বয়ংক্রিয়ভাবে অগ্রসর হন",
     "linkedinButton": "লিঙ্কডইন",
     "interpolButton": "ইন্টারপোল",
@@ -1582,6 +1594,7 @@ const translations = {
     "total": "合計",
     "streak": "連続",
     "highScore": "ベスト",
+    "lives": "ライフ",
     "autoAdvance": "自動進行",
     "linkedinButton": "リンクトイン",
     "interpolButton": "インターポール",
@@ -1714,6 +1727,7 @@ const translations = {
         "total": "총계",
         "streak": "연속",
         "highScore": "최고",
+        "lives": "라이프",
         "autoAdvance": "자동 진행",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -1846,6 +1860,7 @@ const translations = {
         "total": "Toplam",
         "streak": "Seri",
         "highScore": "En İyi",
+        "lives": "Can",
         "autoAdvance": "Otomatik İlerleme",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -1978,6 +1993,7 @@ const translations = {
         "total": "Tổng",
         "streak": "Chuỗi",
         "highScore": "Kỷ lục",
+        "lives": "Mạng",
         "autoAdvance": "Tự động chuyển tiếp",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -2154,6 +2170,7 @@ const images = [
 let score = 0;
 let total = 0;
 let streak = 0;
+let lives = 3;
 let highScore = parseInt(localStorage.getItem('linkedinOrInterpol_highScore')) || 0;
 let currentImage;
 let nextImageObj = null;
@@ -2174,6 +2191,7 @@ const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
 const totalSpan = document.getElementById('total');
 const streakSpan = document.getElementById('streak');
+const livesSpan = document.getElementById('lives');
 const highScoreSpan = document.getElementById('high-score');
 const linkedinButton = document.getElementById('linkedin-button');
 const interpolButton = document.getElementById('interpol-button');
@@ -2357,6 +2375,16 @@ function timeUp() {
     interpolButton.disabled = true;
 }
 
+function updateLivesUI() {
+    if (livesSpan) {
+        if (gameMode === 'classic') {
+            livesSpan.textContent = '❤'.repeat(lives);
+        } else {
+            livesSpan.textContent = '∞';
+        }
+    }
+}
+
 function handleGameModeChange() {
     gameMode = gameModeSelector.value;
     resetGame();
@@ -2510,10 +2538,14 @@ function checkAnswer(guess) {
         if (imageContainer) imageContainer.classList.add('feedback-wrong');
 
         if (gameMode === 'classic') {
-            classicModeEndPopup.style.display = 'block';
-            linkedinButton.disabled = true;
-            interpolButton.disabled = true;
-            return;
+            lives--;
+            updateLivesUI();
+            if (lives <= 0) {
+                classicModeEndPopup.style.display = 'block';
+                linkedinButton.disabled = true;
+                interpolButton.disabled = true;
+                return;
+            }
         }
     }
 
@@ -2544,9 +2576,11 @@ function resetGame() {
     score = 0;
     total = 0;
     streak = 0;
+    lives = 3;
     scoreSpan.textContent = score;
     totalSpan.textContent = total;
     if (streakSpan) streakSpan.textContent = streak;
+    updateLivesUI();
     remainingImages = [...images];
     nextImageObj = null; // Reset preload buffer
     if (timeUpPopup) timeUpPopup.style.display = 'none';
@@ -2558,6 +2592,8 @@ function resetGame() {
 function revive() {
     window.open('https://www.effectivegatecpm.com/az9t8w75?key=9184012d5d952f4a2864a186e609ef9a', '_blank');
     if (gameMode === 'classic') {
+        lives = 3;
+        updateLivesUI();
         classicModeEndPopup.style.display = 'none';
         nextImage();
     } else { // time-trial
@@ -2680,6 +2716,7 @@ function initializeGame() {
     // Initialize stats display
     if (highScoreSpan) highScoreSpan.textContent = highScore;
     if (streakSpan) streakSpan.textContent = streak;
+    updateLivesUI();
 
     preloadNextImage(); // Preload first image
     nextImage(); // Display it
