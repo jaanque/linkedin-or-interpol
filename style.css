@@ -568,10 +568,84 @@ button:disabled {
     left: -9999px;
     top: -9999px;
     width: 600px;
-    padding: 40px;
-    border: 2px solid #333;
+    padding: 3rem 2rem;
     background-color: #fdf6e3;
+    background-image: radial-gradient(#dcd3b8 1px, transparent 1px);
+    background-size: 20px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier Prime', monospace;
+    border: 4px solid #333;
+}
+
+.share-logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#share-card h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+    line-height: 1.2;
+}
+
+.share-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.share-score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #fff;
+    border: 3px solid #333;
+    border-radius: 16px;
+    padding: 1.5rem 3rem;
+    box-shadow: 8px 8px 0px #333;
+    margin-bottom: 2rem;
+    min-width: 300px;
+}
+
+.share-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.share-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+.share-divider {
+    font-size: 3rem;
+    color: #ddd;
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+.share-url {
+    font-size: 1.2rem;
+    color: #0077b5;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* Responsive Media Queries */
