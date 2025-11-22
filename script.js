@@ -2519,7 +2519,7 @@ function nextImage() {
     preloadNextImage();
 
     total++;
-    totalSpan.textContent = total;
+    if (totalSpan) totalSpan.textContent = total;
     startTimer();
 }
 
@@ -2596,8 +2596,8 @@ function resetGame() {
     total = 0;
     streak = 0;
     lives = 3;
-    scoreSpan.textContent = score;
-    totalSpan.textContent = total;
+    if (scoreSpan) scoreSpan.textContent = score;
+    if (totalSpan) totalSpan.textContent = total;
     if (streakSpan) streakSpan.textContent = streak;
     updateLivesUI();
     remainingImages = [...images];
