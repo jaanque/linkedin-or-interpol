@@ -82,20 +82,27 @@ body.menu-open {
 .score-container {
     display: inline-flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     background: #fff;
     padding: 0.8rem 1.5rem;
     border: 2px solid #333;
     border-radius: 12px;
     box-shadow: 4px 4px 0px #333;
     flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .score-container p {
     margin: 0;
     font-weight: 700;
+    white-space: nowrap;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
 
 /* Settings Toolbar */
@@ -276,6 +283,27 @@ input:checked + .slider:before {
 
 #profile-picture:hover {
     filter: sepia(0) grayscale(0);
+}
+
+/* Feedback Animations */
+@keyframes flashGreen {
+    0% { box-shadow: 3px 3px 0px #dcd3b8; }
+    50% { box-shadow: 0 0 15px #28a745, inset 0 0 10px #28a745; border-color: #28a745; }
+    100% { box-shadow: 3px 3px 0px #dcd3b8; border-color: #eceadd; }
+}
+
+@keyframes flashRed {
+    0% { box-shadow: 3px 3px 0px #dcd3b8; }
+    50% { box-shadow: 0 0 15px #c91a1a, inset 0 0 10px #c91a1a; border-color: #c91a1a; }
+    100% { box-shadow: 3px 3px 0px #dcd3b8; border-color: #eceadd; }
+}
+
+.feedback-correct {
+    animation: flashGreen 0.6s ease-out;
+}
+
+.feedback-wrong {
+    animation: flashRed 0.6s ease-out;
 }
 
 /* Feedback and Description */

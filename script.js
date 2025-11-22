@@ -4,6 +4,8 @@ const translations = {
         "subtitle": "Professional or Criminal? You decide!",
         "score": "Score",
         "total": "Total",
+        "streak": "Streak",
+        "highScore": "Best",
         "autoAdvance": "Auto-Advance",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -136,6 +138,8 @@ const translations = {
         "subtitle": "¿Profesional o Criminal? ¡Tú decides!",
         "score": "Puntuación",
         "total": "Total",
+        "streak": "Racha",
+        "highScore": "Récord",
         "autoAdvance": "Avance Automático",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -268,6 +272,8 @@ const translations = {
         "subtitle": "Professionnel ou Criminel? À vous de décider!",
         "score": "Score",
         "total": "Total",
+        "streak": "Série",
+        "highScore": "Meilleur",
         "autoAdvance": "Avance Automatique",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -396,6 +402,8 @@ const translations = {
         "subtitle": "Profi oder Verbrecher? Du entscheidest!",
         "score": "Punktzahl",
         "total": "Gesamt",
+        "streak": "Serie",
+        "highScore": "Rekord",
         "autoAdvance": "Automatischer Vorlauf",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -524,6 +532,8 @@ const translations = {
         "subtitle": "Profissional ou Criminoso? Você decide!",
         "score": "Pontuação",
         "total": "Total",
+        "streak": "Sequência",
+        "highScore": "Recorde",
         "autoAdvance": "Avanço Automático",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -652,6 +662,8 @@ const translations = {
         "subtitle": "Professionista o Criminale? Tu decidi!",
         "score": "Punteggio",
         "total": "Totale",
+        "streak": "Serie",
+        "highScore": "Record",
         "autoAdvance": "Avanzamento Automatico",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -780,6 +792,8 @@ const translations = {
         "subtitle": "Professional of Crimineel? Jij beslist!",
         "score": "Score",
         "total": "Totaal",
+        "streak": "Reeks",
+        "highScore": "Record",
         "autoAdvance": "Automatisch Doorgaan",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -908,6 +922,8 @@ const translations = {
         "subtitle": "Профессионал или преступник? Решайте!",
         "score": "Счет",
         "total": "Всего",
+        "streak": "Серия",
+        "highScore": "Рекорд",
         "autoAdvance": "Автоматический переход",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Интерпол",
@@ -1036,6 +1052,8 @@ const translations = {
     "subtitle": "专业人士还是罪犯？你来决定！",
     "score": "分数",
     "total": "总计",
+    "streak": "连胜",
+    "highScore": "最高分",
     "autoAdvance": "自动前进",
     "linkedinButton": "领英",
     "interpolButton": "国际刑警组织",
@@ -1166,6 +1184,8 @@ const translations = {
     "subtitle": "पेशेवर या अपराधी? आप तय करें!",
     "score": "स्कोर",
     "total": "कुल",
+    "streak": "लगातार",
+    "highScore": "सर्वश्रेष्ठ",
     "autoAdvance": "स्वतः आगे बढ़ें",
     "linkedinButton": "लिंक्डइन",
     "interpolButton": "इंटरपोल",
@@ -1296,6 +1316,8 @@ const translations = {
     "subtitle": "محترف أم مجرم؟ أنت من يقرر!",
     "score": "النتيجة",
     "total": "المجموع",
+    "streak": "سلسلة",
+    "highScore": "الأفضل",
     "autoAdvance": "تقدم تلقائي",
     "linkedinButton": "لينكد إن",
     "interpolButton": "الإنتربول",
@@ -1426,6 +1448,8 @@ const translations = {
     "subtitle": "পেশাদার নাকি অপরাধী? আপনি সিদ্ধান্ত নিন!",
     "score": "স্কোর",
     "total": "মোট",
+    "streak": "ধারাবাহিকতা",
+    "highScore": "সেরা",
     "autoAdvance": "স্বয়ংক্রিয়ভাবে অগ্রসর হন",
     "linkedinButton": "লিঙ্কডইন",
     "interpolButton": "ইন্টারপোল",
@@ -1556,6 +1580,8 @@ const translations = {
     "subtitle": "プロフェッショナルか犯罪者か？あなたが決める！",
     "score": "スコア",
     "total": "合計",
+    "streak": "連続",
+    "highScore": "ベスト",
     "autoAdvance": "自動進行",
     "linkedinButton": "リンクトイン",
     "interpolButton": "インターポール",
@@ -1686,6 +1712,8 @@ const translations = {
         "subtitle": "전문가인가 범죄자인가? 당신이 결정하세요!",
         "score": "점수",
         "total": "총계",
+        "streak": "연속",
+        "highScore": "최고",
         "autoAdvance": "자동 진행",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -1816,6 +1844,8 @@ const translations = {
         "subtitle": "Profesyonel mi Suçlu mu? Sen karar ver!",
         "score": "Puan",
         "total": "Toplam",
+        "streak": "Seri",
+        "highScore": "En İyi",
         "autoAdvance": "Otomatik İlerleme",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -1946,6 +1976,8 @@ const translations = {
         "subtitle": "Chuyên gia hay Tội phạm? Bạn quyết định!",
         "score": "Điểm",
         "total": "Tổng",
+        "streak": "Chuỗi",
+        "highScore": "Kỷ lục",
         "autoAdvance": "Tự động chuyển tiếp",
         "linkedinButton": "LinkedIn",
         "interpolButton": "Interpol",
@@ -2121,7 +2153,10 @@ const images = [
 // State and configuration variables
 let score = 0;
 let total = 0;
+let streak = 0;
+let highScore = parseInt(localStorage.getItem('linkedinOrInterpol_highScore')) || 0;
 let currentImage;
+let nextImageObj = null;
 let remainingImages = [...images];
 let autoAdvance = true;
 let currentTranslations = {};
@@ -2138,6 +2173,8 @@ const classicShareScoreButton = document.getElementById('classic-share-score-but
 const profilePicture = document.getElementById('profile-picture');
 const scoreSpan = document.getElementById('score');
 const totalSpan = document.getElementById('total');
+const streakSpan = document.getElementById('streak');
+const highScoreSpan = document.getElementById('high-score');
 const linkedinButton = document.getElementById('linkedin-button');
 const interpolButton = document.getElementById('interpol-button');
 const feedbackEl = document.getElementById('feedback');
@@ -2329,21 +2366,21 @@ function shareScore() {
     // Update the hidden share card with current score and translations
     const shareCard = document.getElementById('share-card');
     const shareScoreValue = document.getElementById('share-score-value');
-    const shareTotalValue = document.getElementById('share-total-value');
+    const shareStreakValue = document.getElementById('share-streak-value');
 
     if (shareScoreValue) shareScoreValue.textContent = score;
-    if (shareTotalValue) shareTotalValue.textContent = total;
+    if (shareStreakValue) shareStreakValue.textContent = streak;
 
     // Translate elements within the share card
     const shareTitle = shareCard.querySelector('h1');
     const shareSubtitle = shareCard.querySelector('.share-subtitle');
     const shareLabelScore = shareCard.querySelector('.share-label[data-i18n-key="score"]');
-    const shareLabelTotal = shareCard.querySelector('.share-label[data-i18n-key="total"]');
+    const shareLabelStreak = shareCard.querySelector('.share-label[data-i18n-key="streak"]');
 
     // Ensure correct language is applied
     if (shareSubtitle && currentTranslations.professionalOrCriminal) shareSubtitle.textContent = currentTranslations.professionalOrCriminal;
     if (shareLabelScore && currentTranslations.score) shareLabelScore.textContent = currentTranslations.score;
-    if (shareLabelTotal && currentTranslations.total) shareLabelTotal.textContent = currentTranslations.total;
+    if (shareLabelStreak && currentTranslations.streak) shareLabelStreak.textContent = currentTranslations.streak;
 
 
     const shareText = currentTranslations.shareMessage
@@ -2387,6 +2424,28 @@ function shareScore() {
 
 // --- Game Logic Functions (Only for index.html) ---
 
+function preloadNextImage() {
+    if (remainingImages.length === 0) {
+        remainingImages = [...images]; // Reshuffle
+    }
+    const randomIndex = Math.floor(Math.random() * remainingImages.length);
+    const nextData = remainingImages.splice(randomIndex, 1)[0];
+
+    let imageUrl = nextData.src;
+    if (imageUrl.includes('thispersondoesnotexist.com')) {
+        imageUrl += '?t=' + new Date().getTime();
+    }
+
+    // Load in background
+    const img = new Image();
+    img.src = imageUrl;
+
+    nextImageObj = {
+        data: nextData,
+        preloadedSrc: imageUrl
+    };
+}
+
 function nextImage() {
     if (!profilePicture) return; // Exit if not on the game page
     stopTimer();
@@ -2397,34 +2456,59 @@ function nextImage() {
     linkedinButton.disabled = false;
     interpolButton.disabled = false;
 
-    if (remainingImages.length === 0) {
-        remainingImages = [...images]; // Reshuffle
+    // Remove any feedback overlay classes
+    const imageContainer = document.querySelector('.image-container');
+    if (imageContainer) {
+        imageContainer.classList.remove('feedback-correct', 'feedback-wrong');
     }
 
-    const randomIndex = Math.floor(Math.random() * remainingImages.length);
-    currentImage = remainingImages.splice(randomIndex, 1)[0];
-
-    let imageUrl = currentImage.src;
-    if (imageUrl.includes('thispersondoesnotexist.com')) {
-        imageUrl += '?t=' + new Date().getTime();
+    if (!nextImageObj) {
+        preloadNextImage();
     }
-    profilePicture.src = imageUrl;
+
+    currentImage = nextImageObj.data;
+    profilePicture.src = nextImageObj.preloadedSrc;
+
+    // Preload the ONE AFTER this one immediately
+    preloadNextImage();
 
     total++;
     totalSpan.textContent = total;
     startTimer();
 }
 
+function updateStats(isCorrect) {
+    if (isCorrect) {
+        score++;
+        streak++;
+        if (streak > highScore) {
+            highScore = streak;
+            localStorage.setItem('linkedinOrInterpol_highScore', highScore);
+        }
+    } else {
+        streak = 0;
+    }
+
+    scoreSpan.textContent = score;
+    if (streakSpan) streakSpan.textContent = streak;
+    if (highScoreSpan) highScoreSpan.textContent = highScore;
+}
+
 function checkAnswer(guess) {
     stopTimer();
+    const imageContainer = document.querySelector('.image-container');
+
     if (guess === currentImage.type) {
-        score++;
-        scoreSpan.textContent = score;
+        updateStats(true);
         feedbackEl.textContent = currentTranslations.correct;
         feedbackEl.className = 'correct';
+        if (imageContainer) imageContainer.classList.add('feedback-correct');
     } else {
+        updateStats(false);
         feedbackEl.textContent = currentTranslations.wrong;
         feedbackEl.className = 'incorrect';
+        if (imageContainer) imageContainer.classList.add('feedback-wrong');
+
         if (gameMode === 'classic') {
             classicModeEndPopup.style.display = 'block';
             linkedinButton.disabled = true;
@@ -2459,9 +2543,12 @@ function checkAnswer(guess) {
 function resetGame() {
     score = 0;
     total = 0;
+    streak = 0;
     scoreSpan.textContent = score;
     totalSpan.textContent = total;
+    if (streakSpan) streakSpan.textContent = streak;
     remainingImages = [...images];
+    nextImageObj = null; // Reset preload buffer
     if (timeUpPopup) timeUpPopup.style.display = 'none';
     if (classicModeEndPopup) classicModeEndPopup.style.display = 'none'; // Hide classic mode popup
     if (reviveButton) reviveButton.style.display = 'inline-block';
@@ -2590,7 +2677,12 @@ function initializeGame() {
     if (classicReviveButton) classicReviveButton.addEventListener('click', revive);
     if (classicShareScoreButton) classicShareScoreButton.addEventListener('click', shareScore);
 
-    nextImage(); // Load the first image
+    // Initialize stats display
+    if (highScoreSpan) highScoreSpan.textContent = highScore;
+    if (streakSpan) streakSpan.textContent = streak;
+
+    preloadNextImage(); // Preload first image
+    nextImage(); // Display it
 }
 
 document.addEventListener('DOMContentLoaded', () => {
