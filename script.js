@@ -2385,6 +2385,24 @@ function updateLivesUI() {
     }
 }
 
+function showLifeLostAnimation() {
+    if (!livesSpan) return;
+
+    const rect = livesSpan.getBoundingClientRect();
+    const anim = document.createElement('span');
+    anim.textContent = "-1";
+    anim.className = 'floating-minus-one';
+
+    anim.style.left = (rect.left + rect.width / 2 - 10) + 'px';
+    anim.style.top = rect.top + 'px';
+
+    document.body.appendChild(anim);
+
+    setTimeout(() => {
+        if (anim.parentNode) anim.parentNode.removeChild(anim);
+    }, 1000);
+}
+
 function handleGameModeChange() {
     gameMode = gameModeSelector.value;
     resetGame();
@@ -2539,6 +2557,7 @@ function checkAnswer(guess) {
 
         if (gameMode === 'classic') {
             lives--;
+            showLifeLostAnimation();
             updateLivesUI();
             if (lives <= 0) {
                 classicModeEndPopup.style.display = 'block';
