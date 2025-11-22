@@ -119,6 +119,8 @@ const translations = {
         "instructionsPopupText2": "For each image, you must guess whether the person is a professional from LinkedIn or a criminal from Interpol.",
         "instructionsPopupText3": "Click the \"LinkedIn\" or \"Interpol\" button to make your guess.",
         "instructionsPopupText4": "Your score is tracked at the top of the page.",
+        "instructionsPopupText5": "In Classic Mode, you have 3 lives.",
+        "instructionsPopupText6": "Build your Streak with consecutive correct guesses!",
         "playButton": "Play",
         "shareScoreButton": "Share Score",
         "gameMode": "Game Mode",
@@ -254,6 +256,8 @@ const translations = {
         "instructionsPopupText2": "Para cada imagen, debes adivinar si la persona es un profesional de LinkedIn o un criminal de Interpol.",
         "instructionsPopupText3": "Haz clic en el botón \"LinkedIn\" o \"Interpol\" para hacer tu suposición.",
         "instructionsPopupText4": "Tu puntuación se registra en la parte superior de la página.",
+        "instructionsPopupText5": "En el modo Clásico, tienes 3 vidas.",
+        "instructionsPopupText6": "¡Construye tu racha con aciertos consecutivos!",
         "playButton": "Jugar",
         "shareScoreButton": "Compartir Puntuación",
         "gameMode": "Modo de Juego",
@@ -387,6 +391,8 @@ const translations = {
         "instructionsPopupText2": "Pour chaque image, vous devez deviner si la personne est un professionnel de LinkedIn ou un criminel d'Interpol.",
         "instructionsPopupText3": "Cliquez sur le bouton \"LinkedIn\" ou \"Interpol\" pour faire votre supposition.",
         "instructionsPopupText4": "Votre score est suivi en haut de la page.",
+        "instructionsPopupText5": "En mode Classique, vous avez 3 vies.",
+        "instructionsPopupText6": "Construisez votre série avec des suppositions correctes consécutives!",
         "playButton": "Jouer",
         "shareScoreButton": "Partager le Score",
         "gameMode": "Mode de jeu",
@@ -518,6 +524,8 @@ const translations = {
         "instructionsPopupText2": "Für jedes Bild müssen Sie raten, ob die Person ein Profi von LinkedIn oder ein Krimineller von Interpol ist.",
         "instructionsPopupText3": "Klicken Sie auf die Schaltfläche \"LinkedIn\" oder \"Interpol\", um Ihre Vermutung abzugeben.",
         "instructionsPopupText4": "Ihre Punktzahl wird oben auf der Seite verfolgt.",
+        "instructionsPopupText5": "Im klassischen Modus haben Sie 3 Leben.",
+        "instructionsPopupText6": "Baue deine Serie mit aufeinanderfolgenden richtigen Tipps auf!",
         "playButton": "Spielen",
         "shareScoreButton": "Punktzahl teilen",
         "gameMode": "Spielmodus",
@@ -649,6 +657,8 @@ const translations = {
         "instructionsPopupText2": "Para cada imagem, você deve adivinhar se a pessoa é um profissional do LinkedIn ou um criminoso da Interpol.",
         "instructionsPopupText3": "Clique no botão \"LinkedIn\" ou \"Interpol\" para fazer sua suposição.",
         "instructionsPopupText4": "Sua pontuação é acompanhada no topo da página.",
+        "instructionsPopupText5": "No modo Clássico, você tem 3 vidas.",
+        "instructionsPopupText6": "Construa sua sequência com palpites corretos consecutivos!",
         "playButton": "Jogar",
         "shareScoreButton": "Compartilhar Pontuação",
         "gameMode": "Modo de Jogo",
@@ -780,6 +790,8 @@ const translations = {
         "instructionsPopupText2": "Per ogni immagine, devi indovinare se la persona è un professionista di LinkedIn o un criminale dell'Interpol.",
         "instructionsPopupText3": "Clicca sul pulsante \"LinkedIn\" o \"Interpol\" per fare la tua ipotesi.",
         "instructionsPopupText4": "Il tuo punteggio è tracciato in cima alla pagina.",
+        "instructionsPopupText5": "In modalità Classica, hai 3 vite.",
+        "instructionsPopupText6": "Costruisci la tua serie con ipotesi corrette consecutive!",
         "playButton": "Gioca",
         "shareScoreButton": "Condividi Punteggio",
         "gameMode": "Modalità di Gioco",
@@ -911,6 +923,8 @@ const translations = {
         "instructionsPopupText2": "Voor elke afbeelding moet u raden of de persoon een professional van LinkedIn is of een crimineel van Interpol.",
         "instructionsPopupText3": "Klik op de knop \"LinkedIn\" of \"Interpol\" om uw gok te maken.",
         "instructionsPopupText4": "Uw score wordt bovenaan de pagina bijgehouden.",
+        "instructionsPopupText5": "In de Klassieke modus heb je 3 levens.",
+        "instructionsPopupText6": "Bouw je reeks op met opeenvolgende juiste gissingen!",
         "playButton": "Spelen",
         "shareScoreButton": "Deel Score",
         "gameMode": "Spelmodus",
@@ -1042,6 +1056,8 @@ const translations = {
         "instructionsPopupText2": "Для каждого изображения вы должны угадать, является ли человек профессионалом из LinkedIn или преступником из Интерпола.",
         "instructionsPopupText3": "Нажмите кнопку \"LinkedIn\" или \"Интерпол\", чтобы сделать свой выбор.",
         "instructionsPopupText4": "Ваш счет отслеживается в верхней части страницы.",
+        "instructionsPopupText5": "В классическом режиме у вас есть 3 жизни.",
+        "instructionsPopupText6": "Создайте свою серию с последовательными правильными догадками!",
         "playButton": "Играть",
         "shareScoreButton": "Поделиться Счетом",
         "gameMode": "Режим игры",
@@ -1175,6 +1191,8 @@ const translations = {
     "instructionsPopupText2": "对于每张图片，您都必须猜测此人是领英的专业人士还是国际刑警组织的罪犯。",
     "instructionsPopupText3": "单击“领英”或“国际刑警组织”按钮进行猜测。",
     "instructionsPopupText4": "您的分数记录在页面顶部。",
+    "instructionsPopupText5": "在经典模式下，你有 3 条命。",
+    "instructionsPopupText6": "通过连续猜对来建立连胜纪录！",
     "playButton": "开始游戏",
     "shareScoreButton": "分享分数",
     "gameMode": "游戏模式",
@@ -1308,6 +1326,8 @@ const translations = {
     "instructionsPopupText2": "प्रत्येक छवि के लिए, आपको यह अनुमान लगाना होगा कि व्यक्ति लिंक्डइन का पेशेवर है या इंटरपोल का अपराधी।",
     "instructionsPopupText3": "अपना अनुमान लगाने के लिए \"लिंक्डइन\" या \"इंटरपोल\" बटन पर क्लिक करें।",
     "instructionsPopupText4": "आपका स्कोर पृष्ठ के शीर्ष पर ट्रैक किया जाता है।",
+    "instructionsPopupText5": "क्लासिक मोड में, आपके पास 3 जीवन हैं।",
+    "instructionsPopupText6": "लगातार सही अनुमानों के साथ अपनी लकीर बनाएं!",
     "playButton": "खेलें",
     "shareScoreButton": "स्कोर साझा करें",
     "gameMode": "खेल मोड",
@@ -1441,6 +1461,8 @@ const translations = {
     "instructionsPopupText2": "لكل صورة ، يجب أن تخمن ما إذا كان الشخص محترفًا من لينكد إن أم مجرمًا من الإنتربول.",
     "instructionsPopupText3": "انقر فوق الزر \"لينكد إن\" أو \"الإنتربول\" لتخمينك.",
     "instructionsPopupText4": "يتم تتبع درجاتك في الجزء العلوي من الصفحة.",
+    "instructionsPopupText5": "في الوضع الكلاسيكي ، لديك 3 أرواح.",
+    "instructionsPopupText6": "ابني سلسلتك بتخمينات صحيحة متتالية!",
     "playButton": "العب",
     "shareScoreButton": "مشاركة النتيجة",
     "gameMode": "وضع اللعب",
@@ -1574,6 +1596,8 @@ const translations = {
     "instructionsPopupText2": "প্রতিটি চিত্রের জন্য, আপনাকে অনুমান করতে হবে যে ব্যক্তিটি লিঙ্কডইনের পেশাদার নাকি ইন্টারপোলের অপরাধী।",
     "instructionsPopupText3": "আপনার অনুমান করতে \"লিঙ্কডইন\" বা \"ইন্টারপোল\" বোতামে ক্লিক করুন।",
     "instructionsPopupText4": "আপনার স্কোর পৃষ্ঠার শীর্ষে ট্র্যাক করা হয়।",
+    "instructionsPopupText5": "ক্লাসিক মোডে, আপনার ৩টি জীবন আছে।",
+    "instructionsPopupText6": "টানা সঠিক অনুমানের সাথে আপনার ধারাবাহিকতা তৈরি করুন!",
     "playButton": "খেলুন",
     "shareScoreButton": "স্কোর শেয়ার করুন",
     "gameMode": "খেলার মোড",
@@ -1707,6 +1731,8 @@ const translations = {
     "instructionsPopupText2": "各画像について、その人物がリンクトインのプロフェッショナルか、インターポールの犯罪者かを推測する必要があります。",
     "instructionsPopupText3": "「リンクトイン」または「インターポール」ボタンをクリックして推測します。",
     "instructionsPopupText4": "スコアはページの上部で追跡されます。",
+    "instructionsPopupText5": "クラシックモードでは、ライフが3つあります。",
+    "instructionsPopupText6": "連続正解で連勝記録を伸ばそう！",
     "playButton": "プレイ",
     "shareScoreButton": "スコアを共有",
     "gameMode": "ゲームモード",
@@ -1840,6 +1866,8 @@ const translations = {
         "instructionsPopupText2": "각 이미지에 대해 그 사람이 LinkedIn의 전문가인지 Interpol의 범죄자인지 추측해야 합니다.",
         "instructionsPopupText3": "\"LinkedIn\" 또는 \"Interpol\" 버튼을 클릭하여 추측하십시오.",
         "instructionsPopupText4": "점수는 페이지 상단에 기록됩니다.",
+        "instructionsPopupText5": "클래식 모드에서는 생명이 3개입니다.",
+        "instructionsPopupText6": "연속 정답으로 연속 기록을 세우세요!",
         "playButton": "플레이",
         "shareScoreButton": "점수 공유",
         "gameMode": "게임 모드",
@@ -1973,6 +2001,8 @@ const translations = {
         "instructionsPopupText2": "Her resim için, kişinin LinkedIn'den bir profesyonel mi yoksa Interpol'den bir suçlu mu olduğunu tahmin etmelisiniz.",
         "instructionsPopupText3": "Tahmininizi yapmak için \"LinkedIn\" veya \"Interpol\" düğmesine tıklayın.",
         "instructionsPopupText4": "Puanınız sayfanın üst kısmında takip edilir.",
+        "instructionsPopupText5": "Klasik Modda 3 canınız var.",
+        "instructionsPopupText6": "Ardışık doğru tahminlerle serinizi oluşturun!",
         "playButton": "Oyna",
         "shareScoreButton": "Puanı Paylaş",
         "gameMode": "Oyun Modu",
@@ -2106,6 +2136,8 @@ const translations = {
         "instructionsPopupText2": "Đối với mỗi hình ảnh, bạn phải đoán xem người đó là chuyên gia từ LinkedIn hay tội phạm từ Interpol.",
         "instructionsPopupText3": "Nhấp vào nút \"LinkedIn\" hoặc \"Interpol\" để đưa ra dự đoán của bạn.",
         "instructionsPopupText4": "Điểm của bạn được theo dõi ở đầu trang.",
+        "instructionsPopupText5": "Trong Chế độ Cổ điển, bạn có 3 mạng.",
+        "instructionsPopupText6": "Xây dựng chuỗi của bạn với những lần đoán đúng liên tiếp!",
         "playButton": "Chơi",
         "shareScoreButton": "Chia sẻ điểm số",
         "gameMode": "Chế độ chơi",
@@ -2188,8 +2220,7 @@ const classicReviveButton = document.getElementById('classic-revive-button');
 const classicPlayAgainButton = document.getElementById('classic-play-again-button');
 const classicShareScoreButton = document.getElementById('classic-share-score-button');
 const profilePicture = document.getElementById('profile-picture');
-const scoreSpan = document.getElementById('score');
-const totalSpan = document.getElementById('total');
+const scoreSpan = document.getElementById('score-fraction');
 const streakSpan = document.getElementById('streak');
 const livesSpan = document.getElementById('lives');
 const highScoreSpan = document.getElementById('high-score');
@@ -2519,7 +2550,7 @@ function nextImage() {
     preloadNextImage();
 
     total++;
-    if (totalSpan) totalSpan.textContent = total;
+    if (scoreSpan) scoreSpan.textContent = `${score}/${total}`;
     startTimer();
 }
 
@@ -2535,7 +2566,7 @@ function updateStats(isCorrect) {
         streak = 0;
     }
 
-    scoreSpan.textContent = score;
+    if (scoreSpan) scoreSpan.textContent = `${score}/${total}`;
     if (streakSpan) streakSpan.textContent = streak;
     if (highScoreSpan) highScoreSpan.textContent = highScore;
 }
@@ -2596,8 +2627,7 @@ function resetGame() {
     total = 0;
     streak = 0;
     lives = 3;
-    if (scoreSpan) scoreSpan.textContent = score;
-    if (totalSpan) totalSpan.textContent = total;
+    if (scoreSpan) scoreSpan.textContent = `${score}/${total}`;
     if (streakSpan) streakSpan.textContent = streak;
     updateLivesUI();
     remainingImages = [...images];
