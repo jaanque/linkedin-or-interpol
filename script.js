@@ -2445,7 +2445,7 @@ function shareScore() {
     const shareScoreValue = document.getElementById('share-score-value');
     const shareStreakValue = document.getElementById('share-streak-value');
 
-    if (shareScoreValue) shareScoreValue.textContent = score;
+    if (shareScoreValue) shareScoreValue.textContent = `${score}/${total}`;
     if (shareStreakValue) shareStreakValue.textContent = streak;
 
     // Translate elements within the share card
